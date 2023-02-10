@@ -1,0 +1,11 @@
+[19-Jul-2022 10:58:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/valon758/bountiful.valontech.com/wp-content/themes/dokan/test.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/valon758/bountiful.valontech.com/wp-content/themes/dokan/test.php on line 3
+[01-Dec-2022 05:17:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function remove_action() in /home/valon758/bountiful.valontech.com/wp-content/themes/dokan/includes/wc-template.php:3
+Stack trace:
+#0 /home/valon758/bountiful.valontech.com/wp-content/themes/dokan/functions.php(75): require_once()
+#1 /home/valon758/bountiful.valontech.com/wp-content/themes/dokan/functions.php(29): WeDevs_Dokan_Theme->includes()
+#2 /home/valon758/bountiful.valontech.com/wp-content/themes/dokan/functions.php(268): WeDevs_Dokan_Theme->__construct()
+#3 {main}
+  thrown in /home/valon758/bountiful.valontech.com/wp-content/themes/dokan/includes/wc-template.php on line 3

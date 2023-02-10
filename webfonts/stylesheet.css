@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Filson Pro';
+    src: url('FilsonProHeavy.eot');
+    src: url('FilsonProHeavy.eot?#iefix') format('embedded-opentype'),
+        url('FilsonProHeavy.woff') format('woff'),
+        url('FilsonProHeavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+

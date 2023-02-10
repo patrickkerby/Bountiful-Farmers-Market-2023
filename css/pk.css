@@ -1,0 +1,18 @@
+header .row div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header .brand {
+  padding: 30px 0;
+}
+
+header .brand a {
+  display: flex;
+  justify-content: center;
+}
+
+header .brand a img {
+  max-width: 313px;
+}
