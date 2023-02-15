@@ -1,3 +1,16 @@
+html {
+  font-size: 16px;
+}
+
+p, a, li, strong, span {
+  font-family: "basic-sans";
+}
+
+header {
+  background: url('../assets/images/colourbar.svg') repeat-x top center;
+  padding-top: 6px;
+}
+
 header .row div {
   display: flex;
   justify-content: center;
@@ -15,4 +28,81 @@ header .brand a {
 
 header .brand a img {
   max-width: 313px;
+}
+
+header span {
+  font-size: 14px;
+  color: #B5B5B5;
+}
+
+header h6 {
+  color: #067D73;
+  margin: 0;
+  font-size: 16px;
+  font-family: "basic-sans";
+  letter-spacing: 0.44px;
+}
+
+header .header-cta {
+  border-left: solid 2px #EBEBEB;
+  background: url('../assets/images/location.svg') no-repeat 1.5rem center;
+  padding: 0.5rem 0 0.5rem 4rem;
+  margin: auto 0;
+}
+
+header .header-cta.hours {
+  border-right: solid 2px #EBEBEB;
+  border-left: none;
+  background: url('../assets/images/hours.svg') no-repeat calc(100% - 1.5rem) center;
+  padding: 0.5rem 5rem 0.5rem 0;
+  text-align: right;
+}
+
+header .row .socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 1rem;
+}
+
+header .socials a,
+header .cart a {
+  text-indent: -99999999rem;
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  margin: 0.5rem;
+  background: url('../assets/images/facebook.svg') no-repeat center center;
+}
+
+header .socials a.instagram {
+  background: url('../assets/images/instagram.svg') no-repeat center center;
+}
+
+header .cart a {
+  height: 1.75rem;
+  width: 1.75rem;
+  margin-left: 0.75rem;
+  background: url('../assets/images/cart.svg') no-repeat center center;
+}
+
+.navbar {
+  background-image: linear-gradient(180deg, #92BC5C 0%, #A8CF75 100%);
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+.navbar a {
+  font-family: "filson-pro";
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.41px;
+  font-weight: bold;
+  color: #335902;
+}
+
+.navbar .caret {
+  display: none;
 }

@@ -21,15 +21,18 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap-select.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/owl.carousel.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/zno3axd.css">
+    <!-- link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/zno3axd.css" -->
+
+    <link rel="stylesheet" href="https://use.typekit.net/imp1lqn.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=1" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/pk.css" />
     <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/fav.png" type="image/x-icon">
     <title><?php the_title(); ?></title>
     <?php wp_head(); ?>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/pk.css" />
 </head>
 
 <body <?php body_class( 'woocommerce' ); ?>>
@@ -40,16 +43,18 @@
             <div class="row">
                 
                 <!-- Social Media -->
-                <div class="socials col-sm-1 justify-content-center">
-                    <a href="">Instagram</a>
-                    <a href="">Facebook</a>
+                <div class="socials col-sm-1 justify-content-end">
+                    <a href="" class="facebook">Facebook</a>
+                    <a href="" class="instagram">Instagram</a>
                 </div>
 	            
                 <!-- Directions -->
-                <div class="directions header-cta col-sm-3">
-                    <span>Come visit</span>
-                    <h6>Get Directions</h6>
-                </div>
+                <a class="directions header-cta col-sm-3" href="">
+                    <div>
+                        <span>Come visit</span>
+                        <h6>Get Directions</h6>
+                    </div>
+                </a>
 
 	            <!-- Brand -->
                 <div class="brand col-sm-4 justify-content-center">
@@ -59,14 +64,16 @@
                 </div>
 
                 <!-- Hours of Operation -->
-                <div class="hours col-sm-3 align-items-end">
-                    <span>Open next</span>
-                    <h6>Friday, 9am</h6>
-                </div>
+                <a class="hours col-sm-3 align-items-end header-cta" href="#">
+                    <div class="">
+                        <span>Open next</span>
+                        <h6>Friday, 9am</h6>
+                    </div>
+                </a>
 
                 <!-- Cart -->
-                <div class="cart header-cta col-sm-1 justify-content-center">
-                    Cart
+                <div class="cart col-sm-1 justify-content-center">
+                    <a href="">Cart</a>
                 </div>
             </div>
         </div>

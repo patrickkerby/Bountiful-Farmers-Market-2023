@@ -244,18 +244,7 @@ a:hover {
   top: 0;
   left: 100%;
 }
-.dropdown-menu .caret {
-  border-top: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-left: 4px solid #000;
-}
-.dropdown-menu .open > a .caret,
-.dropdown-menu .open > a:hover .caret,
-.dropdown-menu .open > a:focus .caret {
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-}
+
 .dropdown-menu > li > a.dropdown-toggle:hover,
 .dropdown-menu li > a.dropdown-toggle:focus {
   color: #333333;
