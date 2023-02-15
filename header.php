@@ -40,10 +40,10 @@
     <!--Header top starts here-->
     <header>
         <div class="top-header container-fluid">
-            <div class="row">
+            <div class="row justify-content-center">
                 
                 <!-- Social Media -->
-                <div class="socials col-sm-1 justify-content-end">
+                <div class="socials justify-content-end">
                     <a href="" class="facebook">Facebook</a>
                     <a href="" class="instagram">Instagram</a>
                 </div>
@@ -57,7 +57,7 @@
                 </a>
 
 	            <!-- Brand -->
-                <div class="brand col-sm-4 justify-content-center">
+                <div class="brand col justify-content-center">
                     <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-horizontal.svg">
                     </a>
@@ -72,7 +72,7 @@
                 </a>
 
                 <!-- Cart -->
-                <div class="cart col-sm-1 justify-content-center">
+                <div class="cart justify-content-center">
                     <a href="">Cart</a>
                 </div>
             </div>

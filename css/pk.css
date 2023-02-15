@@ -2,6 +2,18 @@ html {
   font-size: 16px;
 }
 
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 p, a, li, strong, span {
   font-family: "basic-sans";
 }
@@ -17,6 +29,10 @@ header .row div {
   flex-direction: column;
 }
 
+header .top-header .row {
+  margin: 0 !important;
+}
+
 header .brand {
   padding: 30px 0;
 }
@@ -28,17 +44,18 @@ header .brand a {
 
 header .brand a img {
   max-width: 313px;
+  transition: all 0.3s ease-in-out;
 }
 
 header span {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #B5B5B5;
 }
 
 header h6 {
   color: #067D73;
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "basic-sans";
   letter-spacing: 0.44px;
 }
@@ -74,17 +91,20 @@ header .cart a {
   height: 1rem;
   margin: 0.5rem;
   background: url('../assets/images/facebook.svg') no-repeat center center;
+  background-size: contain;
 }
 
 header .socials a.instagram {
   background: url('../assets/images/instagram.svg') no-repeat center center;
+  background-size: contain;
 }
 
 header .cart a {
   height: 1.75rem;
-  width: 1.75rem;
+  width: 1.5rem;
   margin-left: 0.75rem;
   background: url('../assets/images/cart.svg') no-repeat center center;
+  background-size: contain;
 }
 
 .navbar {
@@ -97,7 +117,7 @@ header .cart a {
 .navbar a {
   font-family: "filson-pro";
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 0.9375;
   letter-spacing: 0.41px;
   font-weight: bold;
   color: #335902;
@@ -105,4 +125,89 @@ header .cart a {
 
 .navbar .caret {
   display: none;
+}
+
+/* --------- Cart Responsive Style --------- */
+
+@media (max-width: 1024px) {
+  header .brand a img {
+    max-width: 260px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header .cart a {
+    width: 1.35rem;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 780px) {
+  header .brand a img {
+    max-width: 220px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header .header-cta {
+    background: url('../assets/images/location.svg') no-repeat 1rem center;
+    padding: 0.5rem 0 0.5rem 3.5rem;
+  }
+  
+  header .header-cta.hours {
+    padding: 0.5rem 4rem 0.5rem 0;
+    background: url('../assets/images/hours.svg') no-repeat calc(100% - 0.75rem) center;
+  }
+  
+  header .row .socials {
+    padding-right: 0.5rem;
+  }
+
+  header .socials a,
+  header .cart a {
+    margin: 0.5rem;
+  }
+
+  header .cart a {
+    margin-left: 0.75rem;
+  }
+}
+
+@media (min-width: 670px) {
+  .navbar-expand-md .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+  }
+
+  ul.navbar-nav li {
+    width: auto;
+  }
+
+  header .navbar .navbar-nav li a {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 670px) {
+  header .brand a img {
+    max-width: 200px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  header .row .socials,
+  header .row .cart {
+    display: none;
+  }
+
+  header .top-header .row {
+    margin: 0 !important;
+  }
 }
