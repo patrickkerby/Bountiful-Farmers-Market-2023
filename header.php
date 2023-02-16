@@ -49,7 +49,7 @@
                 </div>
 	            
                 <!-- Directions -->
-                <a class="directions header-cta col-sm-3" href="">
+                <a class="directions header-cta col col-sm-3 order-2 order-sm-1" href="">
                     <div>
                         <span>Come visit</span>
                         <h6>Get Directions</h6>
@@ -57,14 +57,14 @@
                 </a>
 
 	            <!-- Brand -->
-                <div class="brand col justify-content-center">
+                <div class="brand col-sm justify-content-center order-first order-sm-1">
                     <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-horizontal.svg">
                     </a>
                 </div>
 
                 <!-- Hours of Operation -->
-                <a class="hours col-sm-3 align-items-end header-cta" href="#">
+                <a class="hours col col-sm-3 align-items-end header-cta order-3 order-sm-5" href="#">
                     <div class="">
                         <span>Open next</span>
                         <h6>Friday, 9am</h6>
@@ -72,7 +72,7 @@
                 </a>
 
                 <!-- Cart -->
-                <div class="cart justify-content-center">
+                <div class="cart justify-content-center order-sm-6">
                     <a href="">Cart</a>
                 </div>
             </div>
@@ -82,7 +82,7 @@
             <div class="container">
                 
                 <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
