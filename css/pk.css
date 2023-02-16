@@ -283,10 +283,15 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
     z-index: 2;
     max-height: none;
     display: flex !important;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
   }
 
   header .navbar #collapsibleNavbar.collapse:not(.show) {
     display: none !important;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    display: flex !important;
   }
 
   .navbar-toggler {
@@ -300,5 +305,12 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
   .navbar-toggler.collapsed .navbar-toggler-icon::before,
   .navbar-toggler.collapsed .navbar-toggler-icon::after {
     background: #92BC5C;
+  }
+
+  header .navbar .navbar-nav li a {
+    font-size: 2rem;
+    text-transform: none;
+    padding: 1.5rem 0;
+    font-weight: 500;
   }
 }
