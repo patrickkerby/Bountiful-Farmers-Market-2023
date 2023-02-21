@@ -39,7 +39,7 @@
 
     <!--Header top starts here-->
     <header>
-        <div class="top-header container-fluid">
+        <div class="top-header container-fluid header-static">
             <div class="row justify-content-center">
                 
                 <!-- Social Media -->

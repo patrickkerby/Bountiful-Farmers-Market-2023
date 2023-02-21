@@ -14,12 +14,28 @@ html {
   }
 }
 
-p, a, li, strong, span {
-  font-family: "basic-sans";
+h1, h2, h3, h4, h5, h6 {
+  font-family: "filson-pro";
 }
 
-header {
-  background: url('../assets/images/colourbar.svg') repeat-x top left;
+p, a, li, strong, span {
+  font-family: "basic-sans";
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 300;
+  color: #565656;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+strong {
+  font-weight: 500;
+}
+
+header .top-header {
+  background: url('../assets/images/colourbar.svg') #fff repeat-x top left;
   padding-top: 6px;
 }
 
@@ -149,9 +165,123 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
   transition: all 0.4s ease-in-out;
 }
 
-/* --------- Cart Responsive Style --------- */
+/* -----------  Home Page ------------ */
+
+.inner-heading { padding-bottom: 15px; }
+
+.inner-heading h2 { 
+    color: #008571; 
+    font-weight: 800; 
+    font-size: 3.875rem; 
+    font-family: "quiverleaf-cf"; 
+    width: 60%;
+    margin: -6rem auto 3rem auto;
+    padding: 1.5rem 3rem;
+    background: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+div.intro {
+  padding-right: 2.5rem;
+}
+
+.inner-heading p { 
+  margin: 0 auto 4rem auto; 
+  line-height: 25px; 
+  word-break: break-word; 
+  width: 70%;
+  text-align: left;
+}
+
+.newsflash {
+  background: #fafafa;
+  margin-bottom: 4rem;
+  /* margin-left: 2rem; */
+  padding-top: 1rem;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.newsflash h3 {
+  font-size: 24px;
+  color: #067D73;
+  letter-spacing: -0.3px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.newsflash h4 {
+  position: absolute;
+  top: -1.25rem;
+  background: #E0665D;
+  color: #fff;
+  text-transform: uppercase;
+  width: 10rem;
+  text-align: center;
+  left: calc(50% - 5rem);
+  padding: 0.5rem 1.5rem;
+  margin: 0 auto;
+}
+
+.newsflash span {
+  font-size: 1.125rem;
+  color: #5C5C5C;
+}
+
+.newsflash div {
+  border-bottom: solid 2px #E8E8E8;
+  align-items: center;
+  margin: 0 -0.75rem;
+}
+
+.newsflash div a {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem 3.25rem 1.75rem 2rem;
+  position: relative;
+}
+
+.newsflash div a::after { 
+  content: "";
+  height: 24px;
+  width: 15px;
+  position: absolute;
+  right: 30px;
+  top: calc(50% - 14px);
+  font-size: 40px;
+  background: url(../assets/images/arrow.svg) no-repeat center center;
+}
+
+.newsflash div:last-of-type {
+  border: none;
+}
+
+.free-parking .outer-box {
+  padding: 2rem 1rem;
+  background: #fafafa;
+  border-radius: 1rem;
+}
+
+/* Footer */ 
+
+footer {
+  background-image: radial-gradient(50% 101%, #008671 0%, #007260 77%, #00584A 100%);
+  padding: 10rem 0 0 0;
+}
+
+/* ---------  Responsive Style --------- */
 
 @media (max-width: 1024px) {
+
+  .inner-heading h2 {
+    font-size: 3.5rem;
+    width: 70%;
+  }
+
   header .brand a img {
     max-width: 260px;
     transition: all 0.3s ease-in-out;
@@ -223,6 +353,7 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
 }
 
 @media (min-width: 575px) {
+
   .navbar-expand-md .navbar-toggler {
     display: none;
   }
@@ -248,6 +379,21 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
 }
 
 @media (max-width: 575px) {
+
+  .inner-heading h2 {
+    font-size: 3rem;
+    width: 80%;
+    margin: -6rem auto 0rem auto;
+    padding: 1rem;
+  }
+
+  div.intro {
+    padding: 0 4rem;
+  }
+
+  .newsflash {
+    margin: 1rem 2rem 4rem 2rem;
+  }
 
   .navbar {
     min-height: 0;
@@ -277,6 +423,7 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
     background: linear-gradient(180deg, #92BC5C 0%, #A8CF75 100%);
     height: 100vh !important;
     width: 100%;
+    height: 1px !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -284,6 +431,8 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
     max-height: none;
     display: flex !important;
     opacity: 1;
+    align-items: start;
+    padding-top: 2rem;
     transition: all 0.4s ease-in-out;
   }
 
@@ -312,5 +461,53 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
     text-transform: none;
     padding: 1.5rem 0;
     font-weight: 500;
+    text-align: left;
+  }
+
+  .top-header.header {
+    overflow: hidden;
+  }
+
+  .top-header.header-static {
+    height: 178px;
+    transition: height 0.4s ease-in-out;
+    position: fixed;
+    z-index: 2;
+  }
+
+  .top-header.header-scroll {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 110px;
+    transition: height 0.6s ease-in-out;
+  }
+
+  .top-header.header-static .hours,
+  .top-header.header-static .directions {
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .top-header.header-scroll .hours,
+  .top-header.header-scroll .directions {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .top-header.header-scroll .brand {
+    border: none;
+    margin-bottom: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .home-banner {
+    margin-top: 178px;
+  }
+
+  header ul.navbar-nav {
+    width: 80%;
+    margin: 0 auto !important;
   }
 }
+

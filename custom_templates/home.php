@@ -30,11 +30,37 @@ $section5 = get_field('section_5');
 	<!--heart-of-canada section starts here-->
 	<section class="heart-of-canada">
 		<div class="container">
-		<div class="inner-heading text-center ">
-			<h2 class="text-uppercase"><?php echo $section2['heading']; ?></h2>
-			<p><?php echo $section2['paragraph']; ?><br><?php echo $section2['sub_paragraph1']; ?><br><?php echo $section2['sub_paragraph2']; ?></p>
+			<div class="inner-heading text-center ">
+				<h2><?php echo $section2['heading']; ?></h2>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-sm-6 intro">
+					<p><?php echo $section2['paragraph']; ?></p>
+				</div>
+				<div class="col-sm-5 newsflash">
+					<h4>Newsflash!</h4>
+					<div>
+						<a href="">
+							<h3>New Christmas Hours!</h3>
+							<span>Regular hours + Closed Dec. 25 & Jan. 1</span>
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<h3>Upcoming Events</h3>
+							<span>Christmas event registrations are live!</span>
+						</a>
+					</div>
+					<div>
+						<a href="">
+							<h3>Advent Calendar Contest</h3>
+							<span>24  Winners in December!</span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+	</secton>
 
 	<!-- free-parking section starts here-->
 	<section class="free-parking">

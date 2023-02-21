@@ -70,4 +70,20 @@ jQuery(function($) {
     $('body').on('adding_to_cart', function(e, button) {
         $(button).children('i').addClass('fa-spin');
     });
+
+        var header = $('.top-header');
+        var body = $('body');
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+        
+            if (scroll >= 2) {
+                header.removeClass('header-static').addClass('header-scroll');
+                body.removeClass('header-static').addClass("header-scroll");
+            } else {
+                header.removeClass('header-scroll').addClass('header-static');
+                body.removeClass('header-scroll').addClass("header-static");
+
+            }
+        });
 });
+

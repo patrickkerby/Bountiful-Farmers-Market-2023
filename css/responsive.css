@@ -602,11 +602,7 @@
     .top-header .form-control{
          width: 190px;
     }   
-    .heart-of-canada p{
-      font-size:14px
-    } 
-    .vendors-sec,
-    .heart-of-canada {
+    .vendors-sec {
         padding: 80px 0;
     }
     .dropdown-content{
