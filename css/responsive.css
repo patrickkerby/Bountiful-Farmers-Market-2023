@@ -13,38 +13,17 @@
       width: 1370px!important;
       max-width: 1370px!important;
     }
-    footer p {
-        font-size: 11px;
-    }
   }
   @media screen and (min-width: 1600px) {
     header .container, footer .container {
       width: 1570px!important;
       max-width: 1570px!important;
     }
-    footer .nmbr, footer address, ul.open-time p, footer ul li a, footer .form-group .form-control::placeholder {
-        font-size: 16px;
-    }
-    footer p {
-        font-size: 13px;
-    }
-    ul.open-time p span {
-        width: 100px;
-    }
-    footer h4 {
-        font-size: 22px;
-    }
   }
   @media screen and (min-width: 1900px) {
     header .container, footer .container {
         width: 1890px!important;
         max-width: 1890px!important;
-    }
-    footer .nmbr, footer address, ul.open-time p, footer ul li a, footer p, footer .form-group .form-control::placeholder {
-        font-size: 16px;
-    }
-    footer h4 {
-        font-size: 25px;
     }
   }
 @media (min-width: 1800px) {
@@ -199,33 +178,8 @@
     .banner-details p {
         font-size: 32px;
     }
-    .home-banner {
-        padding: 100px 0 150px;
-    }   
-    .inner-heading h2 {
-        font-size: 35px;
-        margin-bottom: 22px;
-    }
-    p {
-        font-size: 15px;
-    }
-    .headrt-div figure {
-        height: 325px;
-    }
-    .headrt-div h4 {
-       font-size:42PX;
-    }
     .connected-slider figure {
         height: 275px;
-    }
-    ul.open-time p, footer ul li a, footer address {
-        font-size: 11px;
-    }
-    footer address br {
-        display: none;
-    }
-    ul.open-time p span {
-        width: 56px;
     }
     .local-content p {
         font-size: 14px;
@@ -1247,15 +1201,6 @@
     }
     .details-of-form form .custom-btn {
         width: 35%;
-    }
-    footer {
-        padding: 25px 0 0;
-    }
-    footer .copyright {
-        margin-top: 25px;
-    }
-    footer h4 {
-        margin-bottom: 5px;
     }
     .testimonial-page {
         padding: 80px 0;

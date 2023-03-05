@@ -81,35 +81,33 @@
      <!-- FOOTER START  -->
      <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a href="javascript:void(0);">
-                        <figure>
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ftr-logo.png" alt="ftr-logo" class="ftr-logo" />
-                        </figure>
-                    </a>
-                    <a href="tel:(780) 818-3878" class="nmbr">(780) 818-3878</a>
-                    <address>3696 97 Street Edmonton
-                        Alberta T6E 5S8<br>
-                        office@bountifulmarkets.com
-                        </address>
+            <div class="row justify-content-center contact-form">
+                <div class="col-md-7">
+                    <p>Sign up to stay up-to-date on what’s going on at Edmonton’s premier indoor farmers’ market.</p>
+                    <?php echo do_shortcode('[mc4wp_form id="839"]'); ?>                    
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12">
-                    <h4 class="text-uppercase">OPen</h4>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">We Are Open</h4>
                     <ul class="open-time">
                         <li>
-                            <p><span>Friday :</span>10AM - 4PM</p>
+                            <span>Friday:</span> 10am - 4pm
                         </li>
                         <li>
-                            <p><span>Saturday :</span>9AM - 4PM</p>
+                            <span>Saturday:</span> 9am - 4pm
                         </li>
                         <li>
-                            <p><span>Sunday :</span>10AM - 4PM</p>
+                            <span>Sunday:</span> 10am - 4pm
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12">
-                    <h4 class="text-uppercase">Quick links </h4>
+                <div class="col-md-4">
+                    <a href="javascript:void(0);">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-footer.svg" alt="ftr-logo" class="ftr-logo" />
+                    </a>
+                </div>
+                <div class="col-md-4">
                     <ul class="ftr-links">
                         <li>
                             <a href="https://bountiful.valontech.com/contact-us/">Contact Us</a>
@@ -118,33 +116,17 @@
                             <a href="https://bountiful.valontech.com/vendors/">Vendors</a>
                         </li>
                         <li>
+                            <a href="https://bountiful.valontech.com/faq/">FAQ</a>
+                        </li>
+                        <li>
                             <a href="https://bountiful.valontech.com/contests-and-events/">Contests and Events</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-5 col-md-6 col-sm-12">
-                    <h4 class="text-uppercase">Join our newsletter</h4>
-                    <p>Sign up to stay up-to-date on what’s going on at Edmonton’s premier indoor farmers’ market.</p>
-                    <!-- <form>
-                        <div class="form-group">
-                            <input class="form-control" placeholder="Enter Your Email Address">
-                            <button type="submit" class="custom-btn">Submit</button>
-                        </div>
-                    </form> -->
-                    <?php echo do_shortcode('[mc4wp_form id="839"]'); ?>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/bountifulfarmersmarketyeg/" target=_blank>
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                        <a href="https://www.instagram.com/bountifulfarmersmarketyeg/?hl=en" target=_blank>
-                            <i class="fa fa-instagram"></i>
-                        </a>
-                    </div>
+                <div class="col-12 colophon">
+                    <a href="tel:(780) 818-3878" class="nmbr">(780) 818-3878</a> <span>&#x2022;</span> <address>3696 97 Street Edmonton, AB T6E 5S8 </address> <span>&#x2022;</span> office@bountifulmarkets.com
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p class="text-center">© 2022 Bountiful Farmers’ Market. All Rights Reserved.</p>
         </div>
     </footer>
     <!-- FOOTER END  -->
