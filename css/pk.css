@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.44px;
 }
 
-p, a, li, strong, span {
+p, a, li, strong, span, caption {
   font-family: "basic-sans";
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -385,12 +385,10 @@ div.intro {
 
 footer {
   background-image: radial-gradient(50% 101%, #008671 0%, #007260 77%, #00584A 100%);
-  padding: 16rem 0 0 0;
-  margin-top: -15rem;
   position: relative;
 }
 
-footer::before {
+.home footer::before {
   content: '';
   width: 100%;
   height: 8rem;
@@ -400,6 +398,11 @@ footer::before {
   top: 0;
   transform-origin: left top;
   transform: skewY(-6deg);
+}
+
+.home footer {
+  padding: 16rem 0 0 0;
+  margin-top: -15rem;
 }
 
 footer * {

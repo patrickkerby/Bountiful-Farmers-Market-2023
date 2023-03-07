@@ -119,7 +119,7 @@
                             <a href="https://bountiful.valontech.com/faq/">FAQ</a>
                         </li>
                         <li>
-                            <a href="https://bountiful.valontech.com/contests-and-events/">Contests and Events</a>
+                            <a href="https://bountiful.valontech.com/contests-and-events/">Contests &amp; Events</a>
                         </li>
                     </ul>
                 </div>

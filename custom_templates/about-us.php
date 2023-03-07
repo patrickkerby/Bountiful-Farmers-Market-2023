@@ -4,95 +4,37 @@
 
 get_header();
 
-$section1 = get_field("section_1");
-$section2 = get_field("section_2");
-$section3 = get_field("section_3");
-//print_r($section3);
+$heading_image = get_field("background_image");
+$heading_title = get_field("page_title");
+$heading_intro = get_field("intro");
+$intro_photos_caption = get_field("intro_photos_caption");
+$intro_photos = get_field("intro_photos");
+
 
  ?>
 
-<div class="aboutUs-page">
-    <div class="container-fluid">
-        <div class="row amplifyDiv">
-            <div class="col-lg-6 col-md-12 col1">
-                <div class="amplify-div">
-                    <div class="main-heading">
-                        <h2><?php echo $section1['heading']; ?></h2>
-                    </div>
-                    <p><?php echo $section1['paragraph']; ?></p>
-
-                    <p><?php echo $section1['sub_paragraph']; ?></p>
-                    <a href="<?php echo $section1['button_link']; ?>" class="btn text-capitalize" target="_blank"><?php echo $section1['button_text']; ?></a>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="aboutImages">
-                    <figure>
-                        <img src="<?php echo $section1['image_1']; ?>" srcset="" class="img-1" />
-                    </figure>
-                    <figure>
-                        <img src="<?php echo $section1['image_2']; ?>" srcset="" class="img-2" />
-                    </figure>
-                </div>
-            </div>
-        </div>
-        <div class="row localDiv">
-            <div class="col-lg-6 col-md-12">
-                <div class="aboutImages aboutImages2">
-                    <figure>
-                        <img src="<?php echo $section2['image_1']; ?>" alt="local-img1" srcset="" class="img-1" />
-                    </figure>
-                    <figure>
-                        <img src="<?php echo $section2['image_2']; ?>" alt="local-img2" srcset="" class="img-2" />
-                    </figure>
-                    <figure>
-                        <img src="<?php echo $section2['image_3']; ?>" alt="local-img3" srcset="" class="img-3" />
-                    </figure>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="amplify-div text-right">
-                    <div class="main-heading">
-                        <h2><?php echo $section2['heading']; ?></h2>
-                    </div>
-                    <p><?php echo $section2['paragraph']; ?></p>
-
-                    <p><?php echo $section2['sub_paragraph']; ?></p>
-
-                    <p><?php echo $section2['sub_paragraph1']; ?></p>
-                </div>
+<div class="about-us">
+    <div class="container-fluid heading">
+        <div class="row justify-content-center" style="background-image: linear-gradient(174deg, rgba(27,48,46,0.62) 0%, rgba(43,77,74,0.62) 100%), url('<?php echo $heading_image['url'] ?>');">
+            <h1><?php echo $heading_title; ?></h1> 
+            <span>Friday & Sunday:  10 AM - 4 PM,  Saturday: 9 AM - 5 PM</span>
+            <div class="col-sm-9 intro">
+                <h2><?php echo $heading_intro; ?></h2>
+            </div>            
+        </div>        
+        <div class="row intro-photos justify-content-center g-0 no-gutters">
+            <?php
+                foreach($intro_photos as $photo) {?>
+                    <div class="col-sm-6">
+                        <img src="<?php echo $photo['url']; ?>" />
+                    </div>   
+            <?php } ?>
+            <div class="col-12 caption">
+                <p><?php echo $intro_photos_caption; ?></p>
             </div>
         </div>
     </div>
-    <div class="bountiful-sec">
-        <div class="container-fluid">
-            <div class="main-heading text-center">
-                <h2><?php echo $section3['heading']; ?></h2>
-            </div>
-            <p class="text-center"><?php echo $section3['paragraph']; ?></p>
-        </div>
-            <ul>
-                <li>
-                    <figure><img src="<?php echo $section3['image']; ?>" alt="community-img1" srcset=""></figure>
-                </li>
-                <li>
-                    <figure><img src="<?php echo $section3['image_2']; ?>" alt="community-img2" srcset=""></figure>
-                </li>
-                <li>
-                    <figure><img src="<?php echo $section3['image_3']; ?>" alt="community-img3" srcset=""></figure>
-                </li>
-                <li>
-                    <figure><img src="<?php echo $section3['image_4']; ?>" alt="community-img4" srcset=""></figure>
-                </li>
-                <li>
-                    <figure><img src="<?php echo $section3['image_5']; ?>" alt="community-img5" srcset=""></figure>
-                </li>
-                <li>
-                    <figure><img src="<?php echo $section3['image_6']; ?>" alt="community-img6" srcset=""></figure>
-                </li>
-            </ul>
-        
-    </div>
+    
 </div>
 
 <?php get_footer(); ?>

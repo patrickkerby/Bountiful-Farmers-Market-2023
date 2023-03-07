@@ -33,6 +33,11 @@
     <title><?php the_title(); ?></title>
     <?php wp_head(); ?>
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/pk.css" />
+    <?php 
+        if(is_page('about-us')) {
+            echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() .'/css/about.css" />';
+        }
+    ?>
 </head>
 
 <body <?php body_class( 'woocommerce' ); ?>>
