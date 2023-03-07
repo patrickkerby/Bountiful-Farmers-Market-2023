@@ -55,6 +55,7 @@ h2 {
 header .top-header {
   background: url('../assets/images/colourbar.svg') #fff repeat-x top left;
   padding-top: 6px;
+  box-shadow: 0 0 26px -18px #333;
 }
 
 header .row div {
@@ -151,7 +152,7 @@ header .cart a {
 .navbar a {
   font-family: "filson-pro";
   text-transform: uppercase;
-  font-size: 0.9375;
+  font-size: 0.9375rem;
   letter-spacing: 0.41px;
   font-weight: bold;
   color: #335902;
@@ -672,7 +673,7 @@ footer address {
   header .brand {
     border-bottom: solid 1px #cecece;
     padding: 1.5rem 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   header .brand a {
@@ -694,7 +695,7 @@ footer address {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 4;
     max-height: none;
     display: flex !important;
     opacity: 1;
@@ -709,10 +710,11 @@ footer address {
     opacity: 0;
     display: flex !important;
     height: 1px !important;
+    overflow: hidden;
   }
 
   .navbar-toggler {
-    z-index: 3;
+    z-index: 5;
     top: 2.75rem;
     position: fixed;
     right: 1rem;
@@ -746,7 +748,7 @@ footer address {
   .top-header.header-scroll {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     height: 110px;
     transition: height 0.6s ease-in-out;
   }
@@ -776,6 +778,22 @@ footer address {
   header ul.navbar-nav {
     width: 80%;
     margin: 0 auto !important;
+  }
+
+  .vendors-sec ul {
+    display: block;
+    padding: 0.5rem 1rem 2rem 1rem;
+  }
+
+  .vendors-sec ul li {
+    padding: 1.75rem 0.5rem;
+  }
+
+  .stay-connected .gallery  {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    padding: 0.55rem;
   }
 }
 

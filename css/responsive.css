@@ -1051,23 +1051,11 @@
     .free-parking {
         padding: 0 0 15px;
     }
-    .listing-wrapper li:not(:last-child) {
-        margin-bottom: 5px;
-    }
     .btn-wrap {
         margin-bottom: 25px;
     }
     .outline-btn, .woocommerce form .form-row input.dokan-btn {
         padding: 15px 20px;
-    }
-    .stay-connected {
-        padding: 25px 0 15px;
-    }
-    .stay-connected .inner-heading {
-        padding-bottom: 0;
-    }
-    .vendors-row {
-        background: transparent;
     }
     .contests-and-eventSec figcaption h2 {
         font-size: 38px;
