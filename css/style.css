@@ -407,49 +407,8 @@ header ul.right { margin-bottom: 0; }
 /* stay-connected css ends here  */
 
 /* vendors-sec css Start  */
-.vendors-sec { padding: 50px 0; background: #fff;}
-
-.vendors-row:before, .vendors-row:after {
-	content: '';
-    width: 100%;
-    left: 0;
-    right: 0;
-    position: absolute;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 200px;
-    z-index: -1;
-    background-image: url(https://bountiful.valontech.com/wp-content/themes/dokan/images/white-down-wave.png);
-}
-}
-.vendors-row:before {
-    top: 0;
-}
-.vendors-row:after {
-    bottom: 0;
-    transform: rotate(-180deg);
-}
-
-.vendors-row .row { background: #92BC5C; padding: 67px 72px; }
-
-.vendors-row h2 { width: 180px;margin: 0 auto; font-weight: 600;background: #fff;box-shadow: 0px 0px 7px rgb(0 0 0 / 20%);padding: 7px 16px;font-size: 17px;color: #008571;margin-bottom: -18px;z-index: 1;position: relative;}
-
-.vendors-row { position: relative; background: #f0a294; z-index: 1;}
-
-.wraper { display: flex;align-items: center;justify-content: flex-start; }
-
-.wraper span { width: 50px; height: auto; margin-right: 20px; display: flex; align-items: center; justify-content: center; }
-
-.listing-wrapper li { width: 100%; }
-
-.listing-wrapper li:not(:last-child) { margin-bottom: 30px; }
-
-.wraper .text { width: calc(100% - 70px); }
 
 .btn-wrap { width: 100%; margin-left: -15px; margin-top: -39px; }
-
-.wraper .text h4 { color: #fff; font-size: 20px; font-family: 'Barlow Condensed'; text-transform: capitalize; }
 
 .outline-btn, .woocommerce form .form-row input.dokan-btn {background: #008571!important;transition:all .3s ease-in-out; border: 1px solid #008571;color: #fff;font-size: 20px;padding: 25px 44px;z-index: 1;position: relative;display: inline-block;font-family: 'Barlow Condensed';text-transform: uppercase;min-width: 160px;}
 

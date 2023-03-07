@@ -151,169 +151,79 @@ $section5 = get_field('section_5');
 	<!--heart-of-canada section ends here-->
 
 	
-
 	<!--vendors-sec starts here-->
 	<section class="vendors-sec">
-		<div class="container">
-			<div class="inner-heading text-center">
-				<h2 class="text-uppercase"><?php echo $section5['heading']; ?></h2>
-				<p><?php echo $section5['paragraph']; ?><br><?php echo $section5['sub_paragraph']; ?></p>
-			</div>
-		</div>
+		<h2><?php echo $section5['heading']; ?></h2>
+		<p><?php echo $section5['paragraph']; ?></p>
 
 		<div class="vendors-row">
-			<div class="container">
-				<h2 class="text-center"><?php echo $section5['category_heading']; ?></h2>
-				<div class="row">
-					<div class="col-sm-6">
-						<ul class="listing-wrapper d-f">
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_1']; ?>" alt="category-1" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_1_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_2']; ?>" alt="category-2" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_2_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_3']; ?>" alt="category-3" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_3_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_4']; ?>" alt="category-4" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_4_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_5']; ?>" alt="category-5" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_5_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="col-sm-6">
-						<ul class="listing-wrapper d-f">
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_6']; ?>" alt="category-6" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_6_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_7']; ?>" alt="category-7" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_7_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_8']; ?>" alt="category-8" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_8_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_9']; ?>" alt="category-9" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_9_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="wraper">
-									<span>
-										<img src="<?php echo $section5['category_image_10']; ?>" alt="category-10" />
-									</span>
-									<div class="text">
-										<h4><?php echo $section5['category_image_10_text']; ?></h4>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			
-				<div class="btn-wrap">
-					<a href="<?php echo $section5['vendor_button_link']; ?>" class="outline-btn"><?php echo $section5['vendor_button_text']; ?></a>
-				</div>
-			</div>
+			<ul class="listing-wrapper">
+				<li>
+					<span><img src="<?php echo $section5['category_image_1']; ?>" alt="category-1" /></span>
+					<?php echo $section5['category_image_1_text']; ?>
+				</li>
+				<li>
+					<span><img src="<?php echo $section5['category_image_2']; ?>" alt="category-2" /></span>
+					<?php echo $section5['category_image_2_text']; ?>
+				</li>
+				<li>
+					<span><img src="<?php echo $section5['category_image_3']; ?>" alt="category-3" /></span>
+					<?php echo $section5['category_image_3_text']; ?>
+				</li>
+				<li>
+					<span><img src="<?php echo $section5['category_image_4']; ?>" alt="category-4" /></span>
+					<?php echo $section5['category_image_4_text']; ?>
+				</li>
+				<li>
+					<span><img src="<?php echo $section5['category_image_5']; ?>" alt="category-5" /></span>
+					<?php echo $section5['category_image_5_text']; ?>
+				</li>
+				<li>
+					<span><img src="<?php echo $section5['category_image_6']; ?>" alt="category-6" /></span>
+					<?php echo $section5['category_image_6_text']; ?>
+				</li>
+				<li>
+					<span><img src="<?php echo $section5['category_image_7']; ?>" alt="category-7" /></span>
+					<?php echo $section5['category_image_7_text']; ?>
+				</li>
+				<li>
+					<span><img src="<?php echo $section5['category_image_8']; ?>" alt="category-8" /></span>
+					<?php echo $section5['category_image_8_text']; ?>
+				</li>
+				<li>
+					<span><img src="<?php echo $section5['category_image_9']; ?>" alt="category-9" /></span>
+					<?php echo $section5['category_image_9_text']; ?>
+				</li>
+				<li>
+					<span><img src="<?php echo $section5['category_image_10']; ?>" alt="category-10" /></span>
+					<?php echo $section5['category_image_10_text']; ?>
+				</li>
+			</ul>
+			<a href="<?php echo $section5['vendor_button_link']; ?>"><?php echo $section5['vendor_button_text']; ?></a>
 		</div>
 	</section>
 
 	<!--stay-connected-->
 	<section class="stay-connected">
-		<div class="container">
-			<div class="inner-heading text-center ">
-				<h2 class="text-uppercase"><?php echo $section4['heading']; ?></h2>
-			</div>
-		</div>
-		<div class="owl-carousel owl-theme connected-slider">
-			<div class="item">
-				<figure>
+				<h2 class=""><?php echo $section4['heading']; ?></h2>
+		<div class="gallery">
+			<div class="item">				
 					<img src="<?php echo $section4['slider_image_1']; ?>" alt="connected-img1" />
-				</figure>
 			</div>
 			<div class="item">
-				<figure>
 					<img src="<?php echo $section4['slider_image_2']; ?>" alt="connected-img2" />
-				</figure>
 			</div>
 			<div class="item">
-				<figure>
 					<img src="<?php echo $section4['slider_image_3']; ?>" alt="connected-img3" />
-				</figure>
 			</div>
 			<div class="item">
-				<figure>
 					<img src="<?php echo $section4['slider_image_4']; ?>" alt="connected-img4" />
-				</figure>
 			</div>
 			<div class="item">
-				<figure>
 					<img src="<?php echo $section4['slider_image_5']; ?>" alt="connected-img5" />
-				</figure>
+			</div>
+			<div class="item">
+					<img src="<?php echo $section4['slider_image_5']; ?>" alt="connected-img5" />
 			</div>
 		</div>
 		
