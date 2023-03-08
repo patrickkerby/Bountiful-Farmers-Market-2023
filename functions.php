@@ -199,6 +199,8 @@ class WeDevs_Dokan_Theme {
 
         wp_register_style( 'dokan-fontawesome', $template_directory . '/assets/css/font-awesome.min.css', false, null );
 
+        wp_enqueue_script( 'jquery' );
+        wp_enqueue_script( 'jquery-ui' );
         // register styles
         wp_enqueue_style( 'bootstrap', $template_directory . '/assets/css/bootstrap.css', false, null );
         wp_enqueue_style( 'flexslider', $template_directory . '/assets/css/flexslider.css', false, null );
@@ -216,8 +218,6 @@ class WeDevs_Dokan_Theme {
             wp_enqueue_script( 'keyboard-image-navigation', $template_directory . '/assets/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
         }
 
-        wp_enqueue_script( 'jquery' );
-        wp_enqueue_script( 'jquery-ui' );
 
         wp_enqueue_script( 'bootstrap-min', $template_directory . '/assets/js/bootstrap.min.js', false, null, true );
         wp_enqueue_script( 'flexslider', $template_directory . '/assets/js/jquery.flexslider-min.js', array( 'jquery' ) );
@@ -981,7 +981,7 @@ function enabling_date_picker() {
 } 
 
 function my_enqueue() {
-      wp_enqueue_script( 'ajax-script', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array('jquery') );
+    //   wp_enqueue_script( 'ajax-script', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array('jquery') );
       wp_localize_script( 'ajax-script', 'my_ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
  }
  add_action( 'wp_enqueue_scripts', 'my_enqueue' );

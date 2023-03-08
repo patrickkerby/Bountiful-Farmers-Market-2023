@@ -10,6 +10,9 @@ $heading_intro = get_field("intro");
 $intro_photos_caption = get_field("intro_photos_caption");
 $intro_photos = get_field("intro_photos");
 
+$local_impact_heading = get_field("section_title");
+$local_impact_subheading = get_field("section_subtitle");
+$local_impact_content = get_field("section_content");
 
  ?>
 
@@ -31,6 +34,16 @@ $intro_photos = get_field("intro_photos");
             <?php } ?>
             <div class="col-12 caption">
                 <p><?php echo $intro_photos_caption; ?></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid local-impact">
+        <div class="row justify-content-center">
+            <h2><?php echo $local_impact_heading; ?></h2>
+            <h3><?php echo $local_impact_subheading; ?></h3>
+            <div class="col-sm-9 content">
+                <?php echo $local_impact_content; ?>
             </div>
         </div>
     </div>

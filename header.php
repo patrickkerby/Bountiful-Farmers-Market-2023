@@ -38,6 +38,7 @@
             echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() .'/css/about.css" />';
         }
     ?>
+
 </head>
 
 <body <?php body_class( 'woocommerce' ); ?>>
