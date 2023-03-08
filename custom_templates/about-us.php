@@ -14,6 +14,9 @@ $local_impact_heading = get_field("section_title");
 $local_impact_subheading = get_field("section_subtitle");
 $local_impact_content = get_field("section_content");
 
+$vendor_slider = get_field("slider");
+$vendor_slider_text = get_field("slider_textblock");
+
  ?>
 
 <div class="about-us">
@@ -44,6 +47,16 @@ $local_impact_content = get_field("section_content");
             <h3><?php echo $local_impact_subheading; ?></h3>
             <div class="col-sm-9 content">
                 <?php echo $local_impact_content; ?>
+            </div>
+        </div>
+        <div class="row no-gutters slider justify-content-center">
+            <div class="col-11">
+                <?php 
+                    foreach($vendor_slider as $slide) { ?>
+                        <img src="<?php echo $slide['url']; ?>" />
+                <?php } ?>
+
+                <h4><?php echo $vendor_slider_text; ?></h4>
             </div>
         </div>
     </div>
