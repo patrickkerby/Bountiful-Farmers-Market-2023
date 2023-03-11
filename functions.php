@@ -199,8 +199,8 @@ class WeDevs_Dokan_Theme {
 
         wp_register_style( 'dokan-fontawesome', $template_directory . '/assets/css/font-awesome.min.css', false, null );
 
-        wp_enqueue_script( 'jquery' );
-        wp_enqueue_script( 'jquery-ui' );
+        // wp_enqueue_script( 'jquery' );
+        // wp_enqueue_script( 'jquery-ui' );
         // register styles
         wp_enqueue_style( 'bootstrap', $template_directory . '/assets/css/bootstrap.css', false, null );
         wp_enqueue_style( 'flexslider', $template_directory . '/assets/css/flexslider.css', false, null );

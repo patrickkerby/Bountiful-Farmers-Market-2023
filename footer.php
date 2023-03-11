@@ -82,9 +82,16 @@
      <footer>
         <div class="container">
             <div class="row justify-content-center contact-form">
-                <div class="col-md-7">
-                    <p>Sign up to stay up-to-date on what’s going on at Edmonton’s premier indoor farmers’ market.</p>
-                    <?php echo do_shortcode('[mc4wp_form id="839"]'); ?>                    
+                <?php 
+                    if(is_page('home')) { ?>
+                        <div class="col-md-7 form-wrapper">
+                            <p>Sign up to stay up-to-date on what’s going on at Edmonton’s premier indoor farmers’ market.</p>                                        
+                    <?php }
+                    else { ?>
+                        <div class="col-md-9 form-wrapper">
+                            <p>Newsletter signup</p>                                        
+                    <?php }
+                    echo do_shortcode('[mc4wp_form id="839"]'); ?>                    
                 </div>
             </div>
             <div class="row justify-content-center">

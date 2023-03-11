@@ -17,7 +17,12 @@ $local_impact_content = get_field("section_content");
 $vendor_slider = get_field("slider");
 $vendor_slider_text = get_field("slider_textblock");
 
- ?>
+$community_title = get_field("community_section_title");
+$community_blocks = get_field("community_content_blocks");
+
+$did_you_know = get_field("did_you_know");
+
+?>
 
 <div class="about-us">
     <div class="container-fluid heading">
@@ -60,6 +65,36 @@ $vendor_slider_text = get_field("slider_textblock");
             </div>
         </div>
     </div>
+
+    <div class="container-fluid community">
+        <div class="row justify-content-center">
+            <h2><?php echo $community_title; ?></h2>
+        </div>
+        <?php
+            foreach($community_blocks as $block) { ?>
+                <div class="row justify-content-center feature">
+                    <div class="col-sm-4">
+                        <h3><?php echo $block['content_block_heading']; ?></h3>
+                        <p><?php echo $block['content_block_body']; ?></p>
+                    </div>
+                    <div class="col-sm-7">
+                        <img src="<?php echo $block['content_block_image']['url']; ?>" />
+                    </div>
+                </div>
+        <?php } ?>
+    </div>
+
+    <div class="container-fluid didyouknow">
+        <div class="row justify-content-center">
+            <?php foreach($did_you_know as $fact) { ?>
+                <div class="col-sm-10 col-md-9 col-xl-8">
+                    <h5><?php echo $fact['fact_1']; ?></h5>
+                    <h5><?php echo $fact['fact_2']; ?></h5>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+
     
 </div>
 

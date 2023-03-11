@@ -81,7 +81,7 @@
 /* Local Impact */
 
 .local-impact {
-  padding: 5rem 0;
+  padding: 5rem 0 0 0;
 }
 
 .local-impact h2 {
@@ -127,7 +127,8 @@
   object-fit: cover;
 }
 
-.slider h4 {
+.slider h4,
+.feature h3  {
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -143,4 +144,99 @@
   text-align: center;
   display: flex;
   align-items: center;
+}
+
+/* Feature blocks */
+
+.community {
+  padding: 5rem 0 2rem 0;
+  background-image: linear-gradient(180deg, #FEFDFC 0%, #FCFBF7 100%);
+}
+
+.community h2 {
+  font-family: "filson-pro";
+  font-size: 4.25rem;
+  width: 80%;
+  color: #007276;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.feature {
+  margin-bottom: 6rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature h3 {
+  position: relative;
+  padding: 1.5rem;
+  max-width: none;
+  height: auto;
+  text-align: left;
+  top: 1.5rem;
+  right: 0;
+  z-index: 2;
+  margin-right: -6rem;
+}
+
+.feature p {
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  font-size: 1.25rem;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.feature:nth-child(odd) h3 {
+  right: unset;
+  left: 0;
+  margin-right: 0;
+  margin-left: -6rem;
+}
+
+.feature:nth-child(odd) p {
+  margin-left: 0;
+}
+
+.didyouknow {
+  padding: 6rem 0 20rem 0;
+  position: relative;
+  background: url(../images/divider.svg) no-repeat center top #FCFBF7;
+}
+
+.didyouknow::after {
+  content: "";
+  width: 470px;
+  height: 1rem;
+  background: url(../images/divider.svg) no-repeat center bottom;
+  position: absolute;
+  bottom: 14rem;
+  left: calc(50% - 235px);
+}
+
+.didyouknow h5 {
+  font-family: "quiverleaf-cf"; 
+  font-size: 2.25rem;
+  color: #007276;
+  line-height: 2.65rem;
+  text-align: center;
+}
+
+.didyouknow h5:nth-child(2) {
+  color: #D57974;
+}
+
+.didyouknow .row div {
+  max-width: 800px;
 }
