@@ -384,7 +384,7 @@ div.intro {
 /* Footer */ 
 
 footer {
-  background-image: radial-gradient(50% 101%, #008671 0%, #007260 77%, #00584A 100%);
+  background-image: radial-gradient(at top, #007b67 0%, #027d6a 44%, #00473c 100%);
   position: relative;
 }
 
@@ -501,6 +501,7 @@ footer address {
   .home footer .contact-form p {
     text-align: center;
     width: 80%;
+    color: #fff;
   }
 
   footer .form-group {
@@ -547,6 +548,17 @@ footer address {
     font-weight: 600;
     text-transform: uppercase;
     color: #fff !important;
+  }
+
+  .home .contact-form {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .home .contact-form .form-wrapper {
+    background: none;
+    padding: 0;
+    box-shadow: none;
   }
 
   .home footer form {
