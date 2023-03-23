@@ -84,7 +84,7 @@
             <div class="row justify-content-center contact-form">
                 <?php 
                     if(is_page('home')) { ?>
-                        <div class="col-md-7 form-wrapper">
+                        <div class="col-10 col-md-7 form-wrapper">
                             <p>Sign up to stay up-to-date on what’s going on at Edmonton’s premier indoor farmers’ market.</p>                                        
                     <?php }
                     else { ?>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4">
+                <div class="col-sm-5 col-md-4 order-sm-1">
                     <h4 class="text-uppercase">We Are Open</h4>
                     <ul class="open-time">
                         <li>
@@ -109,12 +109,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-10 col-md-4 order-sm-3 order-md-2">
                     <a href="javascript:void(0);">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-footer.svg" alt="ftr-logo" class="ftr-logo" />
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-sm-5 col-md-4 order-sm-2 order-md-3">
                     <ul class="ftr-links">
                         <li>
                             <a href="https://bountiful2022.test/contact-us/">Contact Us</a>
@@ -130,7 +130,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 colophon">
+                <div class="col-12 order-sm-4 colophon">
                     <a href="tel:(780) 818-3878" class="nmbr">(780) 818-3878</a> <span>&#x2022;</span> <address>3696 97 Street Edmonton, AB T6E 5S8 </address> <span>&#x2022;</span> office@bountifulmarkets.com
                 </div>
             </div>

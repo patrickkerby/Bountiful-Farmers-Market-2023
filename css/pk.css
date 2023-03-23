@@ -438,6 +438,18 @@ footer img {
   margin-top: -1.5rem;
 }
 
+@media (max-width: 768px) {
+  footer img {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  footer img {
+    margin: 1.5rem;
+  }
+}
+
 
 .ftr-links {
   margin-top: 1rem;

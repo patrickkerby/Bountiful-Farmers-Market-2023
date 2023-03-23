@@ -3,13 +3,11 @@
 
 get_header();
 
-
 $section1 = get_field('section_1');
 $section2 = get_field('section_2');
 $section3 = get_field('section_3');
 $section4 = get_field('section_4');
 $section5 = get_field('section_5');
-
 
 ?>
 
@@ -26,7 +24,6 @@ $section5 = get_field('section_5');
 	</section>
 	<!--Banner ends here-->
 
-
 	<!--heart-of-canada section starts here-->
 	<section class="heart-of-canada">
 		<div class="container">
@@ -34,10 +31,10 @@ $section5 = get_field('section_5');
 				<h2><?php echo $section2['heading']; ?></h2>
 			</div>
 			<div class="row justify-content-center">
-				<div class="col-sm-6 intro">
+				<div class="col-sm-10 col-md-5 intro">
 					<p><?php echo $section2['paragraph']; ?></p>
 				</div>
-				<div class="col-sm-5 newsflash">
+				<div class="col-sm-10 col-md-5 newsflash">
 					<h4>Newsflash!</h4>
 					<div>
 						<a href="">
