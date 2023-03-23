@@ -50,6 +50,43 @@ h2 {
   text-align: center;
 }
 
+.modal .modal-dialog {
+  max-width: 1028px;
+  width: 80%;
+}
+
+.modal .modal-body {
+  padding: 2.5rem;
+}
+
+.modal .modal-body * {
+  text-align: left;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.modal .modal-content {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 48px -27px rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-content * {
+  border: none;
+}
+
+.modal-backdrop.in {
+  opacity: 0.15;
+}
+
+.modal-body .close span {
+  font-size: 2.5rem;
+  right: 1rem;
+  top: 0.5rem;
+  position: absolute;
+}
+
 /* HEADER */
 
 header .top-header {

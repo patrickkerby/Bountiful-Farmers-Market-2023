@@ -9,6 +9,8 @@ $section3 = get_field('section_3');
 $section4 = get_field('section_4');
 $section5 = get_field('section_5');
 
+$newsflash_set = get_field('newsflash!');
+
 ?>
 
 	<!--Banner starts here-->
@@ -36,24 +38,22 @@ $section5 = get_field('section_5');
 				</div>
 				<div class="col-sm-10 col-md-5 newsflash">
 					<h4>Newsflash!</h4>
+
+					<?php
+					$index = 0;
+					foreach($newsflash_set as $newsflash) { ?>
+					
 					<div>
-						<a href="">
-							<h3>New Christmas Hours!</h3>
-							<span>Regular hours + Closed Dec. 25 & Jan. 1</span>
+						<a href="#modal<?php echo $index; ?>" data-toggle="modal">
+							<h3><?php echo $newsflash['news_flash_title']; ?></h3>
+							<span><?php echo $newsflash['news_flash_short_description']; ?></span>
 						</a>
 					</div>
-					<div>
-						<a href="">
-							<h3>Upcoming Events</h3>
-							<span>Christmas event registrations are live!</span>
-						</a>
-					</div>
-					<div>
-						<a href="">
-							<h3>Advent Calendar Contest</h3>
-							<span>24  Winners in December!</span>
-						</a>
-					</div>
+										
+					<?php 
+						$index++;
+					} ?>
+
 				</div>
 			</div>
 		</div>
@@ -226,6 +226,27 @@ $section5 = get_field('section_5');
 		
 	</section>
 	<!-- stay-connected Ends here  -->
+
+	<?php
+					$index = 0;
+					foreach($newsflash_set as $newsflash) { ?>					
+					<!-- Modal -->
+					<div id="modal<?php echo $index; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<?php echo $newsflash['newsflash_popup_content']; ?>
+								</div>								
+							</div>
+						</div>
+					</div>	
+					
+					<?php 
+						$index++;
+					} ?>
 
 <?php
 

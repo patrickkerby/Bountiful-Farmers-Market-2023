@@ -214,16 +214,26 @@
 @media (max-width: 559px) {
   .slider div {
     height: auto;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider img {
+    min-height: 50vh;
   }
 
   .slider h4 {
-    left: 4rem;
-    right: 4rem;
     max-width: 100%;
     height: auto;
-    bottom: 3rem;
-    top: 3rem;
+    bottom: unset;
     line-height: 2.2rem;
+    position: relative;
+    top: -7rem;
+    left: 0;
+    margin: 0 2rem 7rem 2rem;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -331,6 +341,7 @@
   .feature:nth-child(odd) p {
     margin: 0 auto;
     width: calc(100% - 5rem);
+    font-size: 1.25rem;
   }
 }
 
