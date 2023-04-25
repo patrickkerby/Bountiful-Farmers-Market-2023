@@ -283,34 +283,6 @@ function disable_plugin_updates( $values ) {
 add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
 
 
-function my_enqueueee($hook) {
-
-wp_enqueue_script('slim_file', 'https://code.jquery.com/jquery-3.2.1.slim.min.js');
-wp_enqueue_script('popper_file', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js');
-wp_enqueue_script('Boot_file', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js');
-wp_enqueue_script('ajax_file', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
-wp_enqueue_script('jquery_val_file', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js');
-// wp_enqueue_script('sweetdd_file', 'https://unpkg.com/sweetalert/dist/sweetalert.min.js');
-wp_enqueue_script( 'jquery-ui-datepicker' );
-
-}
-
-add_action('admin_enqueue_scripts', 'my_enqueueee');
-
-
-// change logo of wordpress admin login Start
-function my_login_logo_one() { 
-?> 
-<style type="text/css"> 
-body.login div#login h1 a {
- background-image: url(https://bountiful.valontech.com/wp-content/themes/dokan/images/logo.png);
-padding-bottom: 30px; 
-} 
-</style>
- <?php 
-} add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
-
-// change logo of wordpress admin login End
 
 // Search code for only products code start
 

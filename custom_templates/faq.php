@@ -16,8 +16,8 @@ get_header();
     <!-- FAQ-PAGE START  -->
     <div class="container-fluid heading">
         <div class="row justify-content-center" style="background-image: linear-gradient(174deg, rgba(27,48,46,0.62) 0%, rgba(43,77,74,0.62) 100%), url('<?php echo $heading_image['url'] ?>'); background-size: cover;">
-            <h1><?php echo $title; ?></h1> 
-            
+            <h1><?php echo $title; ?></h1>
+
             <?php if ($subtitle) { ?>
                 <div class="col-sm-9 intro">
                     <h2><?php echo $subtitle; ?></h2>
@@ -39,7 +39,6 @@ get_header();
                     <hr />
                 </div>
                 <div class="accordion col-sm-8" id="faq">
-
                     <div class="card">
                         <div class="card-header" id="faqhead1">
                             <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq1"
