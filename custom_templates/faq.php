@@ -3,13 +3,13 @@
 
 get_header();
 
-$heading_image = get_field("header_image");
-$title = get_field("title");
-$subtitle = get_field("subtitle");
+    $heading_image = get_field("header_image");
+    $title = get_field("title");
+    $subtitle = get_field("subtitle");
 
-if (is_null($title)) {
-    $title = get_the_title();
-}
+    if (is_null($title)) {
+        $title = get_the_title();
+    }
 
  ?>
 
