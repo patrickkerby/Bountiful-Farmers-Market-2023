@@ -2329,3 +2329,15 @@ add_action( 'woocommerce_after_shop_loop_item_title','sold_by2' );
         } 
 
     }
+
+
+    if( function_exists('acf_add_options_page') ) {
+    
+        acf_add_options_page(array(
+            'page_title'    => 'Bountiful Event Settings',
+            'menu_title'    => 'Bountiful Event Settings',
+            'menu_slug'     => 'theme-bountiful-settings',
+            'capability'    => 'edit_posts',
+            'redirect'      => false
+        ));
+    }

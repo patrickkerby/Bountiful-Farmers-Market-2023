@@ -972,4 +972,24 @@ footer address {
   margin: 0;
 }
 
+/* Weekly Events */
 
+.tribe-events-page-template .heading h1 {
+  font-size: 4rem;
+  margin: 5rem auto;
+}
+
+.row.weeklyevents {
+  padding: 4rem 10%;
+  background: #FCFBF7;
+}
+
+.weeklyevents h3 {
+  color: #067D73;
+}
+
+.weeklyevents p {
+  color: #5C5C5C;
+  font-size: 16px;
+  line-height: 20px;
+}
