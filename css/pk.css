@@ -1056,11 +1056,6 @@ body.post-type-archive-tribe_events #primary .site-content header {
   padding: 0;
 }
 
-.tribe-common--breakpoint-medium.tribe-events .tribe-events-header__events-bar,
-.tribe-common--breakpoint-medium.tribe-events .tribe-events-header__top-bar {
-  margin-bottom: 0;
-}
-
 .tribe-events-calendar-list__event-title a {
   font-size: 2rem;
   font-family: "filson-pro", "Filson Pro";

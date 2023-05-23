@@ -43,8 +43,6 @@ get_header();
         </div>
     </div>
 
-
-
 <main id="tribe-events-pg-template" class="tribe-events-pg-template">
 
 <div id="primary" class="content-area col-md-12">
