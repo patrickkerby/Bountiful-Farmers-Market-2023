@@ -16,7 +16,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap-select.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/owl.carousel.min.css" />
@@ -49,13 +50,13 @@
             <div class="row justify-content-center">
                 
                 <!-- Social Media -->
-                <div class="socials justify-content-end">
+                <div class="col socials justify-content-end">
                     <a href="" class="facebook">Facebook</a>
                     <a href="" class="instagram">Instagram</a>
                 </div>
 	            
                 <!-- Directions -->
-                <a class="directions header-cta col col-sm-3 order-2 order-sm-1" href="">
+                <a class="directions header-cta col col-sm-3 order-2 order-sm-1" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                     <div>
                         <span>Come visit</span>
                         <h6>Get Directions</h6>
@@ -78,7 +79,7 @@
                 </a>
 
                 <!-- Cart -->
-                <div class="cart justify-content-center order-sm-6">
+                <div class="col cart justify-content-center order-sm-last">
                     <a href="">Cart</a>
                 </div>
             </div>
@@ -109,3 +110,38 @@
             </div>
         </nav>
     </header>
+
+
+
+<div class="offcanvas offcanvas-start directions" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body">
+        <div>
+            <div class="close-wrapper">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <iframe width='100%' height='500px' src="https://api.mapbox.com/styles/v1/patrickkerby/clij7sc9b004x01q16mlh8j60.html?title=false&access_token=pk.eyJ1IjoicGF0cmlja2tlcmJ5IiwiYSI6ImpxWDBaVFkifQ.t3gbX7-Sfy3Z9Nh14aLFow&zoomwheel=false#10.61/53.4748/-113.4762" title="Bountiful" style="border:none;"></iframe>
+            <a href="" class="button google-directions">Get directions</a>            
+            <h2>Find us on Edmonton’s South Side!</h2>
+            <div class="content">
+                <address>3696 97 Street Edmonton, AB T6E 5S8</address>
+                <h3>Convenient</h3>
+                <p>Easy to get to via car, bus or bicycle. Convenient access from Anthony Henday, Whitemud Drive, 99 Street, 34 Ave and 91 street.</p>
+                <h3>Free Parking:</h3>
+                <p>Plenty of free parking for both customers and vendors along with accessible parking for vehicles and bicycles.</p>
+                
+                <h3>Open every weekend, year-long!</h3>
+                <ul>
+                    <li>Friday 10AM - 4PM</li>
+                    <li>Saturday 9AM - 4PM</li>
+                    <li>Sunday 10AM - 4PM</li>
+                </ul>
+
+                <h3>Get in touch:</h3>
+                <ul>
+                    <li>(780) 818-3878</li>
+                    <li><a href="mailto:office@bountifulmarkets.com">office@bountifulmarkets.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

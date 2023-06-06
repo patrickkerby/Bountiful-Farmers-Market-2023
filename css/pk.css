@@ -14,12 +14,13 @@ html {
   }
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "filson-pro", "Filson Pro";
   letter-spacing: 0.44px;
 }
 
-p, a, li, strong, span, caption {
+p, a, li, strong, span, caption, address {
   font-family: "basic-sans", "Basic Sans";
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -137,6 +138,12 @@ header .header-cta {
   background: url('../assets/images/location.svg') no-repeat 1.5rem center;
   padding: 0.5rem 0 0.5rem 4rem;
   margin: auto 0;
+}
+
+header a.header-cta:link,
+header a.header-cta:hover,
+header a.header-cta:active {
+  text-decoration: none;
 }
 
 header .header-cta.hours {
@@ -1181,4 +1188,69 @@ body.post-type-archive-tribe_events #primary .site-content header {
   text-align: left;
   width: 100%;
   font-size: 2.25rem;
+}
+
+/* Offcanvas Directions and Map Thing */
+.offcanvas.directions {
+  width: 600px;
+}
+
+.offcanvas.directions h2 {
+  width: 90%;
+  text-align: left;
+}
+
+.offcanvas.directions .offcanvas-body {
+  padding: 0;
+  max-height: 100vh;
+}
+
+.offcanvas.directions .btn-close {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.offcanvas.directions .close-wrapper {
+  background: #fff;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 0.75rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px -3px #3333333d;
+}
+
+.offcanvas.directions a.google-directions {
+    margin: -4rem auto 4rem auto;
+    display: flex;
+    width: 13rem;
+    flex-flow: column;
+    padding: 0.5rem 0;
+    color: #008571;
+    background: #fff;
+    border: none;
+    box-shadow: 0 0 10px -3px #33333340;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.offcanvas.directions .content {
+  width: 90%;
+  margin: 0 auto 3rem auto;
+}
+
+.offcanvas.directions address {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #fff;
+  background: #E0665D;
+  padding: 0.25rem 1rem;
+  display: inline-flex;
+  margin: 0 auto 2rem 0;
+}
+
+.offcanvas.directions .content a {
+  color: #E0665D;
+  font-weight: 600;
 }
