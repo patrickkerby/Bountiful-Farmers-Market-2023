@@ -120,7 +120,7 @@
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <iframe width='100%' height='500px' src="https://api.mapbox.com/styles/v1/patrickkerby/clij7sc9b004x01q16mlh8j60.html?title=false&access_token=pk.eyJ1IjoicGF0cmlja2tlcmJ5IiwiYSI6ImpxWDBaVFkifQ.t3gbX7-Sfy3Z9Nh14aLFow&zoomwheel=false#10.72/53.4818/-113.477" title="Bountiful" style="border:none;"></iframe>
-            <a href="" class="button google-directions">Get directions</a>            
+            <a href="https://goo.gl/maps/h1t9EP4MEw4cAdkB6" target="_blank" class="button google-directions">Get directions</a>            
             <h2>Find us on Edmonton’s South Side!</h2>
             <div class="content">
                 <address>3696 97 Street Edmonton, AB T6E 5S8</address>
