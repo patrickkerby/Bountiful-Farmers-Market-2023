@@ -72,9 +72,8 @@
 
                 <!-- Hours of Operation -->
                 <a class="hours col col-sm-3 align-items-end header-cta order-3 order-sm-5" href="#">
-                    <div class="">
-                        <span>Open next</span>
-                        <h6>Friday, 9am</h6>
+                    <div class="">                        
+                        <?php echo do_shortcode('[mbhi location="Bountiful Farmers\' Market"]'); ?>
                     </div>
                 </a>
 
