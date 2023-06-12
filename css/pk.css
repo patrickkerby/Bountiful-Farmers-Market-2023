@@ -308,6 +308,7 @@ div.intro {
   left: calc(50% - 5rem);
   padding: 0.5rem 1.5rem;
   margin: 0 auto;
+  font-size: 1.125rem;
 }
 
 .newsflash span {
