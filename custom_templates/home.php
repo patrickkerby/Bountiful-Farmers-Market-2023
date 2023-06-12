@@ -44,7 +44,7 @@ $newsflash_set = get_field('newsflash!');
 					foreach($newsflash_set as $newsflash) { ?>
 					
 					<div>
-						<a href="#modal<?php echo $index; ?>" data-toggle="modal">
+						<a href="#modal<?php echo $index; ?>" data-bs-target="#modal<?php echo $index; ?>" data-bs-toggle="modal">
 							<h3><?php echo $newsflash['news_flash_title']; ?></h3>
 							<span><?php echo $newsflash['news_flash_short_description']; ?></span>
 						</a>
@@ -234,15 +234,17 @@ $newsflash_set = get_field('newsflash!');
 					<div id="modal<?php echo $index; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 							<div class="modal-content">
-								<div class="modal-body">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<div class="modal-body">										
+									<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
 									<?php echo $newsflash['newsflash_popup_content']; ?>
-								</div>								
-							</div>
+								</div>
+							</div>								
 						</div>
 					</div>	
+
+			
 					
 					<?php 
 						$index++;
