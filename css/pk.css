@@ -37,6 +37,13 @@ strong {
   font-weight: 500;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
 input, label, ::placeholder, button {
   font-family: "filson-pro", "Filson Pro";
 }
@@ -202,6 +209,7 @@ header .cart a {
   border: 0;
   border-radius: 0;
   margin: 0;
+  height: 4rem;
 }
 
 .navbar a {
