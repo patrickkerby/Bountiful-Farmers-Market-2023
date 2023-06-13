@@ -86,7 +86,7 @@
         </div>
         <!--navbar starts here-->
         <nav class="navbar navbar-expand-md">
-            <div class="container justify-content-center">
+            <div class="container justify-content-center ">
                 
                 <!-- Toggler/collapsibe Button -->
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -108,6 +108,7 @@
                        ?>
                 </div>
             </div>
+            <a href="">Contact</a>
         </nav>
     </header>
 
