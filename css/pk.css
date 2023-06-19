@@ -251,6 +251,22 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
   transition: all 0.4s ease-in-out;
 }
 
+header .navbar a.contact {
+  color: #fff;
+  font-weight: 400;
+  text-transform: none;
+  margin: 0 2rem 0 0;
+  padding-left: 2rem;
+  font-size: 0.875rem;
+  background: url(../assets/images/contact.svg) no-repeat left center;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+header .navbar a.contact:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
 
 /* -----------  Home Page ------------ */
 
@@ -1220,14 +1236,31 @@ body.post-type-archive-tribe_events #primary .site-content header {
   width: 600px;
 }
 
+.offcanvas.contact {
+  width: 540px;
+}
+
 .offcanvas.directions h2 {
   width: 90%;
   text-align: left;
 }
 
+.offcanvas.contact h2 {
+  width: 100%;
+  text-align: left;
+}
+
+.offcanvas.contact ul {
+  margin-bottom: 1.5rem;
+}
+
 .offcanvas.directions .offcanvas-body {
   padding: 0;
   max-height: 100vh;
+}
+
+.offcanvas.contact .offcanvas-body {
+  padding: 2rem;
 }
 
 .offcanvas.directions .btn-close {

@@ -108,7 +108,7 @@
                        ?>
                 </div>
             </div>
-            <a href="">Contact</a>
+            <a class="contact" data-bs-toggle="offcanvas" href="#contactModal" role="button" aria-controls="contactModal">Contact Us</a>
         </nav>
     </header>
 
@@ -142,6 +142,34 @@
                     <li>(780) 818-3878</li>
                     <li><a href="mailto:office@bountifulmarkets.com">office@bountifulmarkets.com</a></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="offcanvas offcanvas-end contact" tabindex="-1" id="contactModal" aria-labelledby="contactModal">
+    <div class="offcanvas-body">
+        <div>
+            <div class="close-wrapper">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+        
+            <h2>Get in touch</h2>
+            <div class="content">
+                <h3>Market Team</h3>
+                <ul>
+                    <li>(780) 818-3878</li>
+                    <li><a href="mailto:office@bountifulmarkets.com">office@bountifulmarkets.com</a></li>
+                </ul>
+
+                <h3>Office Hours:</h3>
+                <p>Tuesday to Sunday, 9 A.M. to 5 P.M.</p>
+                <hr />  
+                <p>If you have a question for a specific vendor please contact them directly via their contact information listed on their vendor page.</p>                
+                <h3>Send us a message:</h3>
+                <?php gravity_form( 1, false, true, false, '', true, 12 ); ?>
+
             </div>
         </div>
     </div>
