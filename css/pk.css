@@ -186,7 +186,6 @@ header .row .socials {
 
 header .socials a,
 header .cart a {
-  text-indent: -99999999rem;
   display: flex;
   width: 1rem;
   height: 1rem;
@@ -194,6 +193,7 @@ header .cart a {
   background: url('../assets/images/facebook.svg') no-repeat center center;
   background-size: contain;
 }
+
 
 header .socials a.instagram {
   background: url('../assets/images/instagram.svg') no-repeat center center;
@@ -206,7 +206,7 @@ header .cart a {
   margin-left: 1.5rem;
   background: url('../assets/images/cart.svg') no-repeat center center;
   background-size: contain;
-}
+} 
 
 .navbar {
   background: linear-gradient(180deg, #92BC5C 0%, #A8CF75 100%);

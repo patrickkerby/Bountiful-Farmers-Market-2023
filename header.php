@@ -52,8 +52,8 @@
                 
                 <!-- Social Media -->
                 <div class="col socials justify-content-end">
-                    <a href="" class="facebook">Facebook</a>
-                    <a href="" class="instagram">Instagram</a>
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="instagram"></a>
                 </div>
 	            
                 <!-- Directions -->
@@ -80,7 +80,7 @@
 
                 <!-- Cart -->
                 <div class="col cart justify-content-center order-sm-last">
-                    <a href="">Cart</a>
+                    <a href=""></a>
                 </div>
             </div>
         </div>
