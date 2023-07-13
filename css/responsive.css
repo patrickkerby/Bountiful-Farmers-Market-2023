@@ -193,10 +193,6 @@
     .woocommerce form .form-row.form-row-wide .password-input {
         width: 100%;
     }
-    .vendorImg-lists li a figure {
-        height: 65px;
-        width: 65px;
-    }
     p.custom-button-text {
         line-height: 27px;
     }
@@ -694,10 +690,6 @@
     }
     .pswd-eye i {
         top: 8px;
-    }
-    .vendorImg-lists li {
-        width: 20%;
-        margin-bottom: 15px;
     }
     .sort-lists {
         margin: 15px 0;
@@ -1235,12 +1227,6 @@
     }
     .woocommerce form p.form-row.form-group.form-row-wide:nth-of-type(5) input {
         margin-top: 5px;
-    }
-    .vendorImg-lists li {
-        width: 25%;
-    }
-    .vendorImg-lists {
-        margin: 25px 0 0;
     }
     .sort-lists span p {
         font-size: 12px;

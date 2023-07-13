@@ -39,6 +39,9 @@
         if(is_page('about-us')) {
             echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() .'/css/about.css" />';
         }
+        if(is_page('vendors')) {
+            echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() .'/css/vendors.css" />';
+        }
     ?>
 
 </head>

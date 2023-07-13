@@ -891,48 +891,6 @@ p{
 }
 /* Testimonial CSS End  */
 
-/*Vendors-page Start */
-.vendor-page {
-    margin-top: 70px;
-}
-.vendor-page .inner-heading h2 {
-    margin: 0;
-}
-.vendorRight-side h2 {
-    font-size: 36px;
-    font-weight: 900;
-    line-height: 40px;
-    color: #007276;
-    letter-spacing: 0;
-    margin-bottom: 15px;
-    font-family: 'Filson Pro';
-}
-.vendorRight-side {
-    padding-left: 60px;
-}
-.vendorRight-side p {
-    font-size: 20px;
-    color: #007276;
-    line-height: 30px;
-    font-weight: 400;
-    margin-bottom: 35px;
-}
-.vendorRight-side h3 {
-    font-size: 24px;
-    margin-bottom: 5px;
-    font-weight: 700;
-    color: #92bc5c;
-    line-height: 40px;
-}
-.vendorRight-side p a {
-    border-bottom: 2px solid;
-    display: inline-block;
-    z-index: 2;
-    color: #e9725d;
-    font-family: filson-pro,Arial,Helvetica,sans-serif;
-}
-/*Vendors-page Start */
-
 /*09-06-22 */
 body #primary {
     max-width: 100%;
@@ -1033,83 +991,6 @@ body #primary .site-content .entry-content .woocommerce-Addresses p {
     margin-right: 25px;
 }
 /*09-06-22 End */
-
-/*Vendor Page Table Styling Start */
-.seller-listing-content .vendor-table {
-    width: 100%;
-    padding: 25px 0;
-}
-.seller-listing-content .vendor-table table {
-    width: 100%;
-}
-
-.seller-listing-content .vendor-table table thead {
-    background: #f9f7ef;
-}
-
-.seller-listing-content .vendor-table table thead th:first-child {
-    padding-left: 10px;
-}
-
-.seller-listing-content .vendor-table table thead th {padding: 5px 10px;font-size: 15px;color: #000;text-transform: uppercase;}
-
-.seller-listing-content .vendor-table table thead th:last-child {
-    text-align: right;
-}
-.seller-listing-content .vendor-table table tbody {
-    border-top: 1px solid #d7d7d7;
-}
-.seller-listing-content .vendor-table table tbody td {
-    padding: 10px 10px;
-    font-weight: 700;
-    color: #000;
-    border-bottom: 1px solid #d7d7d7;
-}
-.seller-listing-content .vendor-table table tbody td a {
-    color: #000;
-    display: block;
-    text-align: right;
-    padding-right: 10px;
-}
-.seller-listing-content .vendor-table table tbody td a i {
-    font-family: 'FontAwesome';
-}
-.seller-listing-content .vendor-table table tbody td figure {
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-}
-.seller-listing-content .vendor-table table tbody td figure img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-}
-.vendorImg-lists {
-    margin: 50px 0 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.vendorImg-lists li {
-    width: 10%;
-    /*margin: 0 5px;*/
-}
-
-.vendorImg-lists li a {
-    color: #000;
-    text-align: center;
-}
-.vendorImg-lists li a figure {
-    height: 85px;
-    width: 85px;
-    margin: 0 auto 0.5em;
-}
-.vendorImg-lists li a figcaption {
-    font-size: 11px;
-    font-weight: 600;
-}
 /*Vendor Page Table Styling End */
 
 .woocommerce form .form-row.form-row-wide label {

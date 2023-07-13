@@ -44,19 +44,14 @@
 
 
         <div class="seller-listing-content">
-
+        <h3>We've got it all!</h3>
         <ul class="vendorImg-lists">
             <li>
                 <a href="javascript:void(0);">
                     <figure onclick = "myFunction1('Artisan Crafts,Jewellary,Bath/Beauty,Home')" data-url = "Artisan Crafts,Jewellary,Beauty/Bath,Home">
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png" alt="1" />
                     </figure>
-                    <figcaption>Artisan Crafts<br>
-                                Jewellery<br>
-                                Beauty<br>
-                                Bath<br>
-                                Home
-                    </figcaption>
+                    <figcaption>Artisan Crafts, Jewellery, Beauty, Bath, Home</figcaption>
                 </a>
             </li>
             <li>
@@ -64,12 +59,7 @@
                     <figure onclick = "myFunction1('Preserves,Vinegars/Oils,Sauces,Spices,')" data-url = "Preserves,Vinegars,Sauces,Spices,Oil">
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png" alt="2" />
                     </figure>
-                    <figcaption>Preserves<br>
-                                Vinegars<br>
-                                Sauces<br>
-                                Spices<br>
-                                Oil
-                    </figcaption>
+                    <figcaption>Preserves, Vinegars, Sauces, Spices, Oil</figcaption>
                 </a>
             </li>
             <li>
@@ -77,11 +67,7 @@
                     <figure onclick = "myFunction1('Beverages,Wine,Beer,Alcohol')" data-url = "Beverages,Wine,Beer,Alcohol">
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png" alt="3" />
                     </figure>
-                    <figcaption>Beverages<br>
-                                Wine<br>
-                                Beer<br>
-                                Alcohol                          
-                    </figcaption>
+                    <figcaption>Beverages, Wine, Beer, Alcohol</figcaption>
                 </a>
             </li>
             <li>
@@ -89,11 +75,7 @@
                     <figure onclick = "myFunction1('Sweet Treats,Candy,Nuts,Honey')" data-url = "Sweet Treats,Candy,Nuts,Honey">
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png" alt="4" />
                     </figure>
-                    <figcaption>Sweet Treats<br>
-                                Candy<br>
-                                Nuts<br>
-                                Honey
-                    </figcaption>
+                    <figcaption>Sweet Treats, Candy, Nuts, Honey</figcaption>
                 </a>
             </li>
             <li>
@@ -101,11 +83,7 @@
                     <figure onclick = "myFunction1(`Clothing,Kids',Pets',Other`)"  data-url = "Clothing,Kids',Pets',Other">
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png" alt="5" />
                     </figure>
-                    <figcaption>Clothing<br>
-                                Kids'<br>
-                                Pets'<br>
-                                Other
-                    </figcaption>
+                    <figcaption>Clothing, Kids', Pets', Other</figcaption>
                 </a>
             </li>
             <li>
@@ -121,11 +99,7 @@
                     <figure onclick = "myFunction1('Vegetables,Mushrooms,Fruits,Herbs')" data-url = "Vegetables,Mushrooms,Fruits,Herbs">
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png" alt="7" />
                     </figure>
-                    <figcaption>Vegetables<br>
-                                Mushrooms<br>
-                                Fruits<br>
-                                Herbs
-                    </figcaption>
+                    <figcaption>Vegetables, Mushrooms, Fruits, Herbs</figcaption>
                 </a>
             </li>
             <li>
@@ -133,11 +107,7 @@
                     <figure onclick = "myFunction1('Cheese/Dairy,Fish/Seafood,Meat,Eggs')" data-url = "Cheese/Dairy,Fish/Seafood,Meat,Eggs">
                         <img src="https://bountiful.valontech.com/wp-content/uploads/2022/06/8.png" alt="8" />
                     </figure>
-                    <figcaption>Cheese/Diary<br>
-                                Fish/Seafood<br>
-                                Meat<br>
-                                Eggs
-                    </figcaption>
+                    <figcaption>Cheese/Diary, Fish/Seafood, Meat, Eggs</figcaption>
                 </a>
             </li>
             <li>

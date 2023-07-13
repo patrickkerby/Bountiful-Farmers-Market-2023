@@ -7,7 +7,7 @@ get_header();
 <section class="vendor-page">
     <div class="container">
         <div class="inner-heading text-center ">
-            <h2 class="text-uppercase">Vendor Map</h2>
+            <h2>Vendor Map</h2>
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12">
