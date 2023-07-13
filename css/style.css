@@ -471,10 +471,6 @@ header ul.right { margin-bottom: 0; }
 .dropdown-content ul li{
     padding-right:0
 }
-.dropdown-menu{
-    background-color: transparent;
-    box-shadow: none
-}
 footer .form-group .form-control{
     padding-right: 114px
 }

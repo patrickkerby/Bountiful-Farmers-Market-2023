@@ -85,7 +85,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 
 				if ( $depth == 0 ) {
 					$atts['href']        = '#';
-					$atts['data-toggle'] = 'dropdown';
+					$atts['data-bs-toggle'] = 'dropdown';
 					$atts['class']       = 'dropdown-toggle';
 				} else {
 					$atts['href']        = $item->url;

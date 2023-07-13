@@ -194,7 +194,6 @@ header .cart a {
   background-size: contain;
 }
 
-
 header .socials a.instagram {
   background: url('../assets/images/instagram.svg') no-repeat center center;
   background-size: contain;
@@ -236,6 +235,16 @@ header .navbar .navbar-nav li a:focus {
   display: none;
 }
 
+.dropdown-menu{
+  background-color: #fff;
+  box-shadow: 0 10px 19px -17px;
+  border: none;
+  border-radius: 2px;
+  top: 2rem;
+  margin-top: 0.5rem !important;
+  padding: 0.75rem 0;
+}
+
 .dropdown-toggle::after {
   border: solid #335902;
   border-width: 0 2px 2px 0;
@@ -251,6 +260,13 @@ header .navbar .navbar-nav a.dropdown-toggle:focus::after {
   transition: all 0.4s ease-in-out;
 }
 
+.dropdown-menu li a {
+  font-size: 0.85rem;
+  line-height: 2rem;
+  padding: 0 1.5rem;
+  white-space: nowrap;
+}
+
 header .navbar a.contact {
   color: #fff;
   font-weight: 400;
@@ -260,6 +276,8 @@ header .navbar a.contact {
   font-size: 0.875rem;
   background: url(../assets/images/contact.svg) no-repeat left center;
   opacity: 1;
+  white-space: nowrap;
+  line-height: normal;
   transition: all 0.3s ease-in-out;
 }
 
