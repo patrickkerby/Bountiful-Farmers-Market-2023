@@ -8,75 +8,6 @@
  * @package dokan - 2014 1.0
  */
 ?>
-<!-- </div> -->
-<!-- .row -->
-<!-- </div> -->
-<!-- .container -->
-<!-- </div> -->
-<!-- #main .site-main -->
-
-<!-- <footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="footer-widget-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <?php dynamic_sidebar( 'footer-1' ); ?>
-                </div>
-
-                <div class="col-md-3">
-                    <?php dynamic_sidebar( 'footer-2' ); ?>
-                </div>
-
-                <div class="col-md-3">
-                    <?php dynamic_sidebar( 'footer-3' ); ?>
-                </div>
-
-                <div class="col-md-3">
-                    <?php dynamic_sidebar( 'footer-4' ); ?>
-                </div>
-            </div> 
-        </div>
-    </div>
-
-    <div class="copy-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footer-copy">
-                        <div class="col-md-6 site-info">
-                            <?php
-                            $footer_text = get_theme_mod( 'footer_text' );
-
-                            if ( empty( $footer_text ) ) {
-                                printf( __( '&copy; %d, %s. All rights are reserved.', 'dokan-theme' ), date( 'Y' ), get_bloginfo( 'name' ) );
-                                printf( __( 'Powered by <a href="%s" target="_blank">Dokan</a> from <a href="%s" target="_blank">weDevs</a>', 'dokan-theme' ), esc_url( 'http://wedevs.com/theme/dokan/?utm_source=dokan&utm_medium=theme_footer&utm_campaign=product' ), esc_url( 'http://wedevs.com/?utm_source=dokan&utm_medium=theme_footer&utm_campaign=product' ) );
-                            } else {
-                                echo $footer_text;
-                            }
-                            ?>
-                        </div>
-
-                        <div class="col-md-6 footer-gateway">
-                            <?php
-                                wp_nav_menu( array(
-                                    'theme_location'  => 'footer',
-                                    'depth'           => 1,
-                                    'container_class' => 'footer-menu-container clearfix',
-                                    'menu_class'      => 'menu list-inline pull-right',
-                                ) );
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-</footer>
-</div>
- -->
-
-<!-- custom footer -->
-
 
      <!-- FOOTER START  -->
      <footer>
@@ -146,3 +77,127 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
 </body>
 </html>
+
+<?php 
+    if(is_page('vendors')) { ?>
+
+    <script>
+        // This one filters the vendors listing
+        function myFunction() {
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("mylist");
+        filter = input.value.toUpperCase();
+            if (filter != "ALPHABETICAL") {
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+            // alert(filter);
+                if (td) {        
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1 || filter === "DEFAULT SORTING") {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+                }       
+            }
+        }
+        else{
+
+            // alert("sort alphabetically");
+
+        var table1, rows, switching, i1, x, y, shouldSwitch;
+        table1 = document.getElementById("myTable");
+        tr = table1.getElementsByTagName("tr");
+        for (var m = 0; m < tr.length; m++) {
+            tr[m].style.display = "";
+        }
+
+            switching = true;
+        /*Make a loop that will continue until
+        no switching has been done:*/
+            while (switching) {
+                //start by saying: no switching is done:
+                switching = false;
+                rows = table1.rows;
+                /*Loop through all table rows (except the
+                first, which contains table headers):*/
+                for (i1 = 1; i1 < (rows.length - 1); i1++) {
+                //start by saying there should be no switching:
+                shouldSwitch = false;
+                /*Get the two elements you want to compare,
+                one from current row and one from the next:*/
+                x = rows[i1].getElementsByTagName("TD")[1];
+                y = rows[i1 + 1].getElementsByTagName("TD")[1];
+                //check if the two rows should switch place:
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                    //if so, mark as a switch and break the loop:
+                    shouldSwitch = true;
+                    break;
+                }
+                }
+                if (shouldSwitch) {
+                /*If a switch has been marked, make the switch
+                and mark that a switch has been done:*/
+                rows[i1].parentNode.insertBefore(rows[i1 + 1], rows[i1]);
+                switching = true;
+                }
+            }
+
+        }
+    }
+
+
+    //This one filters from the category listing below the map
+    function myFunction1(data) {
+
+    // alert(data);
+    const areThereAnyCommas = data.includes(',');
+    // alert(areThereAnyCommas);
+        var input, filter, table, tr, td, i;
+        if (areThereAnyCommas == true) {
+            // alert("yes");
+        var newVar =  data.split(',');
+            newVar.map((item)=>{
+                filter = item;
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                if (td.innerHTML.indexOf(filter) > -1) {
+                    
+                } 
+                else {
+                    if(newVar.indexOf(td.innerHTML) !== -1){  
+                        tr[i].style.display = "";
+                    }   
+                    else{
+                    tr[i].style.display = "none";
+                    }
+                }
+                }       
+            }
+            })
+        }
+        else{
+
+        filter = data.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[3];
+            if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+            }       
+        }
+        }
+
+    }
+    </script>
+
+<?php } ?>

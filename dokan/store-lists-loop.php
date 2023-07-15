@@ -2,45 +2,40 @@
     <div class="container">
 
         <?php 
-                    $categories_images = array(
-                        "Artisan Crafts"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png",
-                        "Prepared Food"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/9.png",
-                        "Bath/Beauty"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png",
-                        "Ethnic Food Hall Kitchens"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/6.png",
-                        "Spices"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png",
-                        "Meat"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/8.png",
-                        "Beer"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png",
-                        "Beverages"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png",
-                        "Pets'"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png",
-                        "Baked Goods"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/10.png",
-                        "Cheese/Dairy"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/8.png",
-                        "Sweet Treats"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png",
-                        "Candy"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png",
-                        "Home"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png",
-                        "Fruits"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png",
-                        "Vegetables"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png",
-                        "Preserves"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png",
-                        "Mushrooms"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png",
-                        "Vinegars/Oils"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png",
-                        "Jewellery"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png",
-                        "Sauces"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png",
-                        "Clothing"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png",
-                        "Herbs"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png",
-                        "Honey"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png",
-                        "Nuts"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png",
-                        "Kids'"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png",
-                        "Wine"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png",
-                        "Alcohol"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png",
-                        "Fish/Seafood"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/8.png",
-                        "Other"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png",
-                        "Uncategorized"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/images-modified.png"
-                    );
-
-                    // foreach ($age as $key => $value) {
-                    //     echo $key ;
-                    //     echo $value;
-                    // }
-                     ?>
+            $categories_images = array(
+                "Artisan Crafts"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png",
+                "Prepared Food"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/9.png",
+                "Bath/Beauty"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png",
+                "Ethnic Food Hall Kitchens"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/6.png",
+                "Spices"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png",
+                "Meat"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/8.png",
+                "Beer"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png",
+                "Beverages"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png",
+                "Pets'"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png",
+                "Baked Goods"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/10.png",
+                "Cheese/Dairy"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/8.png",
+                "Sweet Treats"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png",
+                "Candy"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png",
+                "Home"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png",
+                "Fruits"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png",
+                "Vegetables"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png",
+                "Preserves"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png",
+                "Mushrooms"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png",
+                "Vinegars/Oils"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png",
+                "Jewellery"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png",
+                "Sauces"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png",
+                "Clothing"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png",
+                "Herbs"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png",
+                "Honey"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png",
+                "Nuts"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png",
+                "Kids'"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png",
+                "Wine"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png",
+                "Alcohol"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png",
+                "Fish/Seafood"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/8.png",
+                "Other"=>"https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png",
+                "Uncategorized"=>"https://bountiful.valontech.com/wp-content/uploads/2022/06/images-modified.png"
+            );
+            ?>
 
 
         <div class="seller-listing-content">
@@ -48,7 +43,7 @@
         <ul class="vendorImg-lists">
             <li>
                 <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Artisan Crafts,Jewellary,Bath/Beauty,Home')" data-url = "Artisan Crafts,Jewellary,Beauty/Bath,Home">
+                    <figure onclick = "myFunction1('Artisan Crafts,Jewellery,Bath/Beauty,Home')" data-url = "Artisan Crafts,Jewellery,Beauty/Bath,Home">
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png" alt="1" />
                     </figure>
                     <figcaption>Artisan Crafts, Jewellery, Beauty, Bath, Home</figcaption>
@@ -129,156 +124,89 @@
         </ul>
 
         <?php if ( $sellers['users'] ) : ?>
-            <div class="sort-lists">
-                        <!-- <p><button onclick="sortTable()">Sort Alphabetically</button></p>
-                        <p class="custom-button-text" onclick="resetFunction('DEFAULT SORTING')">Reset list</p> -->
-                        <span>
-                        <p>Sort Vendors by:</p>
-                        <select id="mylist" onchange="myFunction()" class='form-control'>
-                            <!-- <option>Default Sorting</option> -->
-                            <option>Alphabetical</option>
-                            <?php   
-                                foreach ( $categories_images as $key => $value) { ?>
-
-                                   <option><?php echo $key; ?></option>
-
-                            <?php    }  
-                            ?>
-                            
-                            
-                     <!--        <option>Preserves</option>
-                            <option>Prepared Food</option>
-                            <option>Beer</option>
-                            <option>Bath/Beauty</option>
-                            <option>Baked Goods</option> -->
-                        </select>
-                    </span>
+            <div class="sort-lists">                    
+                <span>
+                    <p>Sort Vendors by:</p>
+                    <select id="mylist" onchange="myFunction()" class='form-control'>
+                        <!-- <option>Default Sorting</option> -->
+                        <option>Alphabetical</option>
+                        <?php   
+                            foreach ( $categories_images as $key => $value) { ?>
+                                <option><?php echo $key; ?></option>
+                        <?php } ?>
+                    </select>
+                </span>
             </div>
-                    <div class="table-responsive vendor-table">
-                        <table id="myTable">
-                            <thead>
-                                <tr>
-                                    <th>Booth</th>
-                                    <th>Vendor</th>
-                                    <th></th>
-                                    <th>Category</th>
-                                    <th>Profile</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- <tr>
-                                    <td>A2-3</td>
-                                    <td>Ace Cofee Rester</td>
-                                    <td>
-                                        <figure>
-                                            <img src="" alt="" />
-                                        </figure>
-                                    </td>
-                                    <td>zfbzfb</td>
-                                    <td>
-                                        <a href=""><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                                    </td>
-                                </tr> -->
-                                <!-- <tr>
-                                    <td>A2-3</td>
-                                    <td>Ace Cofee Rester</td>
-                                    <td>
-                                        <figure>
-                                            <img src="" alt="" />
-                                        </figure>
-                                    </td>
-                                    <td>zfbzfb</td>
-                                    <td>
-                                        <a href=""><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>A2-3</td>
-                                    <td>Ace Cofee Rester</td>
-                                    <td>
-                                        <figure>
-                                            <img src="" alt="" />
-                                        </figure>
-                                    </td>
-                                    <td>zfbzfb</td>
-                                    <td>
-<a href=""><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                                    </td>
-                                </tr> -->
-                  
-            <!-- <ul class="dokan-seller-wrap"> -->
+            
+            <div class="table-responsive vendor-table">
+                <table id="myTable">
+                    <thead>
+                        <tr>
+                            <th>Booth</th>
+                            <th>Vendor</th>
+                            <th>Category</th>
+                            <th>Profile</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                         <?php
-                            foreach ( $sellers['users'] as $seller ) {
-                                $vendor            = dokan()->vendor->get( $seller->ID );
-                                $store_banner_id   = $vendor->get_banner_id();
-                                $store_name         = $vendor->get_shop_name();
-                                $store_url         = $vendor->get_shop_url();
-                                $store_rating      = $vendor->get_rating();
-                                $is_store_featured = $vendor->is_featured();
-                                $store_phone       = $vendor->get_phone();
-                                $store_info        = dokan_get_store_info( $seller->ID );
-                                $store_address     = dokan_get_seller_short_address( $seller->ID );
-                                $store_banner_url  = $store_banner_id ? wp_get_attachment_image_src( $store_banner_id, $image_size ) : DOKAN_PLUGIN_ASSEST . '/images/default-store-banner.png';
-                                $show_store_open_close    = dokan_get_option( 'store_open_close', 'dokan_appearance', 'on' );
-                                $dokan_store_time_enabled = isset( $store_info['dokan_store_time_enabled'] ) ? $store_info['dokan_store_time_enabled'] : '';
-                                $store_open_is_on = ( 'on' === $show_store_open_close && 'yes' === $dokan_store_time_enabled && ! $is_store_featured ) ? 'store_open_is_on' : '';
+                        foreach ( $sellers['users'] as $seller ) {
+                            $vendor            = dokan()->vendor->get( $seller->ID );
+                            $store_banner_id   = $vendor->get_banner_id();
+                            $store_name         = $vendor->get_shop_name();
+                            $store_url         = $vendor->get_shop_url();
+                            $store_rating      = $vendor->get_rating();
+                            $is_store_featured = $vendor->is_featured();
+                            $store_phone       = $vendor->get_phone();
+                            $store_info        = dokan_get_store_info( $seller->ID );
+                            $store_address     = dokan_get_seller_short_address( $seller->ID );
+                            $store_banner_url  = $store_banner_id ? wp_get_attachment_image_src( $store_banner_id, $image_size ) : DOKAN_PLUGIN_ASSEST . '/images/default-store-banner.png';
+                            $show_store_open_close    = dokan_get_option( 'store_open_close', 'dokan_appearance', 'on' );
+                            $dokan_store_time_enabled = isset( $store_info['dokan_store_time_enabled'] ) ? $store_info['dokan_store_time_enabled'] : '';
+                            $store_open_is_on = ( 'on' === $show_store_open_close && 'yes' === $dokan_store_time_enabled && ! $is_store_featured ) ? 'store_open_is_on' : '';
 
-                                $category_name = $store_info['categories'][0]->name ;
+                            $category_name = $store_info['categories'][0]->name ;
 
-                                $stall_number_custom = get_user_meta( $seller->ID , 'stall_number' );
-                                ?>
+                            $stall_number_custom = get_user_meta( $seller->ID , 'stall_number' );
+                            
+                            $image = '';
+                            foreach ($categories_images as $key => $value) {
+                                if ($key == $category_name) {
+                                    $image = $value ;
+                                    // echo $image;
+                                }
+                            }
+                            ?>
 
-                                <?php 
-                                 $image = '';
-                                    foreach ($categories_images as $key => $value) {
-                                        if ($key == $category_name) {
-                                            $image = $value ;
-                                            // echo $image;
-                                        }
-                                    }
-                                ?>
-
-                                <tr>
-                                    <td>
-                                     <?php if ( isset($stall_number_custom) && !empty( $stall_number_custom) ) {    
-                                         // echo esc_html( $store_info['stall_number'] ); 
-                                            echo $stall_number_custom[0];
-                                           } 
-                                     ?>
-                                    </td>
-
-                                    <td><?php echo $store_name; ?></td>
-                                    <td>
+                            <tr>
+                                <td class="stall">
+                                    <?php if ( isset($stall_number_custom) && !empty( $stall_number_custom) ) { ?>   
+                                        <span class="stall_num cat_<?php echo $store_info['categories'][0]->term_id;?>">            
+                                            <?php echo $stall_number_custom[0]; ?>
+                                        </span>
+                                    <?php }?>
+                                </td>
+                                <td class="name"><?php echo $store_name; ?></td>
+                                <td class="category">
+                                    <span>
                                         <figure>
-
                                             <img src="<?php echo $image; ?>" alt="1" />
-                                        </figure>
-                                    </td>
-                                    <td><?php echo $category_name; ?></td>
-                                    <td>
-                                        <a href="<?php echo $store_url; ?>"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                                    </td>
-                                </tr>
-
-                                <div class="store-footer">
-
-                                <!-- <a href="<?php //echo esc_url( $store_url ); ?>" title="<?php// esc_attr_e( 'Visit Store', 'dokan-lite' );?>">
-                                    <span class="dashicons dashicons-arrow-right-alt2 dokan-btn-theme dokan-btn-round"></span>
-                                </a> -->
-                                <?php do_action( 'dokan_seller_listing_footer_content', $seller, $store_info ); ?>
-                            </div>
-
-                    
-
-                <?php } ?>
-
-                          </tbody>
-                        </table>
-                    </div>
+                                        </figure>    
+                                        <?php echo $category_name; ?>
+                                    </span>
+                                </td>
+                                <td class="profile">
+                                    <a href="<?php echo $store_url; ?>">
+                                        <span class="arrow"></span>
+                                    </a>
+                                </td>
+                            </tr>                                    
+                        <?php } ?>
+                    </tbody>
+                </table>
+            </div>
 
                 <div class="dokan-clearfix"></div>
-            <!-- </ul>  -->
-            <!-- .dokan-seller-wrap -->
 
                 <?php
                 $user_count   = $sellers['count'];

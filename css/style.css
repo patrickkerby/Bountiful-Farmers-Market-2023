@@ -213,10 +213,6 @@ template {
 
 /* normalize css */
 
-body {
-	font-family: 'Arvo', serif!important;
-}
-
 span,
 a,
 p {
@@ -1062,10 +1058,10 @@ body #primary .site-content .entry-content .woocommerce-Addresses p {
     justify-content: flex-start;
 }
 .sort-lists span p {
-    font-size: 16px;
-    padding-right: 8px;
+    font-size: 16px;    
     color: #008571;
     font-weight: 600;
+    padding: 0 1rem 0 0;
 }
 p.custom-button-text {
       background: #92bc5c;

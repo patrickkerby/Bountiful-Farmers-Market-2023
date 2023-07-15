@@ -1,43 +1,8 @@
 /*Vendors-page Start */
-/* .vendor-page {
-  margin-top: 70px;
+
+.vendor-page {
+  margin-top: 4rem;
 }
-.vendor-page .inner-heading h2 {
-  margin: 0;
-}
-.vendorRight-side h2 {
-  font-size: 36px;
-  font-weight: 900;
-  line-height: 40px;
-  color: #007276;
-  letter-spacing: 0;
-  margin-bottom: 15px;
-  font-family: 'Filson Pro';
-}
-.vendorRight-side {
-  padding-left: 60px;
-}
-.vendorRight-side p {
-  font-size: 20px;
-  color: #007276;
-  line-height: 30px;
-  font-weight: 400;
-  margin-bottom: 35px;
-}
-.vendorRight-side h3 {
-  font-size: 24px;
-  margin-bottom: 5px;
-  font-weight: 700;
-  color: #92bc5c;
-  line-height: 40px;
-}
-.vendorRight-side p a {
-  border-bottom: 2px solid;
-  display: inline-block;
-  z-index: 2;
-  color: #e9725d;
-  font-family: filson-pro,Arial,Helvetica,sans-serif;
-} */
 
 /*Vendor Page Table Styling Start */
 .seller-listing-content .vendor-table {
@@ -53,51 +18,105 @@
 }
 
 .seller-listing-content .vendor-table table thead th:first-child {
-  padding-left: 10px;
+  text-align: center;
 }
 
 .seller-listing-content .vendor-table table thead th {
-  padding: 5px 10px;
-  font-size: 15px;
-  color: #000;
-  text-transform: uppercase;
+  padding: 1rem 0;
+  font-size: 1.35rem;
+  color: #E9725D;
+  font-family: "quiverleaf-cf", "Quiverleaf CF";
+  line-height: 2rem;
 }
 
 .seller-listing-content .vendor-table table thead th:last-child {
   text-align: right;
+  padding-right: 1rem;
 }
+
 .seller-listing-content .vendor-table table tbody {
   border-top: 1px solid #d7d7d7;
 }
+
 .seller-listing-content .vendor-table table tbody td {
-  padding: 10px 10px;
-  font-weight: 700;
-  color: #000;
-  border-bottom: 1px solid #d7d7d7;
+  padding: 14px 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #4e5454;
+  border-bottom: 1px solid #EAE8E3; 
 }
-.seller-listing-content .vendor-table table tbody td a {
+
+.seller-listing-content .vendor-table table tbody td.stall {
+  width: 10%;
+  text-align: center;
+}
+
+.seller-listing-content .vendor-table table tbody td.name {
+  /* font-family: "quiverleaf-cf", "Quiverleaf CF"; */
+  font-family: "filson-pro", "Filson Pro";
+  color: #333;
+  font-size: 1.125rem;
+  padding-left: 0;
+  font-weight: 400;
+}
+
+td.profile {
+  text-align: right;
+}
+
+td.profile a {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+
+.seller-listing-content .vendor-table table tbody td a span.arrow {
   color: #000;
   display: block;
   text-align: right;
   padding-right: 10px;
+  width: 1rem;
+  height: 1rem;
+  border-top: 2px solid #D7D3C6;
+  border-left: 2px solid #D7D3C6;
+
+  transform: rotate(135deg);
+
 }
-.seller-listing-content .vendor-table table tbody td a i {
+
+td a i {
   font-family: 'FontAwesome';
 }
-.seller-listing-content .vendor-table table tbody td figure {
-  height: 50px;
-  width: 50px;
-  margin: 0 auto;
+
+td.category span {
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.12);
+  border-radius: 21px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 1.5rem 0.25rem 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
 }
-.seller-listing-content .vendor-table table tbody td figure img {
+
+td figure {
+  height: 33px;
+  width: 33px;
+  float: left;
+  margin: 0 0.875rem 0 0;
+}
+
+td figure img {
   object-fit: contain;
   width: 100%;
   height: 100%;
 }
 
 .vendor-page div.imp-initialized {
-  margin-left: -2rem;
-  margin-right: -2rem;
   padding-bottom: 2rem;
   background-color: #acd476;
 }
@@ -123,13 +142,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-row-gap: 1.5rem;
   grid-column-gap: 1.5rem;
-
   background: #fafafa;
   padding: 3rem 2rem 2rem 2rem;
   border-radius: 0 0 8px 8px;
-  margin-left: -2rem;
-  margin-right: -2rem;
-  width: 106%;
 }
 
 @media (max-width: 768px) {
@@ -149,6 +164,7 @@
   display: flex;
   align-items: center;
 }
+
 .vendorImg-lists li a figure {
   margin: 0;
   height: 45px;
@@ -156,11 +172,13 @@
   margin: 0;
   float: left;
 }
+
 .vendorImg-lists li a figure img {
   height: 45px;
   width: 45px;
   object-fit: contain;
 }
+
 .vendorImg-lists li a figcaption {
   font-size: 0.9rem;
   font-weight: 500;
@@ -170,3 +188,53 @@
   letter-spacing: 0.03rem;
   margin-left: 0.75rem;
 }
+
+.page-template-vendors footer {
+  margin-top: 8rem;
+}
+
+/* Color Map */
+.stall_num {
+  width: auto;
+  min-width: 2.5rem;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  padding: 0.15rem 0.45rem;
+  margin: 0;
+  line-height: normal;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 10px -4px rgba(0,0,0,0.50);
+  border-radius: 1rem;
+}
+
+.cat_51 { background-color: #333 ;}
+.cat_54 { background-color: #b39e52;}
+.cat_56 { background-color: #7c5182;}
+.cat_57 { background-color: #d76d4f;}
+.cat_58 { background-color: #007277;}
+.cat_59 { background-color: #b39e52;}
+.cat_60 { background-color: #426376;}
+.cat_61 { background-color: #2f6593;}
+.cat_62 { background-color: #d61615;}
+.cat_63 { background-color: #223754;}
+.cat_64 { background-color: #54844e;}
+.cat_65 { background-color: #d76d4f;}
+.cat_66 { background-color: #d76d4f;}
+.cat_67 { background-color: #d61615;}
+.cat_75 { background-color: #b39e52;}
+.cat_76 { background-color: #b39e52;}
+.cat_77 { background-color: #2f6593;}
+.cat_78 { background-color: #2f6593;}
+.cat_79 { background-color: #2f6593;}
+.cat_80 { background-color: #f8651c;}
+.cat_81 { background-color: #d76d4f;}
+.cat_83 { background-color: #54844e;}
+.cat_84 { background-color: #54844e;}
+.cat_85 { background-color: #54844e;}
+.cat_86 { background-color: #426376;}
+.cat_87 { background-color: #426376;}
+.cat_91 { background-color: #d76d4f;}
+.cat_97 { background-color: #d61615 ;}
