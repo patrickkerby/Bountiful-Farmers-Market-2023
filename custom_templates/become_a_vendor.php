@@ -21,19 +21,23 @@ $section2 = get_field('section_2');
 
 <!-- become-vendor-description Start  -->
 <div class="vendor-describe">
-    <div class="container">
-        <h4 class="text-capitalize text-center"><?php echo $section2['heading']; ?></h4>
+    <div class="container">        
+        <div class="row justify-content-center">
+            <div class="col-sm-10">
 
-        <p class="text-center"><?php echo $section2['paragraph']; ?>
-         <a href="mailto:<?php echo $section2['mail_link']; ?> "><?php echo $section2['mail_text']; ?></a>
-         <?php echo $section2['paragraph_2']; ?>
-         <a href="tel:<?php echo $section2['call_link']; ?>"><?php echo $section2['call_text']; ?></a>
-        </p>
+                <?php while (have_posts()) : the_post(); ?>
 
-        <p class="text-center"><?php echo $section2['sub_paragraph']; ?></p>
-    
-        <span class="pdf"><a href="<?php echo $section2['button_link']; ?>" download="Vendor_registration_form"><?php echo $section2['button_text']; ?></a></span>
-    
+                    <?php get_template_part( 'content', 'page' ); ?>
+
+                    <?php
+                    // If comments are open or we have at least one comment, load up the comment template
+                    if ( comments_open() || '0' != get_comments_number() )
+                        comments_template( '', true );
+                    ?>
+
+                <?php endwhile; // end of the loop. ?>
+            </div>
+        </div><!-- #content .site-content -->
     </div>
 </div>
 <!-- become-vendor-description END  -->
