@@ -30,7 +30,8 @@ if (is_null($title)) {
     <div class="container">        
         <div class="row justify-content-center">
             <div class="col-sm-11">
-                <?php echo do_shortcode('[Map1]');  ?>
+                <!-- <?php echo do_shortcode('[Map1]');  ?> -->
+                
             </div> 
         </div>
     </div>

@@ -1,3 +1,88 @@
+<div id="floormap">
+    <div class="stalls">
+        <?php if ( $sellers['users'] ) : 
+
+            foreach ( $sellers['users'] as $seller ) {
+                $vendor            = dokan()->vendor->get( $seller->ID );
+                $store_info        = dokan_get_store_info( $seller->ID );
+                $store_name         = $vendor->get_shop_name();
+                $store_url         = $vendor->get_shop_url();
+                $stall_number_custom = get_user_meta( $seller->ID , 'stall_number' );                             
+                $stall_cat = $store_info['categories'][0]->term_id;                                
+                $additional_stalls = get_field('additional_stall_numbers', 'user_'.$vendor->id);
+
+                if($additional_stalls) {
+                    foreach ($additional_stalls as $stall) { ?>
+                        <a href="<?php echo $store_url; ?>" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="<?php echo $store_name; ?>" data-bs-custom-class="cat_<?php echo $store_info['categories'][0]->term_id;?> stall" class="stall_num stall_<?php echo $stall['stall_number'];?> cat_<?php echo $store_info['categories'][0]->term_id;?>"><?php echo $stall['stall_number'];?></a>
+                    <?php }
+                }
+                else {
+
+                
+
+                if($stall_number_custom){                
+            ?>                                
+                <a href="<?php echo $store_url; ?>" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="<?php echo $store_name; ?>" data-bs-custom-class="cat_<?php echo $store_info['categories'][0]->term_id;?> stall" class="stall_num stall_<?php echo $stall_number_custom[0];?> cat_<?php echo $store_info['categories'][0]->term_id;?>"><?php echo $stall_number_custom[0];?></a>
+
+            <?php } } }
+            endif ?>
+            
+            <!-- <a href="" class="stall_num stall_L6 cat_56">L6</a>
+            <a href="" class="stall_num stall_L8 cat_56">L8</a>
+
+            <a href="" class="stall_num stall_I5 cat_56">I5</a>
+            <a href="" class="stall_num stall_I7 cat_56">I7</a>
+            <a href="" class="stall_num stall_I8 cat_56">I8</a>
+            <a href="" class="stall_num stall_I9 cat_56">I9</a>
+            <a href="" class="stall_num stall_I10 cat_56">I10</a>
+
+            <a href="" class="stall_num stall_H5 cat_56">H5</a>
+            <a href="" class="stall_num stall_H11 cat_56">H11</a>
+            <a href="" class="stall_num stall_H12 cat_56">H12</a>
+            <a href="" class="stall_num stall_H14 cat_56">H14</a>
+
+            <a href="" class="stall_num stall_G1 cat_56">G1</a>
+            <a href="" class="stall_num stall_G2 cat_56">G2</a>
+            <a href="" class="stall_num stall_G3 cat_56">G3</a>
+            <a href="" class="stall_num stall_G5 cat_56">G5</a>
+            <a href="" class="stall_num stall_G6 cat_56">G6</a>
+            <a href="" class="stall_num stall_G8 cat_56">G8</a>
+            <a href="" class="stall_num stall_G9 cat_56">G9</a>
+            <a href="" class="stall_num stall_G10 cat_56">G10</a>
+
+            <a href="" class="stall_num stall_J3 cat_56">J3</a>
+            <a href="" class="stall_num stall_J4 cat_56">J4</a>
+            <a href="" class="stall_num stall_J9 cat_56">J9</a>
+            <a href="" class="stall_num stall_J10 cat_56">J10</a>
+            <a href="" class="stall_num stall_J11 cat_56">J11</a>
+            <a href="" class="stall_num stall_J12 cat_56">J12</a>
+
+            <a href="" class="stall_num stall_F2 cat_56">F2</a>
+            <a href="" class="stall_num stall_F6 cat_56">F6</a>
+            <a href="" class="stall_num stall_F9 cat_56">F9</a>
+            <a href="" class="stall_num stall_F10 cat_56">F10</a>
+
+            <a href="" class="stall_num stall_E9 cat_56">E9</a>
+            <a href="" class="stall_num stall_E10 cat_56">E10</a>
+
+            <a href="" class="stall_num stall_A2 cat_56">A2</a>
+            <a href="" class="stall_num stall_A3 cat_56">A3</a>
+            <a href="" class="stall_num stall_A4 cat_56">A4</a>
+            <a href="" class="stall_num stall_A5 cat_56">A5</a>
+            <a href="" class="stall_num stall_A8 cat_56">A8</a>
+            <a href="" class="stall_num stall_A9 cat_56">A9</a>
+            <a href="" class="stall_num stall_A10 cat_56">A10</a>
+            <a href="" class="stall_num stall_A11 cat_56">A11</a>
+            <a href="" class="stall_num stall_A12 cat_56">A12</a>
+            <a href="" class="stall_num stall_A18 cat_56">A18</a>
+            <a href="" class="stall_num stall_A19 cat_56">A19</a>
+            <a href="" class="stall_num stall_A21 cat_56">A21</a> -->
+
+
+        <img width="1224px" height="935px" src="/app/uploads/2022/07/Website-Bountiful-Map-Vector-7.1.22-03-2.png" />
+    </div>
+</div>
+
     <div id="dokan-seller-listing-wrap" >
     <div class="container">
 
