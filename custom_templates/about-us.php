@@ -28,7 +28,7 @@ $did_you_know = get_field("did_you_know");
     <div class="container-fluid heading">
         <div class="row justify-content-center" style="background-image: linear-gradient(174deg, rgba(27,48,46,0.62) 0%, rgba(43,77,74,0.62) 100%), url('<?php echo $heading_image['url'] ?>'); background-size: cover;">
             <h1><?php echo $heading_title; ?></h1> 
-            <span>Friday & Sunday:  10 AM - 4 PM,  Saturday: 9 AM - 5 PM</span>
+            <span class="col-sm-4">Friday & Sunday:  10 AM - 4 PM,  Saturday: 9 AM - 5 PM</span>
             <div class="col-sm-9 intro">
                 <h2><?php echo $heading_intro; ?></h2>
             </div>            
