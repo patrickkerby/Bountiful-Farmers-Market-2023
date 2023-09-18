@@ -42,6 +42,14 @@
         if(is_page('vendors')) {
             echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() .'/css/vendors.css" />';
         }
+        $current_url = home_url( $wp->request );
+        if( str_contains($current_url, '/vendor/')) {
+            echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() .'/css/vendor-single.css" />';
+        }
+        if(str_contains($current_url, '/events') || is_singular( 'tribe_events' )) {
+            echo '<link rel="stylesheet" type="text/css" href="' . get_stylesheet_directory_uri() .'/css/events.css" />';
+        }
+        
     ?>
 
 </head>

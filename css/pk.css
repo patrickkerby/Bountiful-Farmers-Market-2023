@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.44px;
 }
 
-p, a, li, strong, span, caption, address {
+div, p, a, li, strong, span, caption, address {
   font-family: "basic-sans", "Basic Sans";
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -57,6 +57,44 @@ h2 {
   margin: 0 auto 2rem auto;
   text-align: center;
 }
+
+/* WYSIWYG */
+
+.wysiwyg * {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.wysiwyg h2 {
+  width: auto;
+}
+
+.wysiwyg h3, .wysiwyg h4, .wysiwyg h5, .wysiwyg h6 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1.75rem;
+}
+
+.wysiwyg li {
+  margin-bottom: 1rem;
+}
+
+.wysiwyg ol,
+.wysiwyg ul {
+  list-style-type: decimal;
+  list-style-position: outside;
+  margin-left: 1rem;
+}
+
+.wysiwyg ul {
+  list-style-type: circle;
+}
+
+.wysiwyg figure {
+  margin: 0;
+}
+
+/* Modals */
 
 .modal .modal-dialog {
   max-width: 1028px;
@@ -116,6 +154,8 @@ header .top-header {
   background: url('../assets/images/colourbar.svg') #fff repeat-x top left;
   padding-top: 6px;
   box-shadow: 0 0 26px -18px #333;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 header .row div {
@@ -126,6 +166,7 @@ header .row div {
 
 header .top-header .row {
   margin: 0 !important;
+  flex-wrap: nowrap;
 }
 
 header .brand {
@@ -213,6 +254,7 @@ header .cart a {
   border-radius: 0;
   margin: 0;
   height: 4rem;
+  flex-wrap: nowrap;
 }
 
 .navbar a {
@@ -489,6 +531,7 @@ div.intro {
 footer {
   background-image: radial-gradient(at top, #007b67 0%, #027d6a 44%, #00473c 100%);
   position: relative;
+  margin-top: 8rem;
 }
 
 .home footer::before {
@@ -708,7 +751,7 @@ footer address {
 
 /* ---------  Responsive Style --------- */
 
-@media (max-width: 1024px) {
+@ (max-width: 1024px) {
 
   .inner-heading h2 {
     font-size: 3.5rem;
@@ -716,7 +759,7 @@ footer address {
   }
 
   header .brand a img {
-    max-width: 260px;
+    max-width: 230px;
     transition: all 0.3s ease-in-out;
   }
 
@@ -724,6 +767,10 @@ footer address {
     margin-left: 0.8rem;
     width: 1.35rem;
     transition: all 0.3s ease-in-out;
+  }
+
+  header .navbar .navbar-nav li a {
+    padding: 0.625rem 1.3125rem;
   }
 }
 
@@ -755,6 +802,10 @@ footer address {
   header .cart a {
     margin-left: 0.75rem;
   }
+
+  .nav .menu-item-home {
+    display: none;
+  }
 }
 
 @media (max-width: 670px) {
@@ -768,8 +819,14 @@ footer address {
     display: none;
   }
 
+  header .top-header {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   header .top-header .row {
     margin: 0 !important;
+    flex-wrap: wrap;
   }
 
   header .header-cta {
@@ -807,7 +864,7 @@ footer address {
   }
 
   header .navbar .navbar-nav li a {
-    padding: 0.625rem 1.3125rem;
+    padding: 0.625rem 1rem;
   }
 }
 
@@ -1035,217 +1092,6 @@ footer address {
   line-height: 2.5rem;
   width: 100%;
   margin: 0;
-}
-
-/* Weekly Events */
-
-.tribe-events-page-template .heading h1 {
-  font-size: 4rem;
-  margin: 5rem auto;
-}
-
-.row.weeklyevents {
-  padding: 4rem 10%;
-  background: #FCFBF7;
-  position: relative;
-}
-
-.single-tribe_events .row.weeklyevents {
-  display: none;
-}
-
-body.single-tribe_events #primary .site-content {
-  margin-top: 0;
-}
-
-body.single-tribe_events #tribe-events-pg-template {
-  margin: unset;
-  max-width: unset;
-  padding: unset;
-}
-
-body.single-tribe_events #tribe-events-pg-template #primary.content-area {
-  margin: 0 auto !important;
-  max-width: 1048px !important;
-  padding: 2rem 20px 20px !important;
-}
-
-.tribe-events-back {
-  margin-bottom: 1rem;
-  display: flex;
-}
-
-.tribe-events-back a, .tribe-events-back a:visited {
-  background: #E0665D;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: "basic-sans", "Basic Sans";
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  width: auto;
-  height: 38px;
-  line-height: 38px;
-  display: flex;
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.weeklyevents h2 {
-  background: #E0665D;
-  color: #fff;
-  font-size: 1.125rem;
-  font-weight: bold;
-  font-family: "basic-sans", "Basic Sans";
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  position: absolute;
-  width: 200px;
-  height: 38px;
-  line-height: 38px;
-  left: calc(50% - 100px);
-  top: -19px;
-}
-
-.weeklyevents h3 {
-  color: #067D73;
-}
-
-.weeklyevents p {
-  color: #5C5C5C;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-body.post-type-archive-tribe_events #primary .site-content header {
-  padding: 0;
-}
-
-.tribe-events-calendar-list__event-title a,
-.tribe-events-calendar-latest-past__event-title-link,
-.tribe-events-calendar-latest-past__event-title-link a {
-  font-size: 2rem;
-  font-family: "filson-pro", "Filson Pro";
-}
-
-.tribe-common .tribe-common-c-btn, .tribe-common a.tribe-common-c-btn {
-  background-color: #E0665D;
-}
-
-.tribe-common .tribe-common-c-btn:hover, .tribe-common a.tribe-common-c-btn:hover {
-  background-color: #EB736A;
-}
-
-.post-type-archive-tribe_events #primary .site-content {
-  margin: 0 0 80px 0;
-}
-
-.post-type-archive-tribe_events #content nav {
-  padding: 2rem 0;
-}
-
-.tribe-events-calendar-month__calendar-event-title-link {
-  line-height: 1rem;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.tribe-events .tribe-events-calendar-month__calendar-event-datetime {
-  line-height: 11px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 0 0.5rem 0;
-}
-
-.tribe-events .tribe-events-calendar-month__calendar-event-datetime span {
-  margin: 0 0.1rem;
-  line-height: 11px;
-}
-
-.tribe-events .tribe-events-calendar-list__event-datetime-wrapper span {
-  opacity: 1;
-  color: #D57974;
-  font-weight: 400;
-}
-
-.tribe-events-single-event-title {
-  /* font-family: "filson-pro", "Filson Pro"; */
-  font-family: "quiverleaf-cf", "Quiverleaf CF";
-  font-size: 3.125rem;
-}
-
-.tribe-events-schedule {
-  margin: 0 0 2rem 0;
-}
-
-.tribe-events-schedule h2,
-.tribe-events-schedule span {
-  margin: 0;
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-
-.tribe-events-meta-group h2.tribe-events-single-section-title {
-  margin: 0;
-  font-family: "filson-pro", "Filson Pro";
-  text-align: left;
-  font-size: 1rem;
-  letter-spacing: 0.1px;
-  color: #008671;
-}
-
-.tribe-events-cal-links .tribe-events-gcal, .tribe-events-cal-links .tribe-events-ical {
-  background: #92BC5C;
-  color: #fff;
-  border-radius: 2.25rem;
-  height: 2.25rem;
-  line-height: 2.25rem;
-  text-align: center;
-  margin: 0 1rem 0 0;
-  padding: 0 1.5rem;
-  font-weight: 600;
-}
-
-.tribe-events-content ol,
-.tribe-events-content p,
-.tribe-events-content ul {
-  font-weight: 400;
-  font-size: 1.2em;
-  color: #666;
-  line-height: 1.75rem;
-}
-
-.tribe-events-event-meta {
-  font-family: "basic-sans", "Basic Sans";
-}
-
-.tribe-events-event-meta .tribe-events-address span {
-  font-size: 1rem;
-  line-height: 1rem;
-}
-
-.tribe-events-event-meta a, .tribe-events-event-meta a:visited {
-  display: flex;
-  color: #EB736A;
-  font-size: 0.85rem;
-  font-weight: 400;
-}
-
-.tribe-events-event-meta a:hover {
-  color: #be5049;
-}
-
-.tribe-events-c-ical,
-.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-venue {
-  display: none;
-}
-
-.single-tribe_events section h2 {
-  text-align: left;
-  width: 100%;
-  font-size: 2.25rem;
 }
 
 /* Offcanvas Directions and Map Thing */

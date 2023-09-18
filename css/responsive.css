@@ -352,27 +352,6 @@
     body #primary .site-content {
         margin: 40px 0;
     }
-    .personDetails {
-        padding: 0;
-        margin: -27px;
-    }
-    .personDetails p {
-        font-size: 14px;
-    }
-    .personDetails h2 {
-        font-size: 25px;
-    }
-    .aboutImages {
-        margin: 50px 0;
-        padding-bottom: 50px;
-    }
-    .aboutImages figure {
-        height: 100%;
-    }
-    .aboutImages figure:nth-of-type(2) {
-        margin-top: -100px;
-        padding-right: 20px;
-    }
     .col1 {
         order: 1;
     }
@@ -653,11 +632,11 @@
         border: 1px solid #92bc5c;
         border-radius: 5px;
     }
-    header .navbar .container {
+    /* header .navbar .container {
         flex-direction: column;
         width: 100%;
         height: 100%;
-    }
+    } */
     header ul.navbar-nav {
         display: flex;
         align-items: center;
@@ -739,19 +718,7 @@
     .connect-sec {
         padding: 100px 25px 25px;
     }
-    body.logged-in .dokan-single-store {
-        margin-right: 0;
-        width: 100% !important;
-        margin-left: 0;
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-    body.logged-in .dokan-store-wrap {
-        margin: -10px 0;
-    }
-    .personDetails {
-        margin: 0;
-    }
+    
     .contests-and-eventSec h2 {
         font-size: 32px;
         padding: 25px 0 15px;

@@ -1102,7 +1102,7 @@ p.custom-button-text {
 
 /*27-06-2022*/
 /* Vendor-detail-page  */
-.ace-sec {
+/* .ace-sec {
     padding: 100px 0 200px;
     text-align: center;
     margin-top: -20px;
@@ -1128,7 +1128,6 @@ p.custom-button-text {
     text-shadow: 4px 4px #808d6f;
     font-family: 'Filson Pro';
     padding-top: 0;
-    /* border-bottom: 2px solid red; */
     max-width: 950px;
     margin: 0 auto;
     position: relative;
@@ -1159,7 +1158,6 @@ h2.heading {
 .about-slider {
     padding: 20px;
     border: 10px solid transparent;
-    /*border-image: url('https://www.w3schools.com/css/border.png') 20% round;*/
     margin-bottom: 50px;
 }
 .about-item figure {
@@ -1261,7 +1259,6 @@ h2.heading {
 .product-lists li {
     width: 50%;
     margin-bottom: 12px;
-    /*position: relative;*/
     padding-left: 20px;
 }
 .product-lists li a:before {
@@ -1282,7 +1279,7 @@ h2.heading {
 }
 .social-icons li:first-child figure img {
     height: 60px;
-}
+} */
 /* Vendor-detail-page End */
 
 

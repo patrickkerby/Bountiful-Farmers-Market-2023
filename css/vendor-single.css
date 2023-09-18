@@ -1,0 +1,146 @@
+/* Vendor Profile Page */
+.banner-vendor {
+  position: relative;
+  padding: 1rem 0 4rem 0;
+  /* margin-top: -20px; */
+  margin-bottom: -10px;
+  background-image: linear-gradient(180deg, #425e85 47%, #1b3a65 100%);
+}
+
+.banner-vendor div {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_title {
+  margin-bottom: 4rem;
+}
+
+.banner-vendor h2 {
+    font-size: 70px;
+    color: #fff;
+    line-height: 76px;
+    font-weight: 600;
+    border-bottom: solid 2px #fff;
+    padding: 0 0 30px 0;
+    margin: 0 3rem 30px 0;
+    width: auto;
+    text-align: left;
+}
+
+.banner-vendor h2 span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 3.71px;
+  line-height: 20px;
+  width: 100%;
+  text-transform: uppercase;
+  display: inline-flex;
+  border-bottom: solid 2px #fff;
+  padding: 30px 0;
+  margin-bottom: 15px;
+}
+
+.banner-vendor::after {
+  content: "";
+  display: block;
+  background: url(../images/vendor-swoosh.svg) no-repeat bottom center;
+  background-size: contain;
+  position: absolute;
+  bottom: -6px;
+  width: 105%;
+  height: 100px;
+}
+
+.banner-vendor ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.banner-vendor li {
+  display: inline-flex;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 1rem 0 0;
+  min-width: 1rem;
+  width: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.banner-vendor li span {
+  color: #7f9dc6;
+  display: flex;
+  font-weight: 600;
+  margin-bottom: -30px;
+}
+
+.banner-vendor li span a {
+  color: #7f9dc6;
+  font-weight: normal;
+}
+
+.banner-vendor div.profile-img {
+  display: flex;
+  align-items: center;
+}
+
+.banner-vendor li.stall {
+  margin-right: 1.75rem;
+  white-space: nowrap;
+  line-height: 1.35;
+}
+ 
+.banner-vendor li.website {
+  margin-left: 1.25rem;
+}
+
+.banner-vendor div.profile-img img {
+  border: solid #fff 10px;
+  box-shadow: 0 0 48px 0 rgba(0, 0, 0, 0.11);
+  position: relative;
+  z-index: 11;
+  margin-bottom: 0;
+  max-height: 76%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.vendor.container {
+  margin-top: -8px;
+  position: relative;
+  background: #fff;
+}
+
+.vendor.container .photos img {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+
+  .banner-vendor ul {
+    flex-wrap: wrap;
+  }
+
+  .banner-vendor li.website {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-vendor h2 {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .profile_title {
+    margin-bottom: 0;
+  }
+}

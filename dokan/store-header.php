@@ -21,6 +21,9 @@ $show_store_open_close    = dokan_get_option( 'store_open_close', 'dokan_appeara
 $general_settings         = get_option( 'dokan_general', [] );
 $banner_width             = dokan_get_vendor_store_banner_width();
 
+
+
+
 if ( ( 'default' === $profile_layout ) || ( 'layout2' === $profile_layout ) ) {
     $profile_img_class = 'profile-img-circle';
 } else {
@@ -44,185 +47,129 @@ if ( 'layout3' === $profile_layout ) {
 
 $stall_number_custom = get_user_meta( $store_user->get_id() , 'stall_number' );
 $custom_bio = get_user_meta( $store_user->get_id() , 'description' );
+$long_bio = get_user_meta( $store_user->get_id() , 'vendor_bio' );
 $image_1 = get_user_meta( $store_user->get_id() , 'image_1' );
 $image_2 = get_user_meta( $store_user->get_id() , 'image_2' );
 $image_3 = get_user_meta( $store_user->get_id() , 'image_3' );
 $image_4 = get_user_meta( $store_user->get_id() , 'image_4' );
 
-// print_r($image_1);
-// die;
-
 $user_data =  get_userdata( $store_user->get_id() );
-// print_r($dtaaaa);
+$website_display = "";
+
 $website_url = $user_data->user_url;
-// die;
-// echo $vendor_bio;
+    // The following is all stuff to make the urls look pretty in the profile
+    // in case scheme relative URI is passed, e.g., //www.google.com/
+    
+    if($website_url) {
+        $input = trim($website_url, '/');
+
+        // If scheme not included, prepend it
+        if (!preg_match('#^http(s)?://#', $input)) {
+            $input = 'http://' . $input;
+        }
+
+        $urlParts = parse_url($input);
+
+        // remove www
+        $website_display = preg_replace('/^www\./', '', $urlParts['host']);
+    }
+
+$vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
+
+    
+
 ?>
-<div class="dokan-profile-frame-wrapper">
    
+<div class="banner-vendor row justify-content-center">
+    <div class="col-10 col-sm-5 profile_title">
+      <h2><span>Vendor Profile:</span> <?php echo esc_html( $store_user->get_shop_name() ); ?> <?php apply_filters( 'dokan_store_header_after_store_name', $store_user ); ?></h2>
+      <ul>
+        <li class="stall"><span>Stall</span><br /> <?php if ( isset($stall_number_custom) && !empty( $stall_number_custom) ) {    
+                    // echo esc_html( $store_info['stall_number'] ); 
+                    echo $stall_number_custom[0];
+                    } 
+                ?></li>
+        <!-- @if ( $vendor_social->twitter ) -->
+          <li class="twitter"><a href="//twitter.com/{{ $vendor_social->twitter }}" target="_blank"><img src="/app/themes/dokan/images/twitter.svg" /></a></li>
+        <!-- @endif -->
+        <!-- @if ( $vendor_social->facebook ) -->
+          <li><a href="//fb.com/{{ $vendor_social->facebook }}" target="_blank"><img src="/app/themes/dokan/images/facebook.svg" /></a></li>
+        <!-- @endif -->
+        <!-- @if ( $vendor_social->instagram ) -->
+          <li><a href="//instagram.com/{{ $vendor_social->instagram }}" target="_blank"><img src="/app/themes/dokan/images/instagram.svg" /></a></li>
+        <!-- @endif -->
+          <li><a href="mailto:<?php echo esc_attr( antispambot( $store_user->get_email() ) ); ?> subject=Mail from Bountiful Farmers' Market Website" target="_blank"><img src="/app/themes/dokan/images/email.svg" /></a></li>        
+          <li class="website"><span><a href="<?php echo $website_url ?>" target="_blank"><?php echo $website_display ?></a></span></li>
+      </ul>
+    </div>
+    <div class="col-10 col-sm-5 profile-img">
+        <?php echo wp_get_attachment_image( $image_1[0], 'original' ); ?>
+    </div>
+  </div> 
 
-    <div class="personDetails">
-        <div class="ace-sec">
-            <h2 class="ace-heading"><?php echo esc_html( $store_user->get_shop_name() ); ?> <?php apply_filters( 'dokan_store_header_after_store_name', $store_user ); ?></h2>
-        </div>
-        <div class="personAbout-sec">
-            <div class="container">
-                <!-- <h4><?php if ( ! empty( $store_user->get_shop_name() ) && 'default' === $profile_layout ) { ?> -->
-                        
-                <div class="row">
-                    <div class="col-md-7 col-sm-12">
-                        <div class="detailsofperson">
-                            
-                            <?php if (!$custom_bio == '') { ?>
-                            <div class="about-heading">
-                                <h2 class="heading">About:</h2>
-                                <p><?php echo $custom_bio[0]; ?></p>
-                            </div>  
-                            <?php } ?>                  
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12">
-                        <div class="owl-carousel owl-theme about-slider">
-                            <div class="item about-item">
-                                <figure>
-                                    <img src="<?php echo wp_get_attachment_image( $image_1[0], 'full' ); ?>" alt="local-img1" 
-                                    srcset="" class="img-1" />
-                                </figure>
-                            </div>
-                            <div class="item about-item">
-                                <figure>
-                                    <img src="<?php echo wp_get_attachment_image( $image_2[0], 'full' ); ?>" alt="local-img2" 
-                                    srcset="" class="img-1" />
-                                </figure>
-                            </div>
-                            <div class="item about-item">
-                                <figure>
-                                    <img src="<?php echo wp_get_attachment_image( $image_3[0], 'full' ); ?>" alt="local-img3" 
-                                    srcset="" class="img-1" />
-                                </figure>
-                            </div>
-                            <div class="item about-item">
-                                <figure>
-                                    <img src="<?php echo wp_get_attachment_image( $image_4[0], 'full' ); ?>" alt="local-img3" 
-                                    srcset="" class="img-1" />
-                                </figure>
-                            </div>
-                        </div>
-<!-- 
-                        <h1 class="store-name"><?php //echo esc_html( $store_user->get_shop_name() ); ?> <?php //apply_filters( 'dokan_store_header_after_store_name', $store_user ); ?></h1> -->
-                            <?php } ?>
-                         
-                                <!-- <h2>About Vendor :</h2> -->
-                               <!--  <p><?php echo $vendor_bio; ?></p>   -->                         
-                        
+    <div class="personDetails vendor container">
+        <div class="personAbout-sec bio wysiwyg">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-sm-10 col-md-6">                            
+                    <?php if ($long_bio) { ?>
+                        <h2>About:</h2>
+                        <div><?php echo $long_bio[0]; ?></div>
+                    <?php } elseif ($custom_bio) { ?>
+                        <h2>About:</h2>
+                        <p><?php echo $custom_bio[0]; ?></p>  
+                    <?php } 
+                    else { ?>
+                        <h2>About:</h2>
+                        <p>Vendor bio coming soon!</p>  
+                    <?php } ?>    
                     
-                        <!-- <figcaption> -->
-                            <?php// if ( ! dokan_is_vendor_info_hidden( 'phone' ) && ! empty( $store_user->get_phone() ) ) { ?>
-                                 <!--    <li class="dokan-store-phone">
-                                        <i class="fas fa-mobile-alt"></i>
-                                        <a href="tel:<?php //echo esc_html( $store_user->get_phone() ); ?>"><?php //echo esc_html( $store_user->get_phone() ); ?></a>
-                                    </li> -->
-                                <?php //} ?>                            
-                                <?php //if ( $social_fields ) { ?>
-                                   <!--  <div class="store-social-wrapper">
-                                        <ul class="store-social">
-                                            <?php foreach( $social_fields as $key => $field ) { ?>
-                                                <?php if ( !empty( $social_info[ $key ] ) ) { ?>
-                                                    <li>
-                                                        <i class="fab fa-<?php echo esc_attr( $field['icon'] ); ?>"></i>
-                                                        <a href="<?php echo esc_url( $social_info[ $key ] ); ?>" target="_blank"><?php echo esc_url( $social_info[ $key ] ); ?></a>
-                                                    </li>
-                                                <?php } ?>
-                                            <?php } ?>
-                                        </ul>
-                                    </div> -->
-                                <?php// } ?>
-                            <!-- </figcaption> -->
-                    </div>
-                </div>
+                    <hr>
+                    <?php $str = get_user_meta( $store_user->get_id() , 'main_products' );?>
 
-                <h2 class="heading">Find them in booth  
-                   <?php if ( isset($stall_number_custom) && !empty( $stall_number_custom) ) {    
-                                         // echo esc_html( $store_info['stall_number'] ); 
-                                            echo $stall_number_custom[0];
-                                           } 
-                                     ?>!
-                </h2>
-            </div>
-        </div>
-
-        <div class="connect-sec">
-            <div class="container">
-            <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="connect">
-                            <h2 class="heading">Connect</h2>
-                            <ul class="social-icons">
-                                <?php if ( $social_fields ) { ?>
-                                
-                                 <?php foreach( $social_fields as $key => $field ) { ?>
-                                    <?php if (( $key == "fb" ) && ( $social_info["fb"] ) ) { ?>
-                                <li><a href="<?php echo esc_url( $social_info[ $key ] ); ?>" target=_blank>
-                                    <figure>
-                                        <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/facebook.png" alt="facebook" srcset="" />
-                                    </figure>
-                                </a></li>
-                                        <?php } ?>
-                                    <?php } ?>
-                                 <?php } ?>
-
-                                <?php if ( ! dokan_is_vendor_info_hidden( 'email' )) { ?>
-                                <li><a href="mailto:<?php echo esc_attr( antispambot( $store_user->get_email() ) ); ?>">
-                                    <figure>
-                                        <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/email.png" alt="email" srcset="" />
-                                    </figure>
-                                </a></li>
-                                <?php } ?>
-                                
-                                    <?php if ($website_url) { ?>
-                                        <li><a href="<?php echo $website_url; ?>" target=_blank">
-                                    <figure>
-                                        <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/globe.png" alt="globe" srcset="" />
-                                    </figure>
-                                    </a></li>
-                                 <?php  } ?>
-                               
-                                 
-                            </ul>
-                        </div>
-                    </div>
-
-<?php $str = get_user_meta( $store_user->get_id() , 'main_products' );?>
-                    <?php if ( isset($str) && !empty($str) ) { ?>
-                    <div class="col-md-6 col-sm-12">
+                    <?php if($vendor_products) { ?>
+                        <h2>Our Products</h2>
+                        <ul>
+                            <?php foreach ($vendor_products as $product) { ?>
+                                <li><?php echo $product['product_name']; ?></li>
+                            <?php } ?>
+                        </ul>
+                    <?php } 
+                    // The following is Ivan's version of the products. Let's keep it, for awhile, until all data is migrated to the new fields. But we'll prioritize the new fields
+                        elseif( isset($str) && !empty($str) ) { ?>                    
                         <div class="main-prdct">
-                            <h2 class="heading">Main Products</h2>
+                            <h2>Our Products</h2>
                             <ul class="product-lists">
 
                             <?php
-
-                            $words = explode(PHP_EOL, $str[0]);
-                                // echo count($words);
-                            foreach ($words as $word) {
-
+                                $words = explode(PHP_EOL, $str[0]);
+                                foreach ($words as $word) {
                             ?>
                                 <li><a href="javascript:void(0);"><?php echo $word ; ?></a></li>
                             <?php } ?>
-                            </ul>
+                            </ul>                                                            
+                        </div>
+                    <?php } ?>
+                </div>
+                <div class="col-md-5 photos">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <figure>
+                                <?php echo wp_get_attachment_image( $image_2[0], 'full' ); ?>
+                            </figure>
+                        </div>
+                        <div class="col-sm-6">
+                            <figure>
+                                <?php echo wp_get_attachment_image( $image_3[0], 'full' ); ?>
+                            </figure>
+                        </div>
+                        <div class="col-sm-6">
+                            <figure>
+                                <?php echo wp_get_attachment_image( $image_4[0], 'full' ); ?>
+                            </figure>
                         </div>
                     </div>
-                    <?php } ?>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-
-        <?php //if ( isset( $store_info['stall_number'] ) && !empty( $store_info['stall_number'] ) ) { ?>
-          <!--  <i class="fa fa-globe"></i>
-            <a href="<?php //echo esc_html( $store_info['stall_number'] ); ?>"><?php //echo esc_html( $store_info['stall_number'] ); ?></a>    -->
-    <?php// } ?>
-
 

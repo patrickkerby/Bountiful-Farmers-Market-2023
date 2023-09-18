@@ -1,0 +1,210 @@
+/* Weekly Events */
+
+.tribe-events-page-template .heading h1 {
+  font-size: 4rem;
+  margin: 5rem auto;
+}
+
+.row.weeklyevents {
+  padding: 4rem 10%;
+  background: #FCFBF7;
+  position: relative;
+}
+
+.single-tribe_events .row.weeklyevents {
+  display: none;
+}
+
+body.single-tribe_events #primary .site-content {
+  margin-top: 0;
+}
+
+body.single-tribe_events #tribe-events-pg-template {
+  margin: unset;
+  max-width: unset;
+  padding: unset;
+}
+
+body.single-tribe_events #tribe-events-pg-template #primary.content-area {
+  margin: 0 auto !important;
+  max-width: 1048px !important;
+  padding: 2rem 20px 20px !important;
+}
+
+.tribe-events-back {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.tribe-events-back a, .tribe-events-back a:visited {
+  background: #E0665D;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "basic-sans", "Basic Sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: auto;
+  height: 38px;
+  line-height: 38px;
+  display: flex;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.weeklyevents h2 {
+  background: #E0665D;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
+  font-family: "basic-sans", "Basic Sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  width: 200px;
+  height: 38px;
+  line-height: 38px;
+  left: calc(50% - 100px);
+  top: -19px;
+}
+
+.weeklyevents h3 {
+  color: #067D73;
+}
+
+.weeklyevents p {
+  color: #5C5C5C;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+body.post-type-archive-tribe_events #primary .site-content header {
+  padding: 0;
+}
+
+.tribe-events-calendar-list__event-title a,
+.tribe-events-calendar-latest-past__event-title-link,
+.tribe-events-calendar-latest-past__event-title-link a {
+  font-size: 2rem;
+  font-family: "filson-pro", "Filson Pro";
+}
+
+.tribe-common .tribe-common-c-btn, .tribe-common a.tribe-common-c-btn {
+  background-color: #E0665D;
+}
+
+.tribe-common .tribe-common-c-btn:hover, .tribe-common a.tribe-common-c-btn:hover {
+  background-color: #EB736A;
+}
+
+.post-type-archive-tribe_events #primary .site-content {
+  margin: 0 0 80px 0;
+}
+
+.post-type-archive-tribe_events #content nav {
+  padding: 2rem 0;
+}
+
+.tribe-events-calendar-month__calendar-event-title-link {
+  line-height: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.tribe-events .tribe-events-calendar-month__calendar-event-datetime {
+  line-height: 11px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0 0.5rem 0;
+}
+
+.tribe-events .tribe-events-calendar-month__calendar-event-datetime span {
+  margin: 0 0.1rem;
+  line-height: 11px;
+}
+
+.tribe-events .tribe-events-calendar-list__event-datetime-wrapper span {
+  opacity: 1;
+  color: #D57974;
+  font-weight: 400;
+}
+
+.tribe-events-single-event-title {
+  /* font-family: "filson-pro", "Filson Pro"; */
+  font-family: "quiverleaf-cf", "Quiverleaf CF";
+  font-size: 3.125rem;
+}
+
+.tribe-events-schedule {
+  margin: 0 0 2rem 0;
+}
+
+.tribe-events-schedule h2,
+.tribe-events-schedule span {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.tribe-events-meta-group h2.tribe-events-single-section-title {
+  margin: 0;
+  font-family: "filson-pro", "Filson Pro";
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0.1px;
+  color: #008671;
+}
+
+.tribe-events-cal-links .tribe-events-gcal, .tribe-events-cal-links .tribe-events-ical {
+  background: #92BC5C;
+  color: #fff;
+  border-radius: 2.25rem;
+  height: 2.25rem;
+  line-height: 2.25rem;
+  text-align: center;
+  margin: 0 1rem 0 0;
+  padding: 0 1.5rem;
+  font-weight: 600;
+}
+
+.tribe-events-content ol,
+.tribe-events-content p,
+.tribe-events-content ul {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.75rem;
+}
+
+.tribe-events-event-meta {
+  font-family: "basic-sans", "Basic Sans";
+}
+
+.tribe-events-event-meta .tribe-events-address span {
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.tribe-events-event-meta a, .tribe-events-event-meta a:visited {
+  display: flex;
+  color: #EB736A;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.tribe-events-event-meta a:hover {
+  color: #be5049;
+}
+
+.tribe-events-c-ical,
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-calendar-list__event-venue {
+  display: none;
+}
+
+.single-tribe_events section h2 {
+  text-align: left;
+  width: 100%;
+  font-size: 2.25rem;
+}

@@ -11,21 +11,16 @@
                 $stall_cat = $store_info['categories'][0]->term_id;                                
                 $additional_stalls = get_field('additional_stall_numbers', 'user_'.$vendor->id);
 
-                if($additional_stalls) {
+                if(is_array($additional_stalls)) {
                     foreach ($additional_stalls as $stall) { ?>
                         <a href="<?php echo $store_url; ?>" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="<?php echo $store_name; ?>" data-bs-custom-class="cat_<?php echo $store_info['categories'][0]->term_id;?> stall" class="stall_num stall_<?php echo $stall['stall_number'];?> cat_<?php echo $store_info['categories'][0]->term_id;?>"><?php echo $stall['stall_number'];?></a>
                     <?php }
                 }
-                else {
-
-                
-
-                if($stall_number_custom){                
-            ?>                                
-                <a href="<?php echo $store_url; ?>" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="<?php echo $store_name; ?>" data-bs-custom-class="cat_<?php echo $store_info['categories'][0]->term_id;?> stall" class="stall_num stall_<?php echo $stall_number_custom[0];?> cat_<?php echo $store_info['categories'][0]->term_id;?>"><?php echo $stall_number_custom[0];?></a>
-
-            <?php } } }
-            endif ?>
+                elseif($stall_number_custom) { ?>                    
+                    <a href="<?php echo $store_url; ?>" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="<?php echo $store_name; ?>" data-bs-custom-class="cat_<?php echo $store_info['categories'][0]->term_id;?> stall" class="stall_num stall_<?php echo $stall_number_custom[0];?> cat_<?php echo $store_info['categories'][0]->term_id;?>"><?php echo $stall_number_custom[0];?></a>
+                <?php } 
+            } 
+        endif ?>
             
             <!-- <a href="" class="stall_num stall_L6 cat_56">L6</a>
             <a href="" class="stall_num stall_L8 cat_56">L8</a>

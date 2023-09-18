@@ -2501,12 +2501,12 @@ span.error {
   }
 }
 @media (max-width: 768px) {
-  #dokan-primary {
+  /* #dokan-primary {
     width: 100%;
     float: left;
     padding-left: 15px;
     padding-right: 15px;
-  }
+  } */
   #dokan-secondary {
     width: 100%;
     float: left;

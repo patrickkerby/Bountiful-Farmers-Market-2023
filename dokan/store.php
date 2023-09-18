@@ -25,14 +25,14 @@ get_header( 'shop' );
 ?>
     <?php //do_action( 'woocommerce_before_main_content' ); ?>
 
-    <div class="dokan-store-wrap layout-<?php echo esc_attr( $layout ); ?>">
+    <div class=" layout-<?php echo esc_attr( $layout ); ?>">
 
         <?php if ( 'left' === $layout ) { ?>
             <?php //dokan_get_template_part( 'store', 'sidebar', array( 'store_user' => $store_user, 'store_info' => $store_info, 'map_location' => $map_location ) ); ?>
         <?php } ?>
 
-        <div id="dokan-primary" class="dokan-single-store">
-            <div id="dokan-content" class="store-page-wrap woocommerce" role="main">
+        <div id="dokan-primary">
+            <div id="dokan-content" class="woocommerce" role="main">
 
                 <?php dokan_get_template_part( 'store-header' ); ?>
 
