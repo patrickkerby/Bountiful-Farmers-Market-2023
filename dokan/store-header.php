@@ -90,15 +90,15 @@ $vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
                     } 
                 ?></li>
         <!-- @if ( $vendor_social->twitter ) -->
-          <li class="twitter"><a href="//twitter.com/{{ $vendor_social->twitter }}" target="_blank"><img src="/app/themes/dokan/images/twitter.svg" /></a></li>
+          <li class="twitter"><a href="//twitter.com/{{ $vendor_social->twitter }}" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/twitter.svg" /></a></li>
         <!-- @endif -->
         <!-- @if ( $vendor_social->facebook ) -->
-          <li><a href="//fb.com/{{ $vendor_social->facebook }}" target="_blank"><img src="/app/themes/dokan/images/facebook.svg" /></a></li>
+          <li><a href="//fb.com/{{ $vendor_social->facebook }}" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/facebook.svg" /></a></li>
         <!-- @endif -->
         <!-- @if ( $vendor_social->instagram ) -->
-          <li><a href="//instagram.com/{{ $vendor_social->instagram }}" target="_blank"><img src="/app/themes/dokan/images/instagram.svg" /></a></li>
+          <li><a href="//instagram.com/{{ $vendor_social->instagram }}" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/instagram.svg" /></a></li>
         <!-- @endif -->
-          <li><a href="mailto:<?php echo esc_attr( antispambot( $store_user->get_email() ) ); ?> subject=Mail from Bountiful Farmers' Market Website" target="_blank"><img src="/app/themes/dokan/images/email.svg" /></a></li>        
+          <li><a href="mailto:<?php echo esc_attr( antispambot( $store_user->get_email() ) ); ?> subject=Mail from Bountiful Farmers' Market Website" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/email.svg" /></a></li>        
           <li class="website"><span><a href="<?php echo $website_url ?>" target="_blank"><?php echo $website_display ?></a></span></li>
       </ul>
     </div>
