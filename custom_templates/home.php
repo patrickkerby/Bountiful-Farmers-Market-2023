@@ -204,7 +204,9 @@ $newsflash_set = get_field('newsflash!');
 	<section class="stay-connected">
 				<h2 class=""><?php echo $section4['heading']; ?></h2>
 		<div class="gallery">
-			<div class="item">				
+
+		<?php echo do_shortcode( '[instagram feed="1642"]'); ?>
+		<!-- <div class="item">				
 					<img src="<?php echo $section4['slider_image_1']; ?>" alt="connected-img1" />
 			</div>
 			<div class="item">
@@ -221,7 +223,7 @@ $newsflash_set = get_field('newsflash!');
 			</div>
 			<div class="item">
 					<img src="<?php echo $section4['slider_image_5']; ?>" alt="connected-img5" />
-			</div>
+			</div> -->
 		</div>
 		
 	</section>
