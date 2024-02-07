@@ -48,16 +48,16 @@
                 <div class="col-sm-5 col-md-4 order-sm-2 order-md-3">
                     <ul class="ftr-links">
                         <li>
-                            <a href="https://bountiful2022.test/contact-us/">Contact Us</a>
+                            <a class="contact" data-bs-toggle="offcanvas" href="#contactModal" role="button" aria-controls="contactModal">Contact Us</a>
                         </li>
                         <li>
-                            <a href="https://bountiful2022.test/vendors/">Vendors</a>
+                            <a href="/vendors/">Vendors</a>
                         </li>
                         <li>
-                            <a href="https://bountiful2022.test/faq/">FAQ</a>
+                            <a href="/faq/">FAQ</a>
                         </li>
                         <li>
-                            <a href="https://bountiful2022.test/contests-and-events/">Contests &amp; Events</a>
+                            <a href="/contests-and-events/">Contests &amp; Events</a>
                         </li>
                     </ul>
                 </div>
