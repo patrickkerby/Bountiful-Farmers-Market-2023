@@ -56,23 +56,21 @@ $image_4 = get_user_meta( $store_user->get_id() , 'image_4' );
 $user_data =  get_userdata( $store_user->get_id() );
 $website_display = "";
 
+
+
 $website_url = $user_data->user_url;
-    // The following is all stuff to make the urls look pretty in the profile
-    // in case scheme relative URI is passed, e.g., //www.google.com/
-    
-    if($website_url) {
-        $input = trim($website_url, '/');
-
-        // If scheme not included, prepend it
-        if (!preg_match('#^http(s)?://#', $input)) {
-            $input = 'http://' . $input;
-        }
-
-        $urlParts = parse_url($input);
-
-        // remove www
-        $website_display = preg_replace('/^www\./', '', $urlParts['host']);
+// The following is all stuff to make the urls look pretty in the profile
+// in case scheme relative URI is passed, e.g., //www.google.com/    
+if($website_url) {
+    $input = trim($website_url, '/');
+    // If scheme not included, prepend it
+    if (!preg_match('#^http(s)?://#', $input)) {
+        $input = 'http://' . $input;
     }
+    $urlParts = parse_url($input);
+    // remove www
+    $website_display = preg_replace('/^www\./', '', $urlParts['host']);
+}
 
 $vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
 
@@ -89,15 +87,15 @@ $vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
                     echo $stall_number_custom[0];
                     } 
                 ?></li>
-        <!-- @if ( $vendor_social->twitter ) -->
-          <li class="twitter"><a href="//twitter.com/{{ $vendor_social->twitter }}" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/twitter.svg" /></a></li>
-        <!-- @endif -->
-        <!-- @if ( $vendor_social->facebook ) -->
-          <li><a href="//fb.com/{{ $vendor_social->facebook }}" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/facebook.svg" /></a></li>
-        <!-- @endif -->
-        <!-- @if ( $vendor_social->instagram ) -->
-          <li><a href="//instagram.com/{{ $vendor_social->instagram }}" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/instagram.svg" /></a></li>
-        <!-- @endif -->
+        <?php if ( $social_info['twitter'] ) { ?>
+          <li class="twitter"><a href="//twitter.com/<?php echo esc_html($social_info['twitter']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/twitter.svg" /></a></li>
+        <?php } ?>
+        <?php if ( $social_info['fb'] ) { ?>
+          <li><a href="//fb.com/<?php echo esc_html($social_info['fb']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/facebook.svg" /></a></li>
+          <?php } ?>
+        <?php if ( $social_info['instagram'] ) { ?>
+          <li><a href="//instagram.com/<?php echo esc_html($social_info['instagram']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/instagram.svg" /></a></li>
+          <?php } ?>
           <li><a href="mailto:<?php echo esc_attr( antispambot( $store_user->get_email() ) ); ?> subject=Mail from Bountiful Farmers' Market Website" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/email.svg" /></a></li>        
           <li class="website"><span><a href="<?php echo $website_url ?>" target="_blank"><?php echo $website_display ?></a></span></li>
       </ul>
