@@ -130,7 +130,7 @@
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);" onclick="myFunction1('Preserves,Vinegars/Oils,Sauces,Spices,')" data-url="Preserves,Vinegars,Sauces,Spices,Oil">
+                <a href="javascript:void(0);" onclick="myFunction1('Preserves,Vinegars, Oils, Sauces, Spices')" data-url="Preserves,Vinegars, Oils, Sauces, Spices">
                     <figure>
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png" alt="2" />
                     </figure>
