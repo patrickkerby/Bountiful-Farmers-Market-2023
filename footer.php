@@ -118,90 +118,85 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
             tr[m].style.display = "";
         }
 
-            switching = true;
+        switching = true;
+
         /*Make a loop that will continue until
         no switching has been done:*/
-            while (switching) {
-                //start by saying: no switching is done:
-                switching = false;
-                rows = table1.rows;
-                /*Loop through all table rows (except the
-                first, which contains table headers):*/
-                for (i1 = 1; i1 < (rows.length - 1); i1++) {
-                //start by saying there should be no switching:
-                shouldSwitch = false;
-                /*Get the two elements you want to compare,
-                one from current row and one from the next:*/
-                x = rows[i1].getElementsByTagName("TD")[1];
-                y = rows[i1 + 1].getElementsByTagName("TD")[1];
-                //check if the two rows should switch place:
-                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                    //if so, mark as a switch and break the loop:
-                    shouldSwitch = true;
-                    break;
-                }
-                }
-                if (shouldSwitch) {
-                /*If a switch has been marked, make the switch
-                and mark that a switch has been done:*/
-                rows[i1].parentNode.insertBefore(rows[i1 + 1], rows[i1]);
-                switching = true;
-                }
+        while (switching) {
+            //start by saying: no switching is done:
+            switching = false;
+            rows = table1.rows;
+            /*Loop through all table rows (except the
+            first, which contains table headers):*/
+            for (i1 = 1; i1 < (rows.length - 1); i1++) {
+            //start by saying there should be no switching:
+            shouldSwitch = false;
+            /*Get the two elements you want to compare,
+            one from current row and one from the next:*/
+            x = rows[i1].getElementsByTagName("TD")[1];
+            y = rows[i1 + 1].getElementsByTagName("TD")[1];
+            //check if the two rows should switch place:
+            if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                //if so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                break;
             }
-
+            }
+            if (shouldSwitch) {
+            /*If a switch has been marked, make the switch
+            and mark that a switch has been done:*/
+            rows[i1].parentNode.insertBefore(rows[i1 + 1], rows[i1]);
+            switching = true;
+            }
+        }
         }
     }
-
 
     //This one filters from the category listing below the map
     function myFunction1(data) {
 
-    // alert(data);
-    const areThereAnyCommas = data.includes(',');
-    // alert(areThereAnyCommas);
+        // alert(data);
+        const areThereAnyCommas = data.includes(',');
         var input, filter, table, tr, td, i;
         if (areThereAnyCommas == true) {
-            // alert("yes");
-        var newVar =  data.split(',');
-            newVar.map((item)=>{
+            var newVar =  data.split(',');
+            var rowsToDisplay = [];
+            newVar.forEach((item) => {
                 filter = item;
+                table = document.getElementById("myTable");
+                tr = table.getElementsByTagName("tr");
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[2];
+                    if (td) {
+                        if (td.innerHTML.indexOf(filter) > -1) {
+                            rowsToDisplay.push(tr[i]);
+                        }                         
+                    }
+                }
+            })
+            for (i = 0; i < tr.length; i++) {
+                if (rowsToDisplay.includes(tr[i])) {
+                    tr[i].style.display = "table-row";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+        else {
+            filter = data.toUpperCase();
             table = document.getElementById("myTable");
             tr = table.getElementsByTagName("tr");
             for (i = 0; i < tr.length; i++) {
                 td = tr[i].getElementsByTagName("td")[2];
                 if (td) {
-                if (td.innerHTML.indexOf(filter) > -1) {
-                    
-                } 
-                else {
-                    if(newVar.indexOf(td.innerHTML) !== -1){  
-                        tr[i].style.display = "";
-                    }   
-                    else{
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
                     tr[i].style.display = "none";
-                    }
                 }
-                }       
+                }
             }
-            })
         }
-        else{
-
-        filter = data.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[3];
-            if (td) {
-            if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
-            } else {
-                tr[i].style.display = "none";
-            }
-            }       
-        }
-        }
-
     }
     </script>
 

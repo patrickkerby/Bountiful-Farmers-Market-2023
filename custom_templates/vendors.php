@@ -14,7 +14,7 @@ if (is_null($title)) {
 
  ?>
 
-<div class="container-fluid heading">        
+<div class="container-fluid heading">
     <div class="row justify-content-center" style="background-image: linear-gradient(174deg, rgba(27,48,46,0.12) 0%, rgba(43,77,74,0.12) 100%), url('<?php echo $heading_image['url'] ?>'); background-size: cover;">
         <h1><?php echo $title; ?></h1>
         
@@ -23,7 +23,7 @@ if (is_null($title)) {
                 <h2><?php echo $subtitle; ?></h2>
             </div>
             <?php } ?>
-        </div>                
+        </div>
     </div>
     
 <section class="vendor-page">
@@ -31,7 +31,6 @@ if (is_null($title)) {
         <div class="row justify-content-center">
             <div class="col-sm-11">
                 <!-- <?php echo do_shortcode('[Map1]');  ?> -->
-                
             </div> 
         </div>
     </div>

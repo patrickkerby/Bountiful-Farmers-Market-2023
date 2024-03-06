@@ -122,80 +122,80 @@
         <h3>We've got it all!</h3>
         <ul class="vendorImg-lists">
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Artisan Crafts,Jewellery,Bath/Beauty,Home')" data-url = "Artisan Crafts,Jewellery,Beauty/Bath,Home">
+                <a href="javascript:void(0);" onclick="myFunction1('Artisan Crafts, Jewellery, Home, Bath/Beauty')" data-url="Artisan Crafts, Jewellery, Home, Bath/Beauty">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/1.png" alt="1" />
                     </figure>
-                    <figcaption>Artisan Crafts, Jewellery, Beauty, Bath, Home</figcaption>
+                    <figcaption>Artisan Crafts, Jewellery, Bath/Beauty, Home</figcaption>
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Preserves,Vinegars/Oils,Sauces,Spices,')" data-url = "Preserves,Vinegars,Sauces,Spices,Oil">
+                <a href="javascript:void(0);" onclick="myFunction1('Preserves,Vinegars/Oils,Sauces,Spices,')" data-url="Preserves,Vinegars,Sauces,Spices,Oil">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/2.png" alt="2" />
                     </figure>
                     <figcaption>Preserves, Vinegars, Sauces, Spices, Oil</figcaption>
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Beverages,Wine,Beer,Alcohol')" data-url = "Beverages,Wine,Beer,Alcohol">
+                <a href="javascript:void(0);" onclick="myFunction1('Beverages,Wine,Beer,Alcohol')" data-url="Beverages,Wine,Beer,Alcohol">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/3.png" alt="3" />
                     </figure>
                     <figcaption>Beverages, Wine, Beer, Alcohol</figcaption>
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Sweet Treats,Candy,Nuts,Honey')" data-url = "Sweet Treats,Candy,Nuts,Honey">
+                <a href="javascript:void(0);" onclick="myFunction1('Sweet Treats,Candy,Nuts,Honey')" data-url="Sweet Treats,Candy,Nuts,Honey">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/4.png" alt="4" />
                     </figure>
                     <figcaption>Sweet Treats, Candy, Nuts, Honey</figcaption>
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1(`Clothing,Kids',Pets',Other`)"  data-url = "Clothing,Kids',Pets',Other">
+                <a href="javascript:void(0);" onclick="myFunction1(`Clothing,Kids',Pets',Other`)" data-url="Clothing,Kids',Pets',Other">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/5.png" alt="5" />
                     </figure>
                     <figcaption>Clothing, Kids', Pets', Other</figcaption>
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Ethnic Food Hall Kitchens')" data-url = "Ethnic Food Hall Kitchens">
+                <a href="javascript:void(0);" onclick="myFunction1('Ethnic Food Hall Kitchens')" data-url="Ethnic Food Hall Kitchens">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/6.png" alt="6" />
                     </figure>
                     <figcaption>Ethnic Food Hall Kitchens</figcaption>
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Vegetables,Mushrooms,Fruits,Herbs')" data-url = "Vegetables,Mushrooms,Fruits,Herbs">
+                <a href="javascript:void(0);" onclick="myFunction1('Vegetables,Mushrooms,Fruits,Herbs')" data-url="Vegetables,Mushrooms,Fruits,Herbs">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/themes/dokan/images/7.png" alt="7" />
                     </figure>
                     <figcaption>Vegetables, Mushrooms, Fruits, Herbs</figcaption>
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Cheese/Dairy,Fish/Seafood,Meat,Eggs')" data-url = "Cheese/Dairy,Fish/Seafood,Meat,Eggs">
+                <a href="javascript:void(0);" onclick="myFunction1('Cheese,Seafood')" data-url="Cheese/Dairy,Fish/Seafood,Meat,Eggs">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/uploads/2022/06/8.png" alt="8" />
                     </figure>
-                    <figcaption>Cheese/Diary, Fish/Seafood, Meat, Eggs</figcaption>
+                    <figcaption>Cheese/Dairy, Fish/Seafood, Meat, Eggs</figcaption>
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Prepared Food')" data-url = "Prepared Food">
+                <a href="javascript:void(0);" onclick="myFunction1('Prepared Food')" data-url="Prepared Food">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/uploads/2022/06/9.png" alt="9" />
                     </figure>
                     <figcaption>Prepared Foods</figcaption>
                 </a>
             </li>
             <li>
-                <a href="javascript:void(0);">
-                    <figure onclick = "myFunction1('Baked Goods')" data-url = "Baked Goods">
+                <a href="javascript:void(0);" onclick="myFunction1('Baked Goods')" data-url="Baked Goods">
+                    <figure>
                         <img src="https://bountiful.valontech.com/wp-content/uploads/2022/06/10.png" alt="10" />
                     </figure>
                     <figcaption>Baked Goods</figcaption>

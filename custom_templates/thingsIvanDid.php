@@ -248,7 +248,7 @@ function myFunction1(data) {
                 td = tr[i].getElementsByTagName("td")[3];
                 if (td) {
                   if (td.innerHTML.indexOf(filter) > -1) {
-                    
+                    tr[i].style.display = "";
                   } 
                   else {
                     if(newVar.indexOf(td.innerHTML) !== -1){  
