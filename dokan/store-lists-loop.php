@@ -230,10 +230,16 @@
                     </thead>
                     <tbody>
                         <?php
+                        usort($sellers['users'], function($a, $b) {
+                            $vendorA = dokan()->vendor->get($a->ID);
+                            $vendorB = dokan()->vendor->get($b->ID);
+                            return strcmp($vendorA->get_shop_name(), $vendorB->get_shop_name());
+                        });
+
                         foreach ( $sellers['users'] as $seller ) {
                             $vendor            = dokan()->vendor->get( $seller->ID );
                             $store_banner_id   = $vendor->get_banner_id();
-                            $store_name         = $vendor->get_shop_name();
+                            $store_name        = $vendor->get_shop_name();
                             $store_url         = $vendor->get_shop_url();
                             $store_rating      = $vendor->get_rating();
                             $is_store_featured = $vendor->is_featured();
