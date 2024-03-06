@@ -88,13 +88,13 @@ $vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
                     } 
                 ?></li>
         <?php if ( $social_info['twitter'] ) { ?>
-          <li class="twitter"><a href="//twitter.com/<?php echo esc_html($social_info['twitter']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/twitter.svg" /></a></li>
+          <li class="twitter"><a href="<?php echo esc_html($social_info['twitter']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/twitter.svg" /></a></li>
         <?php } ?>
         <?php if ( $social_info['fb'] ) { ?>
-          <li><a href="//fb.com/<?php echo esc_html($social_info['fb']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/facebook.svg" /></a></li>
+          <li><a href="<?php echo esc_html($social_info['fb']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/facebook.svg" /></a></li>
           <?php } ?>
         <?php if ( $social_info['instagram'] ) { ?>
-          <li><a href="//instagram.com/<?php echo esc_html($social_info['instagram']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/instagram.svg" /></a></li>
+          <li><a href="<?php echo esc_html($social_info['instagram']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/instagram.svg" /></a></li>
           <?php } ?>
           <li><a href="mailto:<?php echo esc_attr( antispambot( $store_user->get_email() ) ); ?> subject=Mail from Bountiful Farmers' Market Website" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/email.svg" /></a></li>        
           <li class="website"><span><a href="<?php echo $website_url ?>" target="_blank"><?php echo $website_display ?></a></span></li>
