@@ -1,3 +1,7 @@
+<?php
+    $map = get_field('vendor_map');
+?>
+
 <div id="floormap">
     <div class="stalls">
         <?php if ( $sellers['users'] ) : 
@@ -74,7 +78,7 @@
             <a href="" class="stall_num stall_A21 cat_56">A21</a> -->
 
 
-        <img width="1224px" height="935px" src="/app/uploads/2022/07/Website-Bountiful-Map-Vector-7.1.22-03-2.png" />
+        <img width="1224px" height="935px" src="<?php echo $map['url']; ?>" />
     </div>
 </div>
 

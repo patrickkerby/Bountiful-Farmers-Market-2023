@@ -83,10 +83,10 @@ $vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
       <h2><span>Vendor Profile:</span> <?php echo esc_html( $store_user->get_shop_name() ); ?> <?php apply_filters( 'dokan_store_header_after_store_name', $store_user ); ?></h2>
       <ul>
         <li class="stall"><span>Stall</span><br /> <?php if ( isset($stall_number_custom) && !empty( $stall_number_custom) ) {    
-                    // echo esc_html( $store_info['stall_number'] ); 
-                    echo $stall_number_custom[0];
-                    } 
-                ?></li>
+            // echo esc_html( $store_info['stall_number'] ); 
+            echo $stall_number_custom[0];
+            } 
+        ?></li>
         <?php if ( $social_info['twitter'] ) { ?>
           <li class="twitter"><a href="<?php echo esc_html($social_info['twitter']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/twitter.svg" /></a></li>
         <?php } ?>
