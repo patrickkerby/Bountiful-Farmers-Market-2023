@@ -124,20 +124,38 @@ $newsflash_set = get_field('newsflash!');
 	</section>
 	<!-- free-parking section starts here-->
 		<div class="wrapper d-f">
-			<a href="<?php echo $section2['image_1_link']; ?>" class="headrt-div">
+			<a href="<?php echo $section2['image_1_link']; ?>"
+				<?php 
+					if($section2['is_link_for_modal_1']) {
+						echo 'data-bs-toggle="offcanvas" ';
+					}
+				?>
+				class="headrt-div">
 				<figure>
 					<img src="<?php echo $section2['image_1']; ?>" alt="diet-1" />
 				</figure>
 				<h4><?php echo $section2['image_1_text']; ?></h4>
 			</a>
 		
-			<a href="<?php echo $section2['image_2_link']; ?>" class="headrt-div">
+			<a href="<?php echo $section2['image_2_link']; ?>"
+				<?php 
+					if($section2['is_link_for_modal_2']) {
+						echo 'data-bs-toggle="offcanvas" ';
+					}
+				?>
+			class="headrt-div">
 				<figure>
 					<img src="<?php echo $section2['image_2']; ?>" alt="diet-2" />
 				</figure>
 				<h4><?php echo $section2['image_2_text']; ?></h4>
 			</a>
-			<a href="<?php echo $section2['image_3_link']; ?>" class="headrt-div">
+			<a href="<?php echo $section2['image_3_link']; ?>" 
+				<?php 
+					if($section2['is_link_for_modal_3']) {
+						echo 'data-bs-toggle="offcanvas" ';
+					}
+				?> 
+			class="headrt-div">
 				<figure>
 					<img src="<?php echo $section2['image_3']; ?>" alt="diet-3" />
 				</figure>
@@ -202,30 +220,10 @@ $newsflash_set = get_field('newsflash!');
 
 	<!--stay-connected-->
 	<section class="stay-connected">
-				<h2 class=""><?php echo $section4['heading']; ?></h2>
+				<h2 class="">STAY CONNECTED</h2>
 		<div class="gallery">
-
-		<?php echo do_shortcode( '[instagram feed="1642"]'); ?>
-		<!-- <div class="item">				
-					<img src="<?php echo $section4['slider_image_1']; ?>" alt="connected-img1" />
-			</div>
-			<div class="item">
-					<img src="<?php echo $section4['slider_image_2']; ?>" alt="connected-img2" />
-			</div>
-			<div class="item">
-					<img src="<?php echo $section4['slider_image_3']; ?>" alt="connected-img3" />
-			</div>
-			<div class="item">
-					<img src="<?php echo $section4['slider_image_4']; ?>" alt="connected-img4" />
-			</div>
-			<div class="item">
-					<img src="<?php echo $section4['slider_image_5']; ?>" alt="connected-img5" />
-			</div>
-			<div class="item">
-					<img src="<?php echo $section4['slider_image_5']; ?>" alt="connected-img5" />
-			</div> -->
+			<?php echo do_shortcode( '[instagram feed="1642"]'); ?>
 		</div>
-		
 	</section>
 	<!-- stay-connected Ends here  -->
 
@@ -246,8 +244,6 @@ $newsflash_set = get_field('newsflash!');
 						</div>
 					</div>	
 
-			
-					
 					<?php 
 						$index++;
 					} ?>

@@ -36,3 +36,47 @@ sketch                        : 0hrs 26mins
 test.bountiful                : 1hrs 15mins
 
 total                         : 10hrs 9mins
+
+
+
+Bountiful Farmers' Market
+  2023 July to December
+  -----------------------
+  visualcode: 4.4 hrs
+  bountiful2022.test: 16.5 hrs
+  test.bountifulmarkets.com: 2.67 hrs
+  bountifulmarkets.com: 1 hr
+  bountiful.valontech.com: .75 hr
+  warp: 0.1 hr
+  tableplus: 0.3 hr
+  transmit: 0.95 hr
+  26.5 hours
+
+
+  visualcode: 3.25h
+  bountiful2022.test: 2.75h
+  bountifulmarkets.test: 1.4h
+  test.bountifulmarkets.com: 1.1 h
+  bountifulmarkets.com: 3h
+  warp: .3h
+  tableplus: .2h
+  transmit: .1h
+  12 hours
+
+extra tools:
+bonton: 45%
+riverbend: 30%
+pbc: 10%
+bountiful: 10%
+other: 5%
+
+
+
+ Tasks - 38.5 hours
+ ------
+ 2.5 - Woocommerce setup
+ 2.5 - Bookings Plugin configuration
+ 6 - Style Product Pages
+ 12 - Vendor Profile Pages
+ 8 - Rebuild vendor page category filtering
+ 7 - Misc. final updates (sticky header, faqs, various bugs)
