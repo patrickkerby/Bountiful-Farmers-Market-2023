@@ -100,7 +100,7 @@
             <div class="container justify-content-center ">
                 
                 <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
