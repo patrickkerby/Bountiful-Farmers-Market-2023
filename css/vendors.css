@@ -211,6 +211,7 @@ td figure img {
 }
 
 .cat_51, .cat_51 .tooltip-inner { background-color: #333333 !important;}
+.cat_53, .cat_53 .tooltip-inner { background-color: #54844e !important;}
 .cat_54, .cat_54 .tooltip-inner { background-color: #b39e52 !important;}
 .cat_56, .cat_56 .tooltip-inner { background-color: #7c5182 !important;}
 .cat_57, .cat_57 .tooltip-inner { background-color: #d76d4f !important;}
@@ -240,6 +241,7 @@ td figure img {
 .cat_97, .cat_97 .tooltip-inner { background-color: #d61615 !important;}
 
 .cat_51 .tooltip-arrow::before { border-top-color: #333333 !important;}
+.cat_53 .tooltip-arrow::before { border-top-color: #54844e !important;}
 .cat_54 .tooltip-arrow::before { border-top-color: #b39e52 !important;}
 .cat_56 .tooltip-arrow::before { border-top-color: #7c5182 !important;}
 .cat_57 .tooltip-arrow::before { border-top-color: #d76d4f !important;}

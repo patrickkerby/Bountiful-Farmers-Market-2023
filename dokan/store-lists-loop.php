@@ -102,6 +102,7 @@
                 "Candy"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png",
                 "Home"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png",
                 "Fruits"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Produce"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
                 "Vegetables"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
                 "Preserves"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png",
                 "Mushrooms"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
