@@ -87,36 +87,36 @@
 
         <?php 
             $categories_images = array(
-                "Artisan Crafts"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/1.png",
+                "Artisan Crafts"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/1.png",
                 "Prepared Food"=>"https://test.bountifulmarkets.com/wp/wp-content/uploads/2022/06/9.png",
-                "Bath/Beauty"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/1.png",
-                "Ethnic Food Hall Kitchens"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/6.png",
-                "Spices"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/2.png",
+                "Bath/Beauty"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/1.png",
+                "Ethnic Food Hall Kitchens"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/6.png",
+                "Spices"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/2.png",
                 "Meat"=>"https://test.bountifulmarkets.com/wp/wp-content/uploads/2022/06/8.png",
-                "Beer"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/3.png",
-                "Beverages"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/3.png",
-                "Pets'"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/5.png",
+                "Beer"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/3.png",
+                "Beverages"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/3.png",
+                "Pets'"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/5.png",
                 "Baked Goods"=>"https://test.bountifulmarkets.com/wp/wp-content/uploads/2022/06/10.png",
                 "Cheese/Dairy"=>"https://test.bountifulmarkets.com/wp/wp-content/uploads/2022/06/8.png",
-                "Sweet Treats"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/4.png",
-                "Candy"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/4.png",
-                "Home"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/1.png",
-                "Fruits"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/7.png",
-                "Vegetables"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/7.png",
-                "Preserves"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/2.png",
-                "Mushrooms"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/7.png",
-                "Vinegars/Oils"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/2.png",
-                "Jewellery"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/1.png",
-                "Sauces"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/2.png",
-                "Clothing"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/5.png",
-                "Herbs"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/7.png",
-                "Honey"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/4.png",
-                "Nuts"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/4.png",
-                "Kids'"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/5.png",
-                "Wine"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/3.png",
-                "Alcohol"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/3.png",
+                "Sweet Treats"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/4.png",
+                "Candy"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/4.png",
+                "Home"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/1.png",
+                "Fruits"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Vegetables"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Preserves"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/2.png",
+                "Mushrooms"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Vinegars/Oils"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/2.png",
+                "Jewellery"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/1.png",
+                "Sauces"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/2.png",
+                "Clothing"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/5.png",
+                "Herbs"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Honey"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/4.png",
+                "Nuts"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/4.png",
+                "Kids'"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/5.png",
+                "Wine"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/3.png",
+                "Alcohol"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/3.png",
                 "Fish/Seafood"=>"https://test.bountifulmarkets.com/wp/wp-content/uploads/2022/06/8.png",
-                "Other"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/5.png",
+                "Other"=>"https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/5.png",
                 "Uncategorized"=>"https://test.bountifulmarkets.com/wp/wp-content/uploads/2022/06/images-modified.png"
             );
             ?>
@@ -128,7 +128,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Artisan Crafts, Jewellery, Home, Bath/Beauty')" data-url="Artisan Crafts, Jewellery, Home, Bath/Beauty">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/1.png" alt="1" />
+                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/1.png" alt="1" />
                     </figure>
                     <figcaption>Artisan Crafts, Jewellery, Bath/Beauty, Home</figcaption>
                 </a>
@@ -136,7 +136,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Preserves,Vinegars, Oils, Sauces, Spices')" data-url="Preserves,Vinegars, Oils, Sauces, Spices">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/2.png" alt="2" />
+                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/2.png" alt="2" />
                     </figure>
                     <figcaption>Preserves, Vinegars, Sauces, Spices, Oil</figcaption>
                 </a>
@@ -144,7 +144,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Beverages,Wine,Beer,Alcohol')" data-url="Beverages,Wine,Beer,Alcohol">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/3.png" alt="3" />
+                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/3.png" alt="3" />
                     </figure>
                     <figcaption>Beverages, Wine, Beer, Alcohol</figcaption>
                 </a>
@@ -152,7 +152,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Sweet Treats,Candy,Nuts,Honey')" data-url="Sweet Treats,Candy,Nuts,Honey">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/4.png" alt="4" />
+                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/4.png" alt="4" />
                     </figure>
                     <figcaption>Sweet Treats, Candy, Nuts, Honey</figcaption>
                 </a>
@@ -160,7 +160,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1(`Clothing,Kids',Pets',Other`)" data-url="Clothing,Kids',Pets',Other">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/5.png" alt="5" />
+                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/5.png" alt="5" />
                     </figure>
                     <figcaption>Clothing, Kids', Pets', Other</figcaption>
                 </a>
@@ -168,7 +168,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Ethnic Food Hall Kitchens')" data-url="Ethnic Food Hall Kitchens">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/6.png" alt="6" />
+                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/6.png" alt="6" />
                     </figure>
                     <figcaption>Ethnic Food Hall Kitchens</figcaption>
                 </a>
@@ -176,7 +176,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Vegetables,Mushrooms,Fruits,Herbs,Produce')" data-url="Vegetables,Mushrooms,Fruits,Herbs,Produce">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/dokan/images/7.png" alt="7" />
+                        <img src="https://test.bountifulmarkets.com/wp/wp-content/themes/Bountiful-Farmers-Market-2023/images/7.png" alt="7" />
                     </figure>
                     <figcaption>Vegetables, Mushrooms, Fruits, Herbs</figcaption>
                 </a>
