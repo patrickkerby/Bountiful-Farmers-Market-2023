@@ -39,13 +39,13 @@ get_header();
                     <hr />
                 </div>
                 <div class="accordion col-sm-8" id="faq">
-                    <div class="card">
+                    <div class="card accordion-item">
                         <div class="card-header" id="faqhead1">
-                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq1"
+                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-bs-toggle="collapse" data-bs-target="#faq1"
                             aria-expanded="true" aria-controls="faq1">1. Where are you located? What are your hours?</a>
                         </div>
 
-                        <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-parent="#faq">
+                        <div id="faq1" class="collapse" aria-labelledby="faqhead1" data-bs-parent="#faq">
                             <div class="card-body">
                                 <ul>
                                     <li>We are located on the Southside of Edmonton at  <a href="https://www.google.com/maps/place/Bountiful+Farmers'+Market/@53.472053,-113.4827447,17z/data=!3m2!4b1!5s0x53a01f2c8568966f:0xd0c3d57e38078fd2!4m5!3m4!1s0x53a01fd071969a35:0xca2cdfd481c389bd!8m2!3d53.4720498!4d-113.4805507">3696 97 Street NW</a>. We are conveniently located in the middle of numerous major roadways including 91st Street, 34th Avenue, Gateway Blvd, and Whitemud. Quick, easy access from any direction!</li>
@@ -57,11 +57,11 @@ get_header();
 
                     <div class="card">
                         <div class="card-header" id="faqhead2">
-                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-bs-toggle="collapse" data-bs-target="#faq2"
                             aria-expanded="true" aria-controls="faq2">2. Do you have a vendor that sells _____?</a>
                         </div>
 
-                        <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                        <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-bs-parent="#faq">
                             <div class="card-body">
                                 <ul>
                                     <li>Our vendors’ stock can vary week-to-week! If you’re looking for a specific item, we encourage you to check out our  <a href="<?php echo site_url(); ?>/vendors">vendor list</a> to get an idea of who sells what and each vendor’s most popular items. You can also use our search function on the top of webpage. </li>
@@ -73,11 +73,11 @@ get_header();
 
                     <div class="card">
                         <div class="card-header" id="faqhead3">
-                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
+                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-bs-toggle="collapse" data-bs-target="#faq3"
                             aria-expanded="true" aria-controls="faq3">3. Is Bountiful wheelchair accessible?</a>
                         </div>
 
-                        <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                        <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-bs-parent="#faq">
                             <div class="card-body">
                                 <ul>
                                     <li>Yes, we have ramp access on our west and south doors. We encourage wheelchair users to use our South doors as that side of the lot is paved. The aisles in our market are plenty wide enough to accommodate wheelchairs.</li>
@@ -88,11 +88,11 @@ get_header();
 
                     <div class="card">
                         <div class="card-header" id="faqhead4">
-                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
+                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-bs-toggle="collapse" data-bs-target="#faq4"
                             aria-expanded="true" aria-controls="faq4">4. Are pets allowed into the market?</a>
                         </div>
 
-                        <div id="faq4" class="collapse" aria-labelledby="faqhead4" data-parent="#faq">
+                        <div id="faq4" class="collapse" aria-labelledby="faqhead4" data-bs-parent="#faq">
                             <div class="card-body">
                                 <ul>
                                     <li>Only registered service dogs are allowed into the market. We ask that if you are bringing your service dog, please have identification with you that indicates the animal is registered. Contact us if you have any other questions. </li>
@@ -103,11 +103,11 @@ get_header();
 
                     <div class="card">
                         <div class="card-header" id="faqhead5">
-                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq5"
+                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-bs-toggle="collapse" data-bs-target="#faq5"
                             aria-expanded="true" aria-controls="faq4">5. Are you accepting new vendors? How much does it cost?</a>
                         </div>
 
-                        <div id="faq5" class="collapse" aria-labelledby="faqhead5" data-parent="#faq">
+                        <div id="faq5" class="collapse" aria-labelledby="faqhead5" data-bs-parent="#faq">
                             <div class="card-body">
                                 <ul>
                                     <li>Yes, we are always accepting new vendor applications! The first step in joining is to fill out an application. You can find a fillable version or a pdf version by visiting our “Become a Vendor” page  <a href="<?php echo site_url(); ?>/become-a-vendor">here</a>.</li>
@@ -119,11 +119,11 @@ get_header();
 
                     <div class="card">
                         <div class="card-header" id="faqhead6">
-                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq6"
+                            <a href="javascript:void(0);" class="btn btn-header-link collapsed" data-bs-toggle="collapse" data-bs-target="#faq6"
                             aria-expanded="true" aria-controls="faq4">6. Do you have buskers and performers? How do I become a busker?</a>
                         </div>
 
-                        <div id="faq6" class="collapse" aria-labelledby="faqhead6" data-parent="#faq">
+                        <div id="faq6" class="collapse" aria-labelledby="faqhead6" data-bs-parent="#faq">
                             <div class="card-body">
                                 <ul>
                                     <li>Yes, we love having live performers and events at our market! Did you know that we have a stage to showcase live entertainers? Check out our <a href="<?php echo site_url(); ?>/contests-and-events">events calendar</a> to see the latest news on what’s coming up. </li>
