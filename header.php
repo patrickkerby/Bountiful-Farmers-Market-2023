@@ -59,7 +59,7 @@
     <!--Header top starts here-->
     <header>
         <div class="top-header container-fluid header-static">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center primary">
                 
                 <!-- Social Media -->
                 <div class="col socials justify-content-end">
@@ -94,33 +94,33 @@
                     <a href=""></a>
                 </div>
             </div>
-        </div>
-        <!--navbar starts here-->
-        <nav class="navbar navbar-expand-md">
-            <div class="container justify-content-center ">
-                
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!--navbar starts here-->
+            <nav class="navbar navbar-expand-md">
+                <div class="container justify-content-center ">
+                    
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <!-- Navbar links -->
-                <div class="new-nav">
-					<?php
-                        wp_nav_menu( array(
-                            'theme_location'    => 'primary',
-                            'container'         => 'div',
-                            'container_class'   => 'collapse navbar-collapse navbar-main-collapse',
-                            'container_id'   	=> 'collapsibleNavbar',
-                            'menu_class'        => 'nav navbar-nav',
-                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                            'walker'            => new wp_bootstrap_navwalker())
-                        );
-                       ?>
+                    <!-- Navbar links -->
+                    <div class="new-nav">
+                        <?php
+                            wp_nav_menu( array(
+                                'theme_location'    => 'primary',
+                                'container'         => 'div',
+                                'container_class'   => 'collapse navbar-collapse navbar-main-collapse',
+                                'container_id'   	=> 'collapsibleNavbar',
+                                'menu_class'        => 'nav navbar-nav',
+                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                'walker'            => new wp_bootstrap_navwalker())
+                            );
+                        ?>
+                    </div>
                 </div>
-            </div>
-            <a class="contact" data-bs-toggle="offcanvas" href="#contactModal" role="button" aria-controls="contactModal">Contact Us</a>
-        </nav>
+                <a class="contact" data-bs-toggle="offcanvas" href="#contactModal" role="button" aria-controls="contactModal">Contact Us</a>
+            </nav>
+        </div>        
     </header>
 
 

@@ -14,7 +14,6 @@ html {
   }
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "filson-pro", "Filson Pro";
   letter-spacing: 0.44px;
@@ -889,6 +888,7 @@ footer address {
     min-height: 0;
     height: 0;
     padding: 0;
+    overflow: hidden;
   }
 
   header {
@@ -943,20 +943,28 @@ footer address {
     top: 2.75rem;
     position: fixed;
     right: 1rem;
+    border: none;
+    transition: background 0.4s ease-in-out;
   }
 
   .navbar-toggler.collapsed .navbar-toggler-icon,
   .navbar-toggler.collapsed .navbar-toggler-icon::before,
   .navbar-toggler.collapsed .navbar-toggler-icon::after {
     background: #92BC5C;
+    transition: background 0.9s ease-in-out;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
   }
 
   header .navbar .navbar-nav li a {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-transform: none;
     padding: 1.5rem 0;
     font-weight: 500;
     text-align: left;
+    line-height: 4rem;
   }
 
   .top-header.header {
@@ -968,6 +976,7 @@ footer address {
     transition: height 0.4s ease-in-out;
     position: fixed;
     z-index: 2;
+    top: 0;
   }
 
   .top-header.header-scroll {
@@ -1001,8 +1010,12 @@ footer address {
   }
 
   header ul.navbar-nav {
-    width: 80%;
-    margin: 0 auto !important;
+    width: auto;
+    margin: 6rem auto auto auto !important;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
   }
 
   .vendors-sec ul {
@@ -1174,4 +1187,65 @@ footer address {
 .offcanvas.directions .content a {
   color: #E0665D;
   font-weight: 600;
+}
+
+
+/* ---- Sticky Header Styles ---  */
+
+@media (min-width: 575px) {
+  body {
+    padding-top: 178px;
+    /* transition: padding 0.6s ease-in-out; */
+  }
+
+  header .top-header.header-static {
+    position: fixed;
+    z-index: 2;
+  }
+
+  header .top-header.header-scroll {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+  }
+
+  header {
+    top: 0;
+    position: fixed;
+    z-index: 3;
+  }
+
+  header .top-header.header-static .primary {
+    height: 130px;
+    transition: height 0.6s ease;
+  }
+
+  header .top-header.header-scroll .primary {
+    height: 75px;
+    transition: height 0.6s ease;
+  }
+
+  header .top-header.header-static .primary span {
+    line-height: 22px;
+    transition: line-height 0.6s ease;
+  }
+
+  header .top-header.header-scroll .primary span {
+    line-height: 14px;
+    transition: line-height 0.6s ease;
+  }
+
+  header .top-header.header-scroll .navbar { 
+    height: 3rem;
+    transition: height 0.6s ease;
+  }
+
+  header .top-header.header-static .primary .brand a img {
+    transition: transform 0.6s ease;
+    transform-origin: center;
+  }
+
+  header .top-header.header-scroll .primary .brand a img {
+    transform: scale(0.7);
+  }
 }
