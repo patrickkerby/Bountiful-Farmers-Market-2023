@@ -57,7 +57,7 @@
 <body <?php body_class( 'woocommerce' ); ?>>
 
     <!--Header top starts here-->
-    <header>
+    <header class="global_header">
         <div class="top-header container-fluid header-static">
             <div class="row justify-content-center primary">
                 

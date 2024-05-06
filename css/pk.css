@@ -1209,7 +1209,7 @@ footer address {
     z-index: 3;
   }
 
-  header {
+  header.global_header {
     top: 0;
     position: fixed;
     z-index: 3;

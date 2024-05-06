@@ -556,14 +556,20 @@ sup {
     font-size: 38px;
 }
 
+.page-template-faq .heading h1 {
+    font-size: 4rem;
+    line-height: 1.25;
+}
+
 #faq .card {
 	margin-bottom: 30px;
-	border: 1px solid #92bc5c;
-	border-radius: 5px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   
   #faq .card .card-header {
-	border-radius: 2px;
+	border-radius: 0;
 	padding: 0;
   }
   
@@ -616,6 +622,7 @@ sup {
     background: #fff;
     line-height: 30px;
     color: #333;
+    padding: 2rem;
 }
 
 #faq .card .card-body ul {
@@ -631,10 +638,10 @@ sup {
     color: #92bc5c;
 }
 
-#faq .card .card-header a.btn-header-link[aria-expanded="true"] {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
+#faq .card .card-header a.btn-header-link[aria-expanded="true"],
+#faq .card .card-header a.btn-header-link {
+    border-radius: 0;
+} 
 /* FAQ Css End  */
 
 /* Contact-us CSS Start  */
