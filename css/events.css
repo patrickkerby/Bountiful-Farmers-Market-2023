@@ -229,6 +229,10 @@ body.post-type-archive-tribe_events #primary .site-content header {
   .gallery {
     grid-template-columns: 1fr 1fr;
   }
+
+  .modal .modal-dialog {
+    width: 100%;
+  }
 }
 
 .site-content .gallery .grid-item img {
