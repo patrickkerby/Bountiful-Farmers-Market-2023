@@ -225,6 +225,12 @@ body.post-type-archive-tribe_events #primary .site-content header {
   row-gap: 1rem;
 }
 
+@media (max-width: 575px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .site-content .gallery .grid-item img {
   height: 100%;
   width: 100%;
