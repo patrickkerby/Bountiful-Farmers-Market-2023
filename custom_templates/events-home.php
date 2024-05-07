@@ -60,7 +60,38 @@ get_header();
 
         <?php endwhile; // end of the loop. ?>
 
+        <?php 
+            $rows = get_field('gallery', 'option');
+            if( $rows ) {
+                echo '<h2>Past Events</h2>';
+                echo '<div class="gallery">';
+                $i = 0;
+                foreach( $rows as $row ) {
+                    // var_dump($row);
+                    echo '<div class="grid-item"><a data-bs-toggle="modal" href="" data-bs-target="#exampleModal'.$i.'"><img src="'.$row['url'].'" alt="'.$row['alt'].'" /></a>';
+                    ?>
+                    
+                    <div class="modal fade" id="exampleModal<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img src="<?php echo $row['url']; ?>" />
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                    <?php
+                    $i++;
+                }
+                echo '</div>';
+            }
+          ?>
     </div><!-- #content .site-content -->
+
 </div><!-- #primary .content-area -->
 
 <?php get_footer(); ?>
