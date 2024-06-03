@@ -56,8 +56,6 @@ $image_4 = get_user_meta( $store_user->get_id() , 'image_4' );
 $user_data =  get_userdata( $store_user->get_id() );
 $website_display = "";
 
-
-
 $website_url = $user_data->user_url;
 // The following is all stuff to make the urls look pretty in the profile
 // in case scheme relative URI is passed, e.g., //www.google.com/    
@@ -74,7 +72,7 @@ if($website_url) {
 
 $vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
 
-    
+$artisanbooth = get_field( 'is_this_an_artisan_booth', 'user_'.$user_data->ID );;
 
 ?>
    
@@ -87,17 +85,19 @@ $vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
             echo $stall_number_custom[0];
             } 
         ?></li>
-        <?php if ( $social_info['twitter'] ) { ?>
-          <li class="twitter"><a href="<?php echo esc_html($social_info['twitter']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/twitter.svg" /></a></li>
+        <?php if (!$artisanbooth) { ?>
+            <?php if ( $social_info['twitter'] ) { ?>
+            <li class="twitter"><a href="<?php echo esc_html($social_info['twitter']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/twitter.svg" /></a></li>
+            <?php } ?>
+            <?php if ( $social_info['fb'] ) { ?>
+            <li><a href="<?php echo esc_html($social_info['fb']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/facebook.svg" /></a></li>
+            <?php } ?>
+            <?php if ( $social_info['instagram'] ) { ?>
+            <li><a href="<?php echo esc_html($social_info['instagram']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/instagram.svg" /></a></li>
+            <?php } ?>
+            <li><a href="mailto:<?php echo esc_attr( antispambot( $store_user->get_email() ) ); ?> subject=Mail from Bountiful Farmers' Market Website" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/email.svg" /></a></li>        
+            <li class="website"><span><a href="<?php echo $website_url ?>" target="_blank"><?php echo $website_display ?></a></span></li>
         <?php } ?>
-        <?php if ( $social_info['fb'] ) { ?>
-          <li><a href="<?php echo esc_html($social_info['fb']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/facebook.svg" /></a></li>
-          <?php } ?>
-        <?php if ( $social_info['instagram'] ) { ?>
-          <li><a href="<?php echo esc_html($social_info['instagram']); ?>" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/instagram.svg" /></a></li>
-          <?php } ?>
-          <li><a href="mailto:<?php echo esc_attr( antispambot( $store_user->get_email() ) ); ?> subject=Mail from Bountiful Farmers' Market Website" target="_blank"><img src="/app/themes/Bountiful-Farmers-Market-2023/images/email.svg" /></a></li>        
-          <li class="website"><span><a href="<?php echo $website_url ?>" target="_blank"><?php echo $website_display ?></a></span></li>
       </ul>
     </div>
     <div class="col-10 col-sm-5 profile-img">
@@ -124,7 +124,8 @@ $vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
                     <hr>
                     <?php $str = get_user_meta( $store_user->get_id() , 'main_products' );?>
 
-                    <?php if($vendor_products) { ?>
+                <?php if (!$artisanbooth) { ?>
+                    <?php if($vendor_products && $artisanbooth == false) { ?>
                         <h2>Our Products</h2>
                         <ul>
                             <?php foreach ($vendor_products as $product) { ?>
@@ -147,6 +148,7 @@ $vendor_products = get_field( 'vendor_products', 'user_'.$user_data->ID );;
                             </ul>                                                            
                         </div>
                     <?php } ?>
+                <?php } ?>
                 </div>
                 <div class="col-md-5 photos">
                     <div class="row">
