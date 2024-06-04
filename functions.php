@@ -2127,3 +2127,6 @@ add_action( 'woocommerce_after_shop_loop_item_title','sold_by2' );
             'redirect'      => false
         ));
     }
+
+    @ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
