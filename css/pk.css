@@ -163,6 +163,10 @@ header .top-header {
   padding-right: 0;
 }
 
+body.admin-bar header .top-header {
+  top: 32px;
+}
+
 header .row div {
   display: flex;
   justify-content: center;
