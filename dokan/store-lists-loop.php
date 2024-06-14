@@ -87,38 +87,38 @@
 
         <?php 
             $categories_images = array(
-                "Artisan Crafts"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png",
-                "Prepared Food"=>"https://test.bountifulmarkets.com/app/uploads/2022/06/9.png",
-                "Bath/Beauty"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png",
-                "Ethnic Food Hall Kitchens"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/6.png",
-                "Spices"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png",
-                "Meat"=>"https://test.bountifulmarkets.com/app/uploads/2022/06/8.png",
-                "Beer"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png",
-                "Beverages"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png",
-                "Pets'"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png",
-                "Baked Goods"=>"https://test.bountifulmarkets.com/app/uploads/2022/06/10.png",
-                "Cheese/Dairy"=>"https://test.bountifulmarkets.com/app/uploads/2022/06/8.png",
-                "Sweet Treats"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png",
-                "Candy"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png",
-                "Home"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png",
-                "Fruits"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
-                "Produce"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
-                "Vegetables"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
-                "Preserves"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png",
-                "Mushrooms"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
-                "Vinegars/Oils"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png",
-                "Jewellery"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png",
-                "Sauces"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png",
-                "Clothing"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png",
-                "Herbs"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
-                "Honey"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png",
-                "Nuts"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png",
-                "Kids'"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png",
-                "Wine"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png",
-                "Alcohol"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png",
-                "Fish/Seafood"=>"https://test.bountifulmarkets.com/app/uploads/2022/06/8.png",
-                "Other"=>"https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png",
-                "Uncategorized"=>"https://test.bountifulmarkets.com/app/uploads/2022/06/images-modified.png"
+                "Artisan Crafts"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png",
+                "Prepared Food"=>"https://bountifulmarkets.com/app/uploads/2022/06/9.png",
+                "Bath/Beauty"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png",
+                "Ethnic Food Hall Kitchens"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/6.png",
+                "Spices"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png",
+                "Meat"=>"https://bountifulmarkets.com/app/uploads/2022/06/8.png",
+                "Beer"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png",
+                "Beverages"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png",
+                "Pets'"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png",
+                "Baked Goods"=>"https://bountifulmarkets.com/app/uploads/2022/06/10.png",
+                "Cheese/Dairy"=>"https://bountifulmarkets.com/app/uploads/2022/06/8.png",
+                "Sweet Treats"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png",
+                "Candy"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png",
+                "Home"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png",
+                "Fruits"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Produce"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Vegetables"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Preserves"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png",
+                "Mushrooms"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Vinegars/Oils"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png",
+                "Jewellery"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png",
+                "Sauces"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png",
+                "Clothing"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png",
+                "Herbs"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png",
+                "Honey"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png",
+                "Nuts"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png",
+                "Kids'"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png",
+                "Wine"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png",
+                "Alcohol"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png",
+                "Fish/Seafood"=>"https://bountifulmarkets.com/app/uploads/2022/06/8.png",
+                "Other"=>"https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png",
+                "Uncategorized"=>"https://bountifulmarkets.com/app/uploads/2022/06/images-modified.png"
             );
             ?>
 
@@ -129,7 +129,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Artisan Crafts, Jewellery, Home, Bath/Beauty')" data-url="Artisan Crafts, Jewellery, Home, Bath/Beauty">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png" alt="1" />
+                        <img src="https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/1.png" alt="1" />
                     </figure>
                     <figcaption>Artisan Crafts, Jewellery, Bath/Beauty, Home</figcaption>
                 </a>
@@ -137,7 +137,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Preserves,Vinegars, Oils, Sauces, Spices')" data-url="Preserves,Vinegars, Oils, Sauces, Spices">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png" alt="2" />
+                        <img src="https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/2.png" alt="2" />
                     </figure>
                     <figcaption>Preserves, Vinegars, Sauces, Spices, Oil</figcaption>
                 </a>
@@ -145,7 +145,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Beverages,Wine,Beer,Alcohol')" data-url="Beverages,Wine,Beer,Alcohol">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png" alt="3" />
+                        <img src="https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/3.png" alt="3" />
                     </figure>
                     <figcaption>Beverages, Wine, Beer, Alcohol</figcaption>
                 </a>
@@ -153,7 +153,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Sweet Treats,Candy,Nuts,Honey')" data-url="Sweet Treats,Candy,Nuts,Honey">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png" alt="4" />
+                        <img src="https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/4.png" alt="4" />
                     </figure>
                     <figcaption>Sweet Treats, Candy, Nuts, Honey</figcaption>
                 </a>
@@ -161,7 +161,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1(`Clothing,Kids',Pets',Other`)" data-url="Clothing,Kids',Pets',Other">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png" alt="5" />
+                        <img src="https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/5.png" alt="5" />
                     </figure>
                     <figcaption>Clothing, Kids', Pets', Other</figcaption>
                 </a>
@@ -169,7 +169,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Ethnic Food Hall Kitchens')" data-url="Ethnic Food Hall Kitchens">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/6.png" alt="6" />
+                        <img src="https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/6.png" alt="6" />
                     </figure>
                     <figcaption>Ethnic Food Hall Kitchens</figcaption>
                 </a>
@@ -177,7 +177,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Vegetables,Mushrooms,Fruits,Herbs,Produce')" data-url="Vegetables,Mushrooms,Fruits,Herbs,Produce">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png" alt="7" />
+                        <img src="https://bountifulmarkets.com/app/themes/Bountiful-Farmers-Market-2023/images/7.png" alt="7" />
                     </figure>
                     <figcaption>Vegetables, Mushrooms, Fruits, Herbs</figcaption>
                 </a>
@@ -185,7 +185,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Cheese,Seafood')" data-url="Cheese/Dairy,Fish/Seafood,Meat,Eggs">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/uploads/2022/06/8.png" alt="8" />
+                        <img src="https://bountifulmarkets.com/app/uploads/2022/06/8.png" alt="8" />
                     </figure>
                     <figcaption>Cheese/Dairy, Fish/Seafood, Meat, Eggs</figcaption>
                 </a>
@@ -193,7 +193,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Prepared Food')" data-url="Prepared Food">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/uploads/2022/06/9.png" alt="9" />
+                        <img src="https://bountifulmarkets.com/app/uploads/2022/06/9.png" alt="9" />
                     </figure>
                     <figcaption>Prepared Foods</figcaption>
                 </a>
@@ -201,7 +201,7 @@
             <li>
                 <a href="javascript:void(0);" onclick="myFunction1('Baked Goods')" data-url="Baked Goods">
                     <figure>
-                        <img src="https://test.bountifulmarkets.com/app/uploads/2022/06/10.png" alt="10" />
+                        <img src="https://bountifulmarkets.com/app/uploads/2022/06/10.png" alt="10" />
                     </figure>
                     <figcaption>Baked Goods</figcaption>
                 </a>
