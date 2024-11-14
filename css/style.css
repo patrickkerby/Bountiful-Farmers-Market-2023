@@ -1988,6 +1988,12 @@ a.contest {
     /*margin-bottom: 15px;*/
 }
 
+.product-name div.product-quantity {
+    color: #fff;
+    font-weight: bold;
+    width: auto;
+}
+
 .single-product .summary form.cart {
     flex-wrap: wrap;
 }
@@ -2175,9 +2181,10 @@ div#customer_details{
 .payment_box.payment_method_cod {
     padding: 10px;
 }
-.variation{
-    display: flex;
-    align-items: center;
+.variation {
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
 }
 .variation-Vendor p{
     font-size: 15px;

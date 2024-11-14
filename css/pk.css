@@ -1259,3 +1259,9 @@ footer address {
     transform: scale(0.7);
   }
 }
+
+/* hidden stuff */
+
+.woocommerce-tabs {
+  display: none;
+}

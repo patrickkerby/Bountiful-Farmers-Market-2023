@@ -398,11 +398,11 @@ function add_custom_sorting_options( $options ){
 }
 
 
-add_action( 'woocommerce_before_checkout_form', 'wnd_checkout_code', 10 );
+// add_action( 'woocommerce_before_checkout_form', 'wnd_checkout_code', 10 );
 
-function wnd_checkout_code( ) {
- echo '<h6 class="custom_text_on_top_checkout_page">All orders are final. No cancellation, refunds or exchanges will be processed once an order has been placed. Please double check your order and delivery/pickup date.</h6>';
-}
+// function wnd_checkout_code( ) {
+//  echo '<h6 class="custom_text_on_top_checkout_page">All orders are final. No cancellation, refunds or exchanges will be processed once an order has been placed. Please double check your order and delivery/pickup date.</h6>';
+// }
 
 add_filter( 'woocommerce_get_catalog_ordering_args', 'custom_product_sorting' );
 function custom_product_sorting( $args ) {
@@ -438,10 +438,10 @@ function change_sorting_options_order( $options ){
 /**
  * Replace the home link URL
  */
-add_filter( 'woocommerce_breadcrumb_home_url', 'woo_custom_breadrumb_home_url' );
-function woo_custom_breadrumb_home_url() {
-    return 'https://bountiful.valontech.com/shop/';
-}
+// add_filter( 'woocommerce_breadcrumb_home_url', 'woo_custom_breadrumb_home_url' );
+// function woo_custom_breadrumb_home_url() {
+//     return 'https://bountiful.valontech.com/shop/';
+// }
 
 // Remove Woocommerce More seller Tab and Shipping Tab from Products Tab Code start
 
@@ -507,12 +507,11 @@ function change_default_checkout_country() {
 // Set Default country to Canada
 
 // Add back Button in Product Detail page
-add_action('woocommerce_before_main_content', 'backbutton', 5);
-function backbutton() {
-    echo ' <button type="button" class="back_button_detail_page" onclick="backfunc()"> Back </button> ';
-}
+// add_action('woocommerce_before_main_content', 'backbutton', 5);
+// function backbutton() {
+//     echo ' <button type="button" class="back_button_detail_page" onclick="backfunc()"> Back </button> ';
+// }
 
-// Add back Button in Product Detail page
 
 //Signup Form Submit Functionality Code start
 
@@ -736,328 +735,13 @@ $user_data = wp_update_user(
 //Reset Password Form Submit Functionality Code End
 
 
-
-
 function my_enqueue() {
     //   wp_enqueue_script( 'ajax-script', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array('jquery') );
       wp_localize_script( 'ajax-script', 'my_ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
  }
  add_action( 'wp_enqueue_scripts', 'my_enqueue' );
 
-
-// Custom Checkout Fields
-add_action( 'woocommerce_after_checkout_billing_form', 'custom_shipping_method' );
-
-function custom_shipping_method( $checkout ){
-
-
-	echo '<div id="my_custom_checkout_field">
-    <h3>'.__('Delivery Info').'</h3>';
-
-    echo '<p>'.__('"Please note that Deliveries are only within Edmonton. Delivery times are estimates only. If you are not available to receive your order, the products will be left on your doorstep."').'</p>';
-
-
-
-    woocommerce_form_field( 'shipping_method_custom', array(
-        'type' => 'select',
-        'required' => true,
-        'class' => array('form-row-wide'),
-        'label' => 'Choose the Delivery method',
-        'options' => get_ship_methods()
-    ), $checkout->get_value( 'shipping_method_custom' ) );
-
-  ?>
-    <script>
-
-        jQuery(function($){
-
-            var shiping_method = "";
-            var get_holidays_dates = [];
-            jQuery("#shipping_method_custom").on("change", function () {
-                shiping_method = jQuery(this).val();
-
-                jQuery('#time_field').val('');
-                jQuery('#datepicker').val('');
-
-                    let link ="<?php echo admin_url('admin-ajax.php')?>";
-                    let formData = new FormData;
-                    formData.append('action' , 'get_holidays');
-                    // formData.append('update_checkout_total' , shiping_method);
-
-                    jQuery.ajax({
-                            type        : "POST",
-                            url         : link,
-                            async       : true,
-                            data        : formData,
-                            processData : false,
-                            contentType : false,
-                            cache       : false,
-
-                beforeSend: function() {
-                 // jQuery("#loader").css("display","block");
-                 jQuery("#datepicker").attr("disabled",true);
-                },
-
-
-                        success: function (data) {
-                           var dd= JSON.parse(data);
-                            get_holidays_dates = dd;
-                            jQuery("#datepicker").attr("disabled",false);                          
-                        },
-                        error: function () {
-                            alert("Error Accured...");
-                        }
-                    });
-                });
-
-      const d = new Date();
-			let day = d.getDay();
-			let hour = d.getHours();
-
-			const mindate = (day , hours) =>{
-
-				if (day <= 3) {
-					if (hour < 18) {
-						return '+1D';
-					}
-					else{
-						return '+2D';
-					}
-				}
-				else{
-					if (hour < 18) {
-						return '+2D';
-					}
-					else{
-						return '+3D';
-					}
-				}
-			}
-
-            $( "#datepicker" ).datepicker({ minDate: mindate(day,hour) , maxDate: '+1M',
-            	beforeShowDay: function(date){
-                var ymd = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-                console.log(get_holidays_dates);
-                 if ($.inArray(ymd, get_holidays_dates) >= 0) {
-                return [ false, 'holiday red', 'Red!' ];
-            }
-                     // console.log(holidays); 
-                    if(shiping_method == "pickup"){  
-                          
-                         if(date.getDay() == 0  || date.getDay() == 5 || date.getDay() == 6){
-                                            return [true];
-                                        } else {
-                                            return [false];
-                                        }
-
-                    }
-                    else if(shiping_method == "delivery"){
-                        if(date.getDay() == 5 || date.getDay() == 6){
-                                            return [true];
-                                        } else {
-                                            return [false];
-                                        }
-                    }
-                    else{
-                        return [false];
-                                    
-                    }
-
-		        },
-                onSelect: function(dateText, inst) {
-                    var date = $(this).datepicker('getDate');
-                    var dayName = $.datepicker.formatDate('DD', date);
-
-                    // console.log(dayName);
-                    // return false;
-                    // var dayOfWeek = date.getUTCDay();
-                    var ship = jQuery('#shipping_method_custom').val();
-
-                     // console.log(dayOfWeek);
-
-                    let link ="<?php echo admin_url('admin-ajax.php')?>";
-                    let formData = new FormData;
-                    formData.append('action' , 'on_select_date');
-                    formData.append('dayOfWeek' , dayName);
-                    formData.append('ship' , ship);
-
-                    // alert(dayOfWeek);
-                    // return false;
-
-
-                    jQuery.ajax({
-
-                            type        : "POST",
-                            url         : link,
-                            async       : true,
-                            data        : formData,
-                            processData : false,
-                            contentType : false,
-                            cache       : false,
-
-
-                        success: function (data) {
-                            //alert("Ok");
-                            
-                            // console.log(data);
-                            
-                        
-                            $('#time_field').html(data);
-                          
-                        },
-                        error: function () {
-                            alert("Error Accured...");
-                        }
-                    });
-
-
-                }
-     
-
-             });
-
-        });
-    </script>
-    <?php
-
-   woocommerce_form_field( 'order_pickup_date', array(
-        'type'          => 'text',
-        'class'         => array('my-field-class form-row-wide'),
-        'id'            => 'datepicker',
-        'required'      => true,
-        'label'         => ('Select Delivery Date'),
-        'placeholder'   => ('Select Date'),
-        // 'options'     	=>   $mydateoptions,
-
-        ),$checkout->get_value( 'order_pickup_date' ));
-
-    echo '</div>';
-
-        woocommerce_form_field( 'time_field', array(
-        'type' => 'select',
-        'required' => true,
-        'class' => array('form-row-wide'),
-        'label' => 'Select Time Slot',
-        'options'       => array(
-            ''     => __( 'Select Time Slot', 'wps' )
-        )
-    ), $checkout->get_value( 'time_field' ) );
-
-    }
-
-
-   function get_ship_methods() {
-
-    $leaders = [];
-    // $leaders = ['' => 'Choose '];
-    // $users = get_users( $args );
-    $users = array("" => "Select Delivery Method" ,"delivery"=>"Delivery", "pickup"=>"Pickup");
-    if($users){
-       foreach($users as $key => $value){
-           $leaders[$key] = $value;
-       }
-    }
-    return $leaders;
-   }
-
-add_action('woocommerce_checkout_process', 'customised_checkout_field_process');
-
-	function customised_checkout_field_process(){
-
-		if (!$_POST['shipping_method_custom']) wc_add_notice(__('Please enter Shipping Method!') , 'error');
-
-		if (!$_POST['order_pickup_date']) wc_add_notice(__('Please enter Preferred Date!') , 'error');
-
-		if (!$_POST['time_field']) wc_add_notice(__('Please enter Preferred Time!') , 'error');
-
-	}
-
-
-// Save custom checkout field value as user meta data
-add_action('woocommerce_checkout_update_order_meta','custom_checkout_checkbox_update_customer', 10, 2 );
-
-	function custom_checkout_checkbox_update_customer( $order_id, $posted  ){	  
-
-	   if( isset( $_POST['shipping_method_custom'] ) ) {
-	    update_post_meta( $order_id, 'custom_shipping_method', $_POST['shipping_method_custom'] );
-		}
-
-	 	if( isset( $_POST['order_pickup_date'] ) ) {
-	    update_post_meta( $order_id, 'preferred_date', $_POST['order_pickup_date'] );
-	    }
-
-    if( isset( $_POST['time_field'] ) ) {
-    update_post_meta( $order_id, 'preferred_time', $_POST['time_field'] );
-    }
-	}
-
-add_action( 'woocommerce_thankyou', 'cloudways_display_order_data', 20 );
-add_action( 'woocommerce_view_order', 'cloudways_display_order_data', 20 );
-
-	function cloudways_display_order_data( $order_id ){
-
-$parent_id =  has_post_parent($order_id);
-if ($parent_id) {
-  $order_id = wp_get_post_parent_id($order_id);
-}
-  ?>
-	    <h2><?php _e( 'Delivery Information' ); ?></h2>
-	    <table class="shop_table shop_table_responsive additional_info">
-	        <tbody>
-	        	<tr>
-	                <th><?php _e( 'Shipping Method:' ); ?></th>
-	                <td><?php echo get_post_meta( $order_id, 'custom_shipping_method', true ); ?></td>
-	            </tr>
-	            <tr>
-	                <th><?php _e( 'Delivery Date/Pickup:' ); ?></th>
-	                <td><?php echo get_post_meta( $order_id, 'preferred_date', true ); ?></td>
-	            </tr>
-                <tr>
-                    <th><?php _e( 'Delivery/Pickup Time:' ); ?></th>
-                    <td><?php echo get_post_meta( $order_id, 'preferred_time', true ); ?></td>
-                </tr>
-	            
-	        </tbody>
-	    </table>
-	<?php }
-
-
-
-add_action( 'woocommerce_admin_order_data_after_order_details', 'cloudways_display_order_data_in_admin' );
-
-	function cloudways_display_order_data_in_admin( $order ){
-    $order_id =  $order->id;
-    $parent_id =  has_post_parent($order_id);
-if ($parent_id) {
-  $order_id = wp_get_post_parent_id($order_id);
-}
-    ?>
-	    <div class="order_data_column">
-	        <h4><?php _e( 'Additional Information', 'woocommerce' ); ?><a href="#" class="edit_address"><?php _e( 'Edit', 'woocommerce' ); ?></a></h4>
-	        <div class="address">
-	        <?php
-	            echo '<p><strong>' . __( 'Shipping Method:' ) . ':</strong>' . get_post_meta( $order_id, 'custom_shipping_method', true ) . '</p>';
-	            echo '<p><strong>' . __( 'Delivery Date:' ) . ':</strong>' . get_post_meta( $order_id, 'preferred_date', true ) . '</p>';
-                 echo '<p><strong>' . __( 'Delivery Time:' ) . ':</strong>' . get_post_meta( $order_id, 'preferred_time', true ) . '</p>'; ?>
-
-	        </div>
-	        <div class="edit_address">
-	            <?php woocommerce_wp_text_input( array( 'id' => 'custom_shipping_method', 'label' => __( 'Some field' ), 'wrapper_class' => '_billing_company_field' ) ); ?>
-	            <?php woocommerce_wp_text_input( array( 'id' => 'preferred_date', 'label' => __( 'Another field' ), 'wrapper_class' => '_billing_company_field' ) ); ?>
-                <?php woocommerce_wp_text_input( array( 'id' => 'preferred_time', 'label' => __( 'Another field' ), 'wrapper_class' => '_billing_company_field' ) ); ?>
-	        </div>
-	    </div>
-	<?php }
-
-
-
-add_action( 'woocommerce_process_shop_order_meta', 'cloudways_save_extra_details', 45, 2 );
-
-	function cloudways_save_extra_details( $post_id, $post ){
-	    update_post_meta( $post_id, '_cloudways_text_field', wc_clean( $_POST[ 'custom_shipping_method' ] ) );
-	    update_post_meta( $post_id, '_cloudways_dropdown', wc_clean( $_POST[ 'preferred_date' ] ) );
-      update_post_meta( $post_id, '_cloudways_dropdown', wc_clean( $_POST[ 'preferred_time' ] ) );
-	}
+//checkout delivery and pickup fields were here. check backup file to add them back in
 
 // Get holidays Code Start
 
@@ -1706,17 +1390,17 @@ $vendor_name = $_GET["vendorName"];
 
 $order = wc_get_order( $order_id );
 $parent_id =  has_post_parent($order_id);
-                        if ($parent_id) {
-                        $p_id = wp_get_post_parent_id($order_id);
-                        $shipping_method = get_post_meta( $p_id , 'custom_shipping_method'); 
-                        $shipping_date = get_post_meta( $p_id , 'preferred_date'); 
-                        $shipping_time = get_post_meta( $p_id , 'preferred_time'); 
-                        }
-                        else{
-                         $shipping_method = get_post_meta( $order_id , 'custom_shipping_method');
-                         $shipping_date = get_post_meta( $order_id , 'preferred_date'); 
-                         $shipping_time = get_post_meta( $order_id , 'preferred_time'); 
-                        }
+if ($parent_id) {
+    $p_id = wp_get_post_parent_id($order_id);
+    $shipping_method = get_post_meta( $p_id , 'custom_shipping_method'); 
+    $shipping_date = get_post_meta( $p_id , 'preferred_date'); 
+    $shipping_time = get_post_meta( $p_id , 'preferred_time'); 
+}
+else{
+    $shipping_method = get_post_meta( $order_id , 'custom_shipping_method');
+    $shipping_date = get_post_meta( $order_id , 'preferred_date'); 
+    $shipping_time = get_post_meta( $order_id , 'preferred_time'); 
+}
 
 $order_total_tax  = $order->get_total_tax();
 $order_date = $order->order_date;
@@ -1826,12 +1510,12 @@ function date_range_filters(){
     'order' => 'ASC',
     'meta_value'  => $user_id,
     'date_query'=> array(
-                            array(
-                                'before' => $date_filter_to,
-                                'after'  => $date_filter_from,
-                                'inclusive' => true,
-                            ),
-                        ),
+        array(
+            'before' => $date_filter_to,
+            'after'  => $date_filter_from,
+            'inclusive' => true,
+        ),
+    ),
 );
 
     $loop = new WP_Query( $filters );
@@ -1992,13 +1676,10 @@ function change_shipping_text_to_delivery( $sprintf, $i, $package ) {
 }
 
 
-add_action( 'woocommerce_before_order_notes', 'wp_kama_woocommerce_before_order_notes_action' );
-
-
-function wp_kama_woocommerce_before_order_notes_action( $checkout ){
-
-    echo '<p>'.__('"Note:  We cannot guarantee special requests will be met."').'</p>';
-}
+// add_action( 'woocommerce_before_order_notes', 'wp_kama_woocommerce_before_order_notes_action' );
+// function wp_kama_woocommerce_before_order_notes_action( $checkout ){
+//     echo '<p>'.__('"Note:  We cannot guarantee special requests will be met."').'</p>';
+// }
 
 
 add_filter('woocommerce_available_payment_gateways', 'show_hide_cod', 10, 1);
@@ -2087,7 +1768,7 @@ add_filter( 'woocommerce_shop_order_search_fields', 'filter_woocommerce_shop_ord
 
 
 
-//PK
+//PK added functions below
 
 add_filter('loop_shop_columns', 'loop_columns', 999);
 if (!function_exists('loop_columns')) {
@@ -2117,16 +1798,16 @@ add_action( 'woocommerce_after_shop_loop_item_title','sold_by2' );
     }
 
 
-    if( function_exists('acf_add_options_page') ) {
-    
-        acf_add_options_page(array(
-            'page_title'    => 'Bountiful Event Settings',
-            'menu_title'    => 'Bountiful Event Settings',
-            'menu_slug'     => 'theme-bountiful-settings',
-            'capability'    => 'edit_posts',
-            'redirect'      => false
-        ));
-    }
+if( function_exists('acf_add_options_page') ) {
 
-    @ini_set( 'upload_max_size' , '64M' );
+    acf_add_options_page(array(
+        'page_title'    => 'Bountiful Event Settings',
+        'menu_title'    => 'Bountiful Event Settings',
+        'menu_slug'     => 'theme-bountiful-settings',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+}
+
+@ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
